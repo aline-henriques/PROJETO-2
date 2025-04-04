@@ -2,6 +2,8 @@
 
 > Aplicação desenvolvida com React como projeto acadêmico para a disciplina de **Projetos 2** na [CESAR School](https://www.cesar.school).
 
+*** 
+
 ### 📑 | Índice
 
 - [Sobre o Projeto](#sobre-o-projeto)
