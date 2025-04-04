@@ -2,7 +2,7 @@
 
 Aplicação desenvolvida com React como projeto acadêmico para a disciplina de **Projetos 2** na [CESAR School](https://www.cesar.school).
 
-*** 
+***
 
 ### 📑 | Índice
 
@@ -27,13 +27,13 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 
 ### 💻 | Tecnologias Utilizadas
 
-- **React**  
-- **JavaScript**  
-- **HTML5 & CSS3**  
-- **Figma** 
-- **GitHub** 
-- **Trello** 
-- **Canva** 
+    React 
+    JavaScript
+    HTML e CSS
+    Figma
+    GitHub
+    Trello
+    Canva
 
 *** 
 
