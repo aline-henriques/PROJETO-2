@@ -12,6 +12,8 @@
 - [Autores](#autores)
 - [Licença](#licença)
 
+*** 
+
 ### 📌 | Sobre o Projeto
 
 > Sobre...
@@ -20,6 +22,8 @@
 > - ✅ Funcionalidade 1  
 > - ✅ Funcionalidade 2  
 > - ✅ Funcionalidade 3
+
+*** 
 
 ### 💻 | Tecnologias Utilizadas
 
@@ -31,16 +35,22 @@
 - **Trello** — Organização e planejamento de tarefas  
 - **Canva** — Design visual e gráfico  
 
+*** 
+
 ### 🔗 | Acesse o Site
 
 [**Clique aqui para acessar!**](https://link-do-site.com)  
 
+*** 
+
 ### 👥 | Autores
 
--  Aline de Albuquerque Henriques  
+`-  Aline de Albuquerque Henriques  
 - Bruno Felipe de Castilhos Gomes Rego  
 - Luiz Henrique da Silva Neves  
-- Thyalles Araújo Campos  
+- Thyalles Araújo Campos`
+
+*** 
 
 ### ⚖️ | Licença
 
