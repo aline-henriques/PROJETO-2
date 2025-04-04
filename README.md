@@ -9,7 +9,7 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 1. [Sobre o Projeto](#sobre-o-projeto)
 2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 3. [Acesse o Site](#acesse-o-site)
-4. [Autores](#autores)
+4. [Equipe](#equipe)
 5. [Licença](#licença)
 
 *** 
@@ -19,21 +19,21 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 > Sobre...
 
     Principais funcionalidades
-    - ✔️ Funcionalidade 1  
-    - ✔️ Funcionalidade 2  
-    - ✔️ Funcionalidade 3
+    ✔️ Funcionalidade 1  
+    ✔️ Funcionalidade 2  
+    ✔️ Funcionalidade 3
 
 *** 
 
 ### 💻 | Tecnologias Utilizadas
 
-- **React** — Biblioteca para construção de interfaces   
-- **JavaScript (ES6+)**  
+- **React**  
+- **JavaScript**  
 - **HTML5 & CSS3**  
-- **Figma** — Design e prototipação  
-- **GitHub** — Versionamento de código  
-- **Trello** — Organização e planejamento de tarefas  
-- **Canva** — Design visual e gráfico  
+- **Figma** 
+- **GitHub** 
+- **Trello** 
+- **Canva** 
 
 *** 
 
@@ -43,7 +43,7 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 
 *** 
 
-### 👥 | Autores
+### 👥 | Equipe
 
     -  Aline de Albuquerque Henriques
     -  Bruno Felipe de Castilhos Gomes Rego  
