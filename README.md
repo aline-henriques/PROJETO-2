@@ -6,11 +6,11 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 
 ### 📑 | Índice
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Acesse o Site](#acesse-o-site)
-- [Autores](#autores)
-- [Licença](#licença)
+1. [Sobre o Projeto](#sobre-o-projeto)
+2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+3. [Acesse o Site](#acesse-o-site)
+4. [Autores](#autores)
+5. [Licença](#licença)
 
 *** 
 
@@ -18,10 +18,10 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 
 > Sobre...
 
-    > Principais funcionalidades
-    > - ✅ Funcionalidade 1  
-    > - ✅ Funcionalidade 2  
-    > - ✅ Funcionalidade 3
+    Principais funcionalidades
+    - ✔️ Funcionalidade 1  
+    - ✔️ Funcionalidade 2  
+    - ✔️ Funcionalidade 3
 
 *** 
 
@@ -39,7 +39,7 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 
 ### 🔗 | Acesse o Site
 
-[**Clique aqui para acessar!**](https://link-do-site.com)  
+[**Clique aqui para acessar o nosso site!**](https://link-do-site.com)  
 
 *** 
 
