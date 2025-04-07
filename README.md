@@ -1,4 +1,4 @@
-## 🧠 | Deu Tilt - Website
+## 🧠 | DeI TiltI - Website
 
 Aplicação desenvolvida com React como projeto acadêmico para a disciplina de **Projetos 2** na [CESAR School](https://www.cesar.school).
 
@@ -7,10 +7,13 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 ### 📑 | Índice
 
 1. [Sobre o Projeto](#sobre-o-projeto)
-2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
-3. [Acesse o Site](#acesse-o-site)
-4. [Equipe](#equipe)
-5. [Licença](#licença)
+2. [Backlog do Projeto](#backlog-do-projeto)
+3. [ScreenCast do Protótipo](#screencast-do-prototipo)
+4. [Links Úteis](#links-uteis)
+5. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+6. [Acesse o Site](#acesse-o-site)
+7. [Equipe](#equipe)
+8. [Licença](#licença)
 
 *** 
 
@@ -24,6 +27,20 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
     ✔️ Funcionalidade 3
 
 *** 
+
+### | Backlog do Projeto
+Print do Quadro de Requisitos: 
+
+
+### | ScreenCast do Protótipo
+
+***
+
+### | Links Úteis
+[GitHub](https://link-do-site.com)  
+[Figma](https://link-do-site.com)  
+
+***
 
 ### 💻 | Tecnologias Utilizadas
 
