@@ -31,15 +31,14 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 ### 📑 | Backlog do Projeto
 [Link para o Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)
 
-
-### 🎥 | ScreenCast do Protótipo
+    - 🎥 ScreenCast do Protótipo
 [Vídeo no YouTube](https://youtube.com)
 
 ***
 
 ### 🔗 | Links Úteis
-[GitHub | Repositório do nosso projeto!](github.com/aline-henriques/PROJETO-2)  
-[Figma | Prototipação Navegável de baixa fidelidade no Figma!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)
+[GitHub - Repositório do nosso projeto!](github.com/aline-henriques/PROJETO-2)  
+[Figma - Prototipação Navegável de baixa fidelidade no Figma!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)
 
 ***
 
@@ -57,7 +56,7 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 
 ### 🔗 | Acesse o Site
 
-[**Clique aqui para acessar o nosso site!**](https://link-do-site.com)  
+[**Clique aqui para acessar o nosso site! Em andamento...**](https://link-do-site.com)  
 
 *** 
 
