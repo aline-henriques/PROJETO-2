@@ -19,19 +19,19 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 
 ### 📌 | Sobre o Projeto
 
-> Sobre...
+Plataforma Web interativa para promover a saúde mental no trabalho. Com um fórum anônimo, chat de suporte e recursos educativos, oferece um ambiente seguro para troca de experiências e acesso a atendimentos online, ajudando na prevenção de problemas emocionais.
 
     Principais funcionalidades
-    ✔️ Funcionalidade 1  
-    ✔️ Funcionalidade 2  
-    ✔️ Funcionalidade 3
+    ✔️ Fórum Anônimo para compartilhar experiências, desabafos e comentários
+    ✔️ Chat de Suporte e Atendimento Online
+    ✔️ Questionários de Auto Avaliação
 
 *** 
 
 ### 📑 | Backlog do Projeto
 [Link para o Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)
 
-    - 🎥 ScreenCast do Protótipo
+- 🎥 ScreenCast do Protótipo
 [Vídeo no YouTube](https://youtube.com)
 
 ***
@@ -56,7 +56,7 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 
 ### 🔗 | Acesse o Site
 
-[**Clique aqui para acessar o nosso site! Em andamento...**](https://link-do-site.com)  
+[Clique aqui para acessar o nosso site! **Em andamento...**](https://link-do-site.com)  
 
 *** 
 
