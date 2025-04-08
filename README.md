@@ -45,7 +45,7 @@ Vídeo no YouTube, apresentando as funcionalidades principais do site.
 ### ✔️ | Links Úteis
 [🔗 GitHub - Repositório do nosso projeto!](https://github.com/aline-henriques/PROJETO-2)
 
-[🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)
+[🔗 Figma - Prototipação Navegável de baixa fidelidade!]([https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design](https://www.figma.com/proto/v8qSHsqxcSn1YCFe0em4Wb/Dei-Tilti?node-id=118-50&p=f&t=6jSx9w5MhOaIrp9Y-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=118%3A50))
 
 [🔗 DOCS - Relatório de Desenvolvimento!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
 
