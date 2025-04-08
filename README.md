@@ -42,7 +42,7 @@ Playlist com vídeos no YouTube, apresentando as funcionalidades principais do s
 
 ***
 
-### 🔗 | Links Úteis
+### ✔️ | Links Úteis
 [🔗 GitHub - Repositório do nosso projeto!](github.com/aline-henriques/PROJETO-2)  
 
 [🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)
@@ -63,7 +63,7 @@ Playlist com vídeos no YouTube, apresentando as funcionalidades principais do s
 
 *** 
 
-### 🔗 | Acesse o Site
+### 🔥 | Acesse o Site
 
 [**Em andamento...**](https://link-do-site.com)  
 
