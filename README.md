@@ -31,7 +31,7 @@ Plataforma Web interativa para promover a saúde mental no trabalho. Com um fór
 ### 📑 | Backlog do Projeto
 [Link para o Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)
 
-🎥 ScreenCast do Protótipo
+### 🎥 ScreenCast do Protótipo
 
 [Playlist com vídeos no YouTube](https://youtube.com/playlist?list=PLEae11J8gvaeXbTAaJ4iZ1nHJVGUslSOW&si=2arBRt1bZET3l-sv)
 
