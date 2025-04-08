@@ -36,7 +36,7 @@ Link para o Trello, contendo todo o backlog do projeto.
 
 ### 🎥 ScreenCast do Protótipo
 
-Playlist com vídeos no YouTube, apresentando as funcionalidades principais do site.
+Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
 [🔗 Youtube](https://youtube.com/playlist?list=PLEae11J8gvaeXbTAaJ4iZ1nHJVGUslSOW&si=2arBRt1bZET3l-sv)
 
@@ -47,7 +47,7 @@ Playlist com vídeos no YouTube, apresentando as funcionalidades principais do s
 
 [🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)
 
-[🔗 DOCS - Relatório de Desenvolvimento!](https://workspace.google.com/products/docs/)
+[🔗 DOCS - Relatório de Desenvolvimento!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
 
 ***
 
