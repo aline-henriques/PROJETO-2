@@ -39,7 +39,7 @@ Plataforma Web interativa para promover a saúde mental no trabalho. Com um fór
 
 ### 🔗 | Links Úteis
 [GitHub - Repositório do nosso projeto!](github.com/aline-henriques/PROJETO-2)  
-[Figma - Prototipação Navegável de baixa fidelidade no Figma!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)
+[Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)
 
 [Relatório de Desenvolvimento]
 
