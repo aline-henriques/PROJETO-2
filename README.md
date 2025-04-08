@@ -33,15 +33,14 @@ Plataforma Web interativa para promover a saúde mental no trabalho. Com um fór
 
 🎥 ScreenCast do Protótipo
 
-[Vídeo no YouTube](https://youtube.com)
+[Playlist com vídeos no YouTube](https://youtube.com/playlist?list=PLEae11J8gvaeXbTAaJ4iZ1nHJVGUslSOW&si=2arBRt1bZET3l-sv)
 
 ***
 
 ### 🔗 | Links Úteis
 [GitHub - Repositório do nosso projeto!](github.com/aline-henriques/PROJETO-2)  
 [Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)
-
-[Relatório de Desenvolvimento]
+[Relatório de Desenvolvimento](https://workspace.google.com/products/docs/)
 
 ***
 
