@@ -23,24 +23,24 @@ Plataforma Web interativa para promover a saúde mental no trabalho. Com um fór
 
     Principais funcionalidades
     ✔️ Fórum Anônimo para compartilhar experiências, desabafos e comentários
-    ✔️ Chat de Suporte e Atendimento Online
+    ✔️ Chat de Suporte e Atendimento Online com psicólogos cadastrados
     ✔️ Questionários de Auto Avaliação
 
 *** 
 
 ### 📑 | Backlog do Projeto
-[Link para o Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)
+[Link para o Trello, contendo todo o backlog.](https://trello.com/b/FODA84Ao/lorem-ipsons)
 
 ### 🎥 ScreenCast do Protótipo
 
-[Playlist com vídeos no YouTube](https://youtube.com/playlist?list=PLEae11J8gvaeXbTAaJ4iZ1nHJVGUslSOW&si=2arBRt1bZET3l-sv)
+[Playlist com vídeos no YouTube, apresentando as funcionalidades.](https://youtube.com/playlist?list=PLEae11J8gvaeXbTAaJ4iZ1nHJVGUslSOW&si=2arBRt1bZET3l-sv)
 
 ***
 
 ### 🔗 | Links Úteis
 [GitHub - Repositório do nosso projeto!](github.com/aline-henriques/PROJETO-2)  
 [Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)
-[Relatório de Desenvolvimento](https://workspace.google.com/products/docs/)
+[DOCS - Relatório de Desenvolvimento!](https://workspace.google.com/products/docs/)
 
 ***
 
