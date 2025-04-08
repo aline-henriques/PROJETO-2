@@ -6,14 +6,14 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 
 ### 📑 | Índice
 
-1. <u>[Sobre o Projeto](#sobre-o-projeto)</u>  
-2. <u>[Backlog do Projeto](#backlog-do-projeto)</u>  
-3. <u>[ScreenCast do Protótipo](#screencast-do-prototipo)</u>  
-4. <u>[Links Úteis](#links-uteis)</u>  
-5. <u>[Tecnologias Utilizadas](#tecnologias-utilizadas)</u>  
-6. <u>[Acesse o Site](#acesse-o-site)</u>  
-7. <u>[Equipe](#equipe)</u>  
-8. <u>[Licença](#licença)</u>
+1. [Sobre o Projeto](#sobre-o-projeto)
+2. [Backlog do Projeto](#backlog-do-projeto)
+3. [ScreenCast do Protótipo](#screencast-do-prototipo)
+4. [Links Úteis](#links-uteis)
+5. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+6. [Acesse o Site](#acesse-o-site)
+7. [Equipe](#equipe)
+8. [Licença](#licença)
 
 *** 
 
@@ -32,22 +32,22 @@ Plataforma Web interativa para promover a saúde mental no trabalho. Com um fór
 
 Link para o Trello, contendo todo o backlog do projeto.
 
-<u>[🔗 Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)</u>
+[🔗 Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)
 
 ### 🎥 ScreenCast do Protótipo
 
 Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
-<u>[🔗 Youtube](https://youtube.com/playlist?list=PLEae11J8gvaeXbTAaJ4iZ1nHJVGUslSOW&si=2arBRt1bZET3l-sv)</u>
+[🔗 Youtube](https://youtube.com/playlist?list=PLEae11J8gvaeXbTAaJ4iZ1nHJVGUslSOW&si=2arBRt1bZET3l-sv)
 
 ***
 
 ### ✔️ | Links Úteis
-<u>[🔗 GitHub - Repositório do nosso projeto!](https://github.com/aline-henriques/PROJETO-2)</u>  
+[🔗 GitHub - Repositório do nosso projeto!](https://github.com/aline-henriques/PROJETO-2)
 
-<u>[🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)</u>
+[🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)
 
-<u>[🔗 DOCS - Relatório de Desenvolvimento!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)</u>
+[🔗 DOCS - Relatório de Desenvolvimento!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
 
 ***
 
@@ -65,7 +65,7 @@ Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
 ### 🔥 | Acesse o Site
 
-<u>[**Em andamento...**](https://link-do-site.com)<u>
+[**Em andamento...**](https://link-do-site.com)
 
 *** 
 
