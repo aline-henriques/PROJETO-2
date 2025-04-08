@@ -31,18 +31,22 @@ Plataforma Web interativa para promover a saúde mental no trabalho. Com um fór
 ### 📑 | Backlog do Projeto
 
 Link para o Trello, contendo todo o backlog do projeto.
+
 [🔗 Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)
 
 ### 🎥 ScreenCast do Protótipo
 
 Playlist com vídeos no YouTube, apresentando as funcionalidades principais do site.
+
 [🔗 Youtube](https://youtube.com/playlist?list=PLEae11J8gvaeXbTAaJ4iZ1nHJVGUslSOW&si=2arBRt1bZET3l-sv)
 
 ***
 
 ### 🔗 | Links Úteis
 [🔗 GitHub - Repositório do nosso projeto!](github.com/aline-henriques/PROJETO-2)  
+
 [🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/file/v8qSHsqxcSn1YCFe0em4Wb?node-id=0:1&locale=en&type=design)
+
 [🔗 DOCS - Relatório de Desenvolvimento!](https://workspace.google.com/products/docs/)
 
 ***
