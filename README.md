@@ -38,7 +38,7 @@ Link para o Trello, contendo todo o backlog do projeto.
 
 Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
-[🔗 Youtube](https://youtube.com/playlist?list=PLEae11J8gvaeXbTAaJ4iZ1nHJVGUslSOW&si=2arBRt1bZET3l-sv)
+[🔗 Youtube](https://youtu.be/fAqK-gVWzYk?si=Q7YdSiw--jwKe019)
 
 ***
 
