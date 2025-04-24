@@ -8,6 +8,14 @@
     justify-self: center;
 } 
 
+.linha {
+    
+    width: 93%;
+    height: 1px;
+    justify-self: center;
+    background-color: var(--red-200);
+}
+
 .header img{
     height: 8rem;
     clip-path: inset(28% 0);

@@ -5,6 +5,7 @@ import temaHeader from '../assets/img/TEMA-BUTTON.svg'
 
 export function Header() {
   return (
+    <div>
     <div className={styles.header}>
         <img src={logoHeader} alt="" />
        
@@ -22,5 +23,8 @@ export function Header() {
             
         </div>
     </div>
+      <div className={styles.linha}></div>
+    </div>
+    
   )
 }
