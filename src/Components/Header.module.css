@@ -1,0 +1,55 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    height: 96px;
+    background: var(--cinza-100);
+    color: var(--red-200);
+    justify-self: center;
+} 
+
+.header img{
+    height: 8rem;
+    clip-path: inset(28% 0);
+    align-self: center;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+    padding: 0 5rem ;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+.header button{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.navbar img{
+    height: 1.5rem;
+    clip-path: inset(0);
+}
+
+.linhaVertical{
+    width: 1px;
+    height: 50%;
+    background-color:var(--red-200);
+
+  }
+  
+.cadastro {
+    background-color: var(--red-200);
+    border-radius: 8px;
+    padding: 0.7rem;
+    color: white;
+
+}
