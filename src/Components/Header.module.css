@@ -3,9 +3,8 @@
     justify-content: space-between;
     width: 96%;
     height: 96px;
-    background: var(--cinza-100);
-    color: var(--red-200);
     justify-self: center;
+    transition: background-color 0.3s, color 0.2s;
 } 
 
 .linha {
@@ -13,7 +12,7 @@
     width: 93%;
     height: 1px;
     justify-self: center;
-    background-color: var(--red-200);
+    
 }
 
 .header img{
@@ -33,8 +32,8 @@
 
 .navbar a{
     text-decoration: none;
-    color: inherit;
-    
+    color: var(--red-200);
+    transition: 0.3s;
 }
 .header button{
     border: 0;
@@ -50,14 +49,43 @@
 .linhaVertical{
     width: 1px;
     height: 50%;
-    background-color:var(--red-200);
+    background-color: var(--red-200);
 
   }
   
 .cadastro {
-    background-color: var(--red-200);
+    
     border-radius: 8px;
     padding: 0.7rem;
-    color: white;
+    color: var(--red-200); 
 
+
+}
+
+.light .navbar a, .light .cadastro {
+    color: var(--red-300); /* Cor do texto no tema claro */
+  }
+  
+.dark .navbar a, .dark .cadastro {
+    color: var(--cinza-100); /* Cor do texto no tema escuro */
+  }
+  
+.light .header {
+    background-color: var(--cinza-100); /* Fundo claro no header */
+  }
+  
+.dark .header {
+    background-color: var(--red-300); /* Fundo escuro no header */
+  }
+
+.light .linha, .light .linhaVertical  {
+    background-color: var(--red-200);
+}
+
+.dark .linha, .dark .linhaVertical {
+    background-color: var(--cinza-100);
+}
+
+.dark .header img {
+    filter: brightness(0) invert(1);
 }

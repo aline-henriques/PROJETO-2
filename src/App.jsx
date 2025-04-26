@@ -4,14 +4,21 @@ import logoContent from './assets/img/logoContent1.svg'
 import askHelpImage from './assets/img/buttonAskHelp.svg'
 import knowUsImage from './assets/img/buttonKnowUs.svg'
 import notAloneImage from './assets/img/buttonNotAlone.svg'
+import { useState } from 'react'
 
 
 
 export function App() {
 
+  const [darkMode, setDarkMode] = useState(false);
+
+  // setando uma vareavel para receber a função de alterar a cor
+  const toggleColors = () => setDarkMode((prev) => !prev)
+  
+
   return (
-    <div>
-      <Header />
+    <div className={`${styles.container}, ${darkMode ? styles.dark : styles.light}`}>
+      <Header onToggleColors = {toggleColors} isDarkMode = {darkMode}/>
       <main className={styles.effectPhrase} >
       <div className={styles.text}>
           <h1>Paz.</h1>

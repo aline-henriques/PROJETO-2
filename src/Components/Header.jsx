@@ -2,10 +2,13 @@ import styles from './Header.module.css'
 
 import logoHeader from '../assets/img/DEI-TILT-LOGO.svg'
 import temaHeader from '../assets/img/TEMA-BUTTON.svg'
+import React from 'react';
 
-export function Header() {
+
+
+export function Header({onToggleColors,isDarkMode}) {
   return (
-    <div>
+    <div className={isDarkMode ? styles.dark : styles.light}>
     <div className={styles.header}>
         <img src={logoHeader} alt="" />
        
@@ -17,7 +20,10 @@ export function Header() {
 
             <div className={styles.linhaVertical}></div>
 
-            <button><img src={temaHeader} alt="" /></button>  
+            <button onClick={onToggleColors}>
+              <img src={temaHeader} alt="" />
+            </button>  
+
             <a href="#">Login</a>
             <a href="#"><strong className={styles.cadastro}>Cadastre-se</strong></a>
             
@@ -26,5 +32,5 @@ export function Header() {
       <div className={styles.linha}></div>
     </div>
     
-  )
+  );
 }
