@@ -89,24 +89,28 @@ E visualizar o andamento do site localmente?
 Para visualizar o site em andamento, siga os passos abaixo:
         
 1. Clone o repositório:
+
 Primeiro, clone o repositório em seu computador usando o seguinte comando no terminal:
     
         git clone https://github.com/aline-henriques/PROJETO-2.git
 
 2. Instale as dependências:
+
 Navegue até o diretório do projeto e instale as dependências necessárias com o comando:
     
         cd PROJETO-2
         npm install
 
 3. Inicie o servidor local:
+
 Após a instalação das dependências, inicie o servidor de desenvolvimento com o comando:
     
         npm start
 
+
 O site será aberto automaticamente no seu navegador. Caso não abra, acesse o endereço:
     
-        http://localhost:3000
+    http://localhost:3000
 
 4. Veja o progresso:
 O site estará rodando localmente, permitindo que você visualize as funcionalidades que já foram implementadas até o momento. :)
