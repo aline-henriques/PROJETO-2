@@ -8,12 +8,14 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 
 1. [Sobre o Projeto](#sobre-o-projeto)
 2. [Backlog do Projeto](#backlog-do-projeto)
-3. [ScreenCast do Protótipo](#screencast-do-prototipo)
-4. [Links Úteis](#links-uteis)
+3. [ScreenCast](#screencast)
+4. [Links](#links-uteis)
 5. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 6. [Acesse o Site](#acesse-o-site)
-7. [Equipe](#equipe)
-8. [Licença](#licença)
+7. [Como Instalar?](#como-instalar)
+8. [Issues](#Issues)
+9. [Equipe](#equipe)
+10. [Licença](#licença)
 
 *** 
 
@@ -34,7 +36,8 @@ Link para o Trello, contendo todo o backlog do projeto.
 
 [🔗 Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)
 
-### 🎥 ScreenCast do Protótipo
+
+### 🎥 ScreenCast
 
 Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
@@ -47,7 +50,11 @@ Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
 [🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/proto/v8qSHsqxcSn1YCFe0em4Wb/Dei-Tilti?node-id=118-50&p=f&t=6jSx9w5MhOaIrp9Y-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=118%3A50)
 
+[🔗 Canva - Design do projeto de alta fidelidade!](https://www.canva.com/design/DAGkIDK7g_c/iggZQvdKgD6SRUxeE1mv3A/edit?utm_content=DAGkIDK7g_c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebuttonv)
+
 [🔗 DOCS - Relatório de Desenvolvimento!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
+
+[🔗 Diagramas de Atividade UML!](https://www.canva.com/design/DAGlzQsGeGw/ckztLZvsKIfwOUF001ynJw/edit?utm_content=DAGlzQsGeGw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ***
 
@@ -65,11 +72,60 @@ Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
 ### 🔥 | Acesse o Site
 
-[**Em andamento...**](https://link-do-site.com)
+[**Projeto em andamento...**](https://link-do-site.com)
+
+✔️ Justificativa para o Não Deployment:
+
+O projeto ainda está em início de desenvolvimento e não foi completamente finalizado. Estamos aguardando a implementação de funcionalidades-chave antes de realizar o deploy. O foco está em garantir que todas as partes essenciais do site sejam implementadas corretamente antes de ser disponibilizado publicamente.
+
+✔️ Planos para o Projeto:
+
+A estimativa de conclusão e o primeiro deploy do site está prevista para junho de 2025. Estamos planejando realizar testes de funcionalidade, usabilidade e responsividade antes de lançar o site. Nosso objetivo é garantir que o sistema seja bem implementado e funcional, oferecendo uma experiência de usuário de alta qualidade antes de torná-lo acessível ao público.
 
 *** 
 
+### ❓ | Como instalar
+E visualizar o andamento do site localmente?
+
+Para visualizar o site em andamento, siga os passos abaixo:
+        
+1. Clone o repositório:
+
+Primeiro, clone o repositório em seu computador usando o seguinte comando no terminal:
+    
+    git clone https://github.com/aline-henriques/PROJETO-2.git
+
+2. Instale as dependências:
+
+Navegue até o diretório do projeto e instale as dependências necessárias com o comando:
+    
+    cd PROJETO-2
+    npm install
+
+3. Inicie o servidor local:
+
+Após a instalação das dependências, inicie o servidor de desenvolvimento com o comando:
+    
+    npm start
+
+O site será aberto automaticamente no seu navegador. Caso não abra, acesse o endereço:
+    
+    http://localhost:3000
+
+4. Veja o progresso:
+
+O site estará rodando localmente, permitindo que você visualize as funcionalidades que já foram implementadas até o momento. :)
+
+*** 
+
+### 📌 Issues 
+
+Acompanhe nossos issues através do link: [Issues](https://github.com/aline-henriques/PROJETO-2/issues)
+
+*** 
 ### 👥 | Equipe
+Programação em par experimentada 🚀
+Acesse nossos issues e commits semanais.
 
     -  Aline de Albuquerque Henriques
     -  Bruno Felipe de Castilhos Gomes Rego  
