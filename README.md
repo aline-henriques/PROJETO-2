@@ -8,13 +8,14 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 
 1. [Sobre o Projeto](#sobre-o-projeto)
 2. [Backlog do Projeto](#backlog-do-projeto)
-3. [ScreenCast do Protótipo](#screencast-do-prototipo)
-4. [Links Úteis](#links-uteis)
+3. [ScreenCast](#screencast)
+4. [Links](#links-uteis)
 5. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 6. [Acesse o Site](#acesse-o-site)
 7. [Como Instalar?](#como-instalar)
-7. [Equipe](#equipe)
-8. [Licença](#licença)
+8. [Issues](#Issues))
+9. [Equipe](#equipe)
+10. [Licença](#licença)
 
 *** 
 
@@ -36,7 +37,7 @@ Link para o Trello, contendo todo o backlog do projeto.
 [🔗 Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)
 
 
-### 🎥 ScreenCast do Protótipo
+### 🎥 ScreenCast
 
 Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
@@ -53,7 +54,7 @@ Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
 [🔗 DOCS - Relatório de Desenvolvimento!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
 
-[📎 Diagramas de Atividade UML!](https://www.canva.com/design/DAGlzQsGeGw/ckztLZvsKIfwOUF001ynJw/edit?utm_content=DAGlzQsGeGw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[🔗 Diagramas de Atividade UML!](https://www.canva.com/design/DAGlzQsGeGw/ckztLZvsKIfwOUF001ynJw/edit?utm_content=DAGlzQsGeGw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ***
 
@@ -117,6 +118,11 @@ O site estará rodando localmente, permitindo que você visualize as funcionalid
 
 *** 
 
+### 📌 Issues 
+
+Acompanhe nossos issues através do link: [Issues](https://github.com/aline-henriques/PROJETO-2/issues)
+
+*** 
 ### 👥 | Equipe
 Programação em par experimentada 🚀
 Acesse nossos issues e commits semanais.
