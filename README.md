@@ -53,7 +53,7 @@ Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
 [🔗 DOCS - Relatório de Desenvolvimento!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
 
-[📎 Diagramas de Atividade UML - Diagrama das 3 funcionalidades!](https://www.canva.com/design/DAGlzQsGeGw/ckztLZvsKIfwOUF001ynJw/edit?utm_content=DAGlzQsGeGw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[📎 Diagramas de Atividade UML!](https://www.canva.com/design/DAGlzQsGeGw/ckztLZvsKIfwOUF001ynJw/edit?utm_content=DAGlzQsGeGw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ***
 
@@ -92,27 +92,27 @@ Para visualizar o site em andamento, siga os passos abaixo:
 
 Primeiro, clone o repositório em seu computador usando o seguinte comando no terminal:
     
-        git clone https://github.com/aline-henriques/PROJETO-2.git
+    git clone https://github.com/aline-henriques/PROJETO-2.git
 
 2. Instale as dependências:
 
 Navegue até o diretório do projeto e instale as dependências necessárias com o comando:
     
-        cd PROJETO-2
-        npm install
+    cd PROJETO-2
+    npm install
 
 3. Inicie o servidor local:
 
 Após a instalação das dependências, inicie o servidor de desenvolvimento com o comando:
     
-        npm start
-
+    npm start
 
 O site será aberto automaticamente no seu navegador. Caso não abra, acesse o endereço:
     
     http://localhost:3000
 
 4. Veja o progresso:
+
 O site estará rodando localmente, permitindo que você visualize as funcionalidades que já foram implementadas até o momento. :)
 
 *** 
