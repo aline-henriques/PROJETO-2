@@ -69,15 +69,15 @@ Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
 ### 🔥 | Acesse o Site
 
-Justificativa para o Não Deployment:
+[**Projeto em andamento...**](https://link-do-site.com)
+
+### ✔️ Justificativa para o Não Deployment:
 
 O projeto ainda está em início de desenvolvimento e não foi completamente finalizado. Estamos aguardando a implementação de funcionalidades-chave antes de realizar o deploy. O foco está em garantir que todas as partes essenciais do site sejam implementadas corretamente antes de ser disponibilizado publicamente.
 
-Planos para o Projeto:
+### ✔️ Planos para o Projeto:
 
 A estimativa de conclusão e o primeiro deploy do site está prevista para junho de 2025. Estamos planejando realizar testes de funcionalidade, usabilidade e responsividade antes de lançar o site. Nosso objetivo é garantir que o sistema seja bem implementado e funcional, oferecendo uma experiência de usuário de alta qualidade antes de torná-lo acessível ao público.
-
-[**Em andamento...**](https://link-do-site.com)
 
 *** 
 
