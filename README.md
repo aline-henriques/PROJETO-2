@@ -13,7 +13,7 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 5. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 6. [Acesse o Site](#acesse-o-site)
 7. [Como Instalar?](#como-instalar)
-8. [Issues](#Issues))
+8. [Issues](#Issues)
 9. [Equipe](#equipe)
 10. [Licença](#licença)
 
