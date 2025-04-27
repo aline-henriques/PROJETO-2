@@ -47,7 +47,11 @@ Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
 [🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/proto/v8qSHsqxcSn1YCFe0em4Wb/Dei-Tilti?node-id=118-50&p=f&t=6jSx9w5MhOaIrp9Y-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=118%3A50)
 
+[🔗 Canva - Design do projeto de alta fidelidade!](https://www.canva.com/design/DAGkIDK7g_c/iggZQvdKgD6SRUxeE1mv3A/edit?utm_content=DAGkIDK7g_c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebuttonv)
+
 [🔗 DOCS - Relatório de Desenvolvimento!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
+
+[📎 Diagramas de Atividade UML - Diagrama das 3 funcionalidades!](https://www.canva.com/design/DAGlzQsGeGw/ckztLZvsKIfwOUF001ynJw/edit?utm_content=DAGlzQsGeGw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ***
 
@@ -70,6 +74,8 @@ Vídeo no YouTube, apresentando as funcionalidades principais do site.
 *** 
 
 ### 👥 | Equipe
+Programação em par experimentada 🚀
+Acesse nossos issues e commits semanais.
 
     -  Aline de Albuquerque Henriques
     -  Bruno Felipe de Castilhos Gomes Rego  
