@@ -1,0 +1,75 @@
+.effectPhrase {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 93%;
+    transition: background-color 0.3s, color 0.3s, filter 0.3s;
+    margin-bottom: -5rem;
+    flex: 1;
+  }
+  
+.text {
+    font-family: sans-serif;
+    flex: 1;
+    padding-left: 3rem;
+    padding-top: 3rem;
+  }
+  
+.image {
+    margin-left: 22rem;
+  }
+  
+main h1 {
+    font-size: 4rem;
+  }
+  
+main p {
+    font-size: 1rem;
+  }
+  
+main img {
+    width: 40rem;
+    height: 40rem;
+    clip-path: inset(0 0 16%);
+  }
+  
+.buttons {
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+  
+.buttonCadastrar {
+    margin-left: 3rem;
+    border: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+  }
+  
+.buttonEntrar {
+    font-size: 1rem;
+    color: var(--cinza-100);
+    background-color: var(--red-200);
+    border-radius: 1rem;
+    border: 0;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.dark img {
+  filter: brightness(0) invert(1);
+  
+}
+
+.dark .buttonEntrar {
+  color: var(--red-200);
+  background-color: var(--cinza-100);
+}
+
+.light .buttonCadastrar{
+  color: var(--red-200);
+}
+
+.dark .buttonCadastrar{
+  color: var(--cinza-100);
+}
