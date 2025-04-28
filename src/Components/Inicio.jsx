@@ -20,6 +20,8 @@ export function Inicio() {
         <FunctionalyInfo isDarkMode={darkMode} />
 
         <Footer isDarkMode={darkMode} />
+
+
     </div>
   )
 }

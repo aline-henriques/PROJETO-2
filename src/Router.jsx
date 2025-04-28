@@ -14,7 +14,7 @@ export function Router() {
             
             {/* Rota protegida */}
             <Route path="/InicioLogado" element={
-                <ProtectedRoute>
+                <ProtectedRoute requireAuth={true}>
                     <InicioLogado />
                 </ProtectedRoute>
             } />

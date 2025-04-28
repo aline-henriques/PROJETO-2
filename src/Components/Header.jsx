@@ -2,14 +2,22 @@ import styles from './Header.module.css'
 import logoHeader from '../assets/img/DEI-TILT-LOGO.svg'
 import temaHeader from '../assets/img/TEMA-BUTTON.svg'
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate  } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
-
-
+import { useLocation } from 'react-router-dom';
 
 export function Header({onToggleColors,isDarkMode}) {
+  const location = useLocation();
+  const from = location.state?.from?.pathname || '/';
 
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, logout } = useAuth();
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        navigate(from, { replace: false });
+        logout();  
+        navigate('/');  
+    };
 
   return (
     <div className={isDarkMode ? styles.dark : styles.light}>
@@ -18,7 +26,7 @@ export function Header({onToggleColors,isDarkMode}) {
        
         <div className={styles.navbar}>
             <NavLink to="/">Início</NavLink>
-            <NavLink toto="#">Fórum</NavLink>
+            <NavLink to="#">Fórum</NavLink>
             <NavLink to="/Questionario" title='Questionario'>Questionários</NavLink>
             <NavLink to="#">+Saúde</NavLink>
 
@@ -38,8 +46,15 @@ export function Header({onToggleColors,isDarkMode}) {
 
               {isAuthenticated && (
                 <>
-                  <>Olá, Bruno!</>
-                  <button className={styles.cadastro}>Perfil</button>
+                  <p>Olá, Danilo!</p>
+                  <div className={styles.menuSide}>
+                    <div className={styles.cadastro}>Perfil</div>
+                    <div className={styles.dropdownMenu}>
+                      <NavLink to="*"><span className={styles.textMenuDrop}>Meu Perfil</span></NavLink>
+                      <div className={styles.linha}></div>
+                      <NavLink onClick={handleLogout}><span className={styles.textMenuDrop}>Logout</span></NavLink>
+                    </div>
+                  </div>
                 </>
               )}
 
