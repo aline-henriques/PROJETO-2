@@ -1,0 +1,159 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+    padding: 0 5rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: var(--red-200);
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--red-200);
+    transition: width 0.3s ease;
+  }
+  
+  .navbar a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar a:hover {
+    color: inherit;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    height: 96px;
+    justify-self: center;
+    transition: background-color 0.3s, color 0.2s;
+  }
+  
+  .linha {
+    width: 93%;
+    height: 1px;
+    justify-self: center;
+  }
+  
+  .header img {
+    height: 8rem;
+    clip-path: inset(28% 0);
+    align-self: center;
+  }
+  
+  .header button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .navbar img {
+    height: 1.5rem;
+    clip-path: inset(0);
+  }
+  
+  .linhaVertical {
+    width: 1px;
+    height: 50%;
+    background-color: var(--red-200);
+  }
+  
+  .light .header {
+    background-color: var(--cinza-100);
+  }
+  
+  .dark .header {
+    background-color: var(--red-300);
+  }
+  
+  .light .linha, .light .linhaVertical {
+    background-color: var(--red-200);
+  }
+  
+  .dark .linha, .dark .linhaVertical {
+    background-color: var(--cinza-100);
+  }
+  
+  .dark .header img {
+    filter: brightness(0) invert(1);
+  }
+  
+  .cadastro {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    background-color: var(--red-200);
+    border: 2px solid var(--red-200);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cadastro::after {
+    content: none; 
+  }
+  
+  .cadastro:hover {
+    background-color: var(--red-300);
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .dark .navbar a {
+    color: white;
+  }
+  
+  .dark .navbar a:hover {
+    color: white;
+  }
+  
+  .dark .navbar a::after {
+    background-color: white;
+  }
+  
+  .themeButton {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+  
+  .themeButton:active {
+    animation: flip 0.6s ease forwards;
+  }
+  
+  @keyframes flip {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+  
+  .themeButton img {
+    transition: transform 0.5s ease;
+  }
+  
+  .themeButton:hover img {
+    transform: scale(1.2);
+  }
+  
+  
