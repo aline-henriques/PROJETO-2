@@ -39,11 +39,17 @@ Link para o Trello, contendo todo o backlog do projeto.
 Print do nossos quadros!
 ![Trello](./src/assets/img/IMG-TRELLO.jpg)
 
+*** 
+
 ### 🎥 ScreenCast
 
 Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
-[🔗 Youtube](https://youtu.be/fAqK-gVWzYk?si=Q7YdSiw--jwKe019)
+    Minutos exatos do vídeo, apresentando as funcionalidades:
+    __00:05 - Tela Inicial__
+    __00:21 - Mudança de Tema (dark/light theme)__
+    __00:34 - Questionários de Autoavaliação__
+(Screencast)[https://youtu.be/AYptshBXO7Q?si=WzMDX9upq5QId9Bk]
 
 ***
 
