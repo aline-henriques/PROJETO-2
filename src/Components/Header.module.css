@@ -1,0 +1,175 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  height: 96px;
+  justify-self: center;
+  transition: background-color 0.3s, color 0.2s;
+}
+
+.linha {
+  width: 93%;
+  height: 1px;
+  justify-self: center;
+}
+
+.header img {
+  height: 8rem;
+  clip-path: inset(28% 0);
+  align-self: center;
+}
+
+.header button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+  padding: 0 5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--red-200);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--red-200);
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar a:hover {
+  color: inherit;
+}
+
+.navbar img {
+  height: 1.5rem;
+  clip-path: inset(0);
+}
+
+.linhaVertical {
+  width: 1px;
+  height: 50%;
+  background-color: var(--red-200);
+}
+
+.cadastro {
+  border-radius: 8px;
+  background-color: var(--red-200);  /* Cor de fundo inicial igual ao botão "ENTRAR" */
+  padding: 0.7rem 2rem;
+  color: white;  /* Cor do texto */
+  border: 2px solid var(--red-200);  /* Borda igual à cor de fundo */
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.cadastro:hover {
+  background-color: var(--red-300);  /* Cor de fundo ao passar o mouse (semelhante ao botão "ENTRAR") */
+  color: var(--cinza-100);  /* Garante que o texto continua branco no hover */
+  transform: scale(1.05);  /* Aumenta o botão ao passar o mouse */
+  border-color: var(--red-300);  /* Cor da borda no hover */
+}
+
+.light .cadastro:hover{
+  color: var(--cinza-100);
+}
+
+.light .navbar a,
+.light .cadastro {
+  color: var(--red-300);
+}
+
+.light .linha,
+.light .linhaVertical {
+  background-color: var(--red-200);
+}
+
+.light .header {
+  background-color: var(--cinza-100);
+}
+
+.dark .navbar a,
+.dark .cadastro {
+  color: var(--cinza-100);
+}
+
+.dark .cadastro:hover {
+  color: var(--red-200);
+  background-color: var(--cinza-100);
+}
+
+.dark .navbar a:hover {
+  color: var(--cinza-100);
+}
+
+.dark .navbar a::after {
+  background-color: var(--cinza-100);
+}
+
+.dark .linha,
+.dark .linhaVertical {
+  background-color: var(--cinza-100);
+}
+
+.dark .header {
+  background-color: var(--red-300);
+}
+
+.dark .header img {
+  filter: brightness(0) invert(1);
+}
+
+.themeButton {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.themeButton:active {
+  animation: flip 0.6s ease forwards; 
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg); 
+  }
+  50% {
+    transform: rotateY(180deg); /* Meio da animação, flip */
+  }
+  100% {
+    transform: rotateY(360deg); /* Finaliza com rotação completa */
+  }
+}
+
+.themeButton img {
+  transition: transform 0.5s ease;
+}
+
+.themeButton:hover img {
+  transform: scale(1.2); /* Aumenta a imagem ao passar o mouse */
+}
