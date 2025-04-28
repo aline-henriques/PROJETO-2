@@ -3,8 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import styles from './Login.module.css';
 import logoContent from '../assets/img/logoContent1.svg';
 import { useAuth } from '../AuthContext'; // 👈 importa o contexto
+import { useLocation } from 'react-router-dom';
 
 export function Login({ isDarkMode }) {
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
@@ -22,8 +25,8 @@ export function Login({ isDarkMode }) {
         }
     
         if (username === 'admin' && password === '123') {
-            login(); // Ativa o login no contexto
-            setTimeout(() => navigate('/InicioLogado'), 0); // Redireciona após o login
+            login(); 
+            navigate(from, { replace: true });
         } else {
             setError('Usuário ou senha incorretos');
         }
