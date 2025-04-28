@@ -12,12 +12,11 @@ export function FunctionalyInfo({ isDarkMode }) {
           <img src={imageInfoQuestionario} alt="Imagem Questionário" />
         </div>
         <div className={styles.textInfo}>
-          <h2>Anda exausto no trabalho?</h2>
-          <h2>Sem energia pra realizar suas tarefas?</h2>
-          <h2>Falta paciencia com colegas de trabalho?</h2>
+          <h2>Se sente exausto no trabalho?</h2>
+          <h2>Sem energia para realizar suas tarefas?</h2>
+          <h2>Falta de paciencia com colegas de trabalho?</h2>
           <p>
-            Descubra se você tem sintomas do <strong>Burnout</strong> realizando
-            nosso questionário super simples!
+            Descubra se você possui sintomas de <strong>Burnout</strong> realizando o questionário!
           </p>
         </div>
       </div>
@@ -25,8 +24,8 @@ export function FunctionalyInfo({ isDarkMode }) {
       <div className={styles.infoSaudeMais}>
         <div className={styles.textInfoSaudeMais}>
           <h2>Não sabe o que é Burnout?</h2>
-          <h2>Quer saber mais sobre?</h2>
-          <p>Conheça mais sobre esse tema importante na nossa área Saúde+.</p>
+          <h2>Quer saber mais sobre o assunto?</h2>
+          <p>Conheça mais sobre em nossa área Saúde+.</p>
         </div>
         <div className={styles.imageInfo}>
           <img src={imageInfoSaudeMais} alt="Imagem Saúde+" />
@@ -40,12 +39,11 @@ export function FunctionalyInfo({ isDarkMode }) {
           <img src={imageInfoForum} alt="Imagem Fórum" />
         </div>
         <div className={styles.textInfo}>
-          <h2>Deseja Compartilhar sua opinião sobre Burnout?</h2>
+          <h2>Deseja Compartilhar suas experiências com o Burnout?</h2>
           <h2>Expressar suas frustrações de forma <strong>anônima</strong>?</h2>
-          <h2>Quer saber se sua experiência não é única?</h2>
+          <h2>Descobrir se sua experiência não é única?</h2>
           <p>
-            Acesse nosso fórum anônimo e compartilhe suas frustrações e comente
-            com outros semelhantes!
+            Acesse nosso fórum anônimo, compartilhe livremente suas frustrações. 
           </p>
         </div>
       </div>
