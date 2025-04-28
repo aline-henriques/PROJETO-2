@@ -45,13 +45,63 @@
   }
   
   .buttonConheca {
-    font-size: 1rem;
-    color: white;
-    border: 0;
-    background-color: #92423c;
-    padding: 3.7rem 6rem;
-    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color:var(--red-200); /* ou cor da sua marca */
+    color: var(--cinza-100);
+    border: none;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3.7rem;
+    padding-bottom: 3.7rem;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .buttonConheca::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--cinza-100); /* cor ao passar o mouse */
+    transition: left 0.3s ease;
+    z-index: 0;
+  }
+
+  .dark .buttonConheca::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--red-200); /* cor ao passar o mouse */
+    transition: left 0.3s ease;
+    z-index: 0;
+  }
+  
+  .buttonConheca:hover::before {
+    left: 0;
+  }
+  
+  .buttonConheca:hover {
+    color: var(--red-200);
+  }
+  
+  .buttonConheca:hover {
+    color: var(--red-200);
+  }
+
+  .dark .buttonConheca:hover {
+    color: var(--cinza-100);
+  }
+
+  .buttonConheca span {
+    position: relative;
+    z-index: 1;
   }
 
   .dark .bottomActions {
@@ -68,3 +118,7 @@
     background-color: var(--cinza-100);
     color: var(--red-200);
   }
+
+.light, .dark {
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }  

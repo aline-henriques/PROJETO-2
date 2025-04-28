@@ -20,13 +20,17 @@ export function Header({onToggleColors,isDarkMode}) {
 
             <div className={styles.linhaVertical}></div>
 
-            <button onClick={onToggleColors}>
-              <img src={temaHeader} alt="" />
-            </button>  
+           <div className={styles.themeButton}>
+              <button onClick={onToggleColors}>
+                <img src={temaHeader} alt="" />
+              </button>
+            </div>  
 
             <a href="#">Login</a>
-            <a href="#"><strong className={styles.cadastro}>Cadastre-se</strong></a>
-            
+            <div className={styles.cadastro}>
+               <button><strong>Cadastre-se</strong></button>
+            </div>
+           
         </div>
     </div>
       <div className={styles.linha}></div>

@@ -1,84 +1,86 @@
-.header{
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+    padding: 0 5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--red-200);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--red-200);
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: inherit;
+}
+
+/* Header */
+.header {
     display: flex;
     justify-content: space-between;
     width: 96%;
     height: 96px;
     justify-self: center;
     transition: background-color 0.3s, color 0.2s;
-} 
+}
 
 .linha {
-    
     width: 93%;
     height: 1px;
     justify-self: center;
-    
 }
 
-.header img{
+.header img {
     height: 8rem;
     clip-path: inset(28% 0);
     align-self: center;
-
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    gap: 4.5rem;
-    padding: 0 5rem ;
-
-}
-
-.navbar a{
-    text-decoration: none;
-    color: var(--red-200);
-    transition: 0.3s;
-}
-.header button{
+.header button {
     border: 0;
     background: transparent;
     cursor: pointer;
 }
 
-.navbar img{
+.navbar img {
     height: 1.5rem;
     clip-path: inset(0);
 }
 
-.linhaVertical{
+.linhaVertical {
     width: 1px;
     height: 50%;
     background-color: var(--red-200);
-
-  }
-  
-.cadastro {
-    
-    border-radius: 8px;
-    padding: 0.7rem;
-    color: var(--red-200); 
-
-
 }
 
-.light .navbar a, .light .cadastro {
-    color: var(--red-300); /* Cor do texto no tema claro */
-  }
-  
-.dark .navbar a, .dark .cadastro {
-    color: var(--cinza-100); /* Cor do texto no tema escuro */
-  }
-  
+/* Light and Dark Modes */
 .light .header {
-    background-color: var(--cinza-100); /* Fundo claro no header */
-  }
-  
-.dark .header {
-    background-color: var(--red-300); /* Fundo escuro no header */
-  }
+    background-color: var(--cinza-100);
+}
 
-.light .linha, .light .linhaVertical  {
+.dark .header {
+    background-color: var(--red-300);
+}
+
+.light .linha, .light .linhaVertical {
     background-color: var(--red-200);
 }
 
@@ -88,4 +90,85 @@
 
 .dark .header img {
     filter: brightness(0) invert(1);
+}
+
+/* Cadastro Button */
+.cadastro {
+    font-size: 1rem;
+    color: var(--cinza-100);
+    text-decoration: none;
+    background-color: var(--red-200);
+    border: 2px solid var(--red-200);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.cadastro strong{
+    color: var(--cinza-100);
+}
+
+.dark .cadastro{
+    background-color: var(--cinza-100);
+    
+}
+
+.dark .cadastro strong{
+    color:var(--red-200)
+}
+
+.cadastro:hover {
+    background-color: var(--red-200);
+    color: var(--cinza-100);
+    transform: scale(1.05);
+}
+
+.dark .cadastro:hover {
+    background-color: var(--red-200);
+    color: var(--cinza-100);
+    
+}
+
+.dark .cadastro:hover strong{
+    color: var(--cinza-100);
+}
+
+/* Dark mode navbar link color */
+.dark .navbar a {
+    color: var(--cinza-100);
+}
+
+.dark .navbar a:hover {
+    color: var(--cinza-100);
+}
+
+.dark .navbar a::after {
+    background-color: var(--cinza-100);
+}
+
+/* Theme button */
+.themeButton {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: box-shadow 0.3s ease;
+}
+
+.themeButton:active {
+    animation: flip 0.6s ease forwards;
+}
+
+
+.themeButton img {
+    transition: transform 0.5s ease;
+}
+
+.themeButton:hover img {
+    transform: scale(1.2);
+}
+
+.themeButton:active {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }

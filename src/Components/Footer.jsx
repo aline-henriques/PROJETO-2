@@ -22,7 +22,7 @@ export function Footer({isDarkMode}) {
           Conheça já nossa iniciativa
         </div>
       </div>
-      <button className={styles.buttonConheca}>CONHEÇA MAIS</button>
+      <button className={styles.buttonConheca}><span>CONHEÇA MAIS</span></button>
     </footer>
   );
 }
