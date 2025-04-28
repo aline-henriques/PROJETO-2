@@ -37,7 +37,7 @@ Link para o Trello, contendo todo o backlog do projeto.
 [🔗 Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)
 
 Print do nossos quadros!
-[Trello](https://github.com/aline-henriques/PROJETO-2/blob/5ea9647f849b1b09dac6a7f4f8497e5d1025e7c3/src/assets/img/IMG-TRELLO.jpg)
+![Trello](./src/assets/img/IMG-TRELLO.jpg)
 
 ### 🎥 ScreenCast
 
