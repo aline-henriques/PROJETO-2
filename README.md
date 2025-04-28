@@ -36,8 +36,8 @@ Link para o Trello, contendo todo o backlog do projeto.
 
 [🔗 Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)
 
-Print do nossos quadros!
-![Trello](./src/assets/img/IMG-TRELLO.jpg)
+Print dos nossos quadros!
+![Trello](./src/assets/img/QUADROS-TRELLO.jpg)
 
 *** 
 
@@ -45,11 +45,15 @@ Print do nossos quadros!
 
 Vídeo no YouTube, apresentando as funcionalidades principais do site.
 
-    Minutos exatos do vídeo, apresentando as funcionalidades:
-    __00:05 - Tela Inicial__
-    __00:21 - Mudança de Tema (dark/light theme)__
-    __00:34 - Questionários de Autoavaliação__
-(Screencast)[https://youtu.be/AYptshBXO7Q?si=WzMDX9upq5QId9Bk]
+Minutos exatos do vídeo, apresentando as funcionalidades:
+
+**00:05 - Tela Inicial**
+
+**00:21 - Mudança de Tema (dark/light theme)**
+
+**00:34 - Questionários de Autoavaliação**
+
+[Screencast no YouTube](https://youtu.be/AYptshBXO7Q?si=WzMDX9upq5QId9Bk)
 
 ***
 
