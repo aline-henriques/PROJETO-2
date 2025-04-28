@@ -130,7 +130,7 @@ Acesse nossos issues e commits semanais.
     -  Aline de Albuquerque Henriques
     -  Bruno Felipe de Castilhos Gomes Rego  
     -  Luiz Henrique da Silva Neves  
-    -  Thyalles Araújo Campos.
+    -  Thyalles Araújo Campos
 
 *** 
 
