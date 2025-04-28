@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './Quiz.module.css';
 
-export function Quiz() {
+export function Quiz({isDarkMode}) {
     const questions = [
         "Sinto-me emocionalmente exausto(a) devido ao trabalho ou estudos.",
         "Sinto que estou no limite emocionalmente.",
@@ -48,7 +48,7 @@ export function Quiz() {
     const progressPercent = Math.round((currentQuestion / questions.length) * 100);
 
     return (
-        <div className={styles.quizContainer}>
+        <div className={`${styles.quizContainer} ${isDarkMode ? styles.dark : styles.light}`}>
             {!showResult && (
                 <div className={styles.progressBar}>
                     <div className={styles.progressFill} style={{ width: `${progressPercent}%` }} />

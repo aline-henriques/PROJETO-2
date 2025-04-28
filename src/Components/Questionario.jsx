@@ -75,12 +75,12 @@ export function Questionario() {
                 </section>
 
                 <section id="quiz">
-                    <Quiz />
+                    <Quiz isDarkMode={darkMode} />
                 </section>
 
             </main>
 
-            <Footer />
+            <Footer isDarkMode={darkMode} />
         </div>
     )
 }
