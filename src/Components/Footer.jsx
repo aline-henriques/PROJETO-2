@@ -9,7 +9,7 @@ export function Footer({isDarkMode}) {
       <div className={styles.bottomActions}>
         <div className={styles.notAlone}>
           <img src={notAloneImage} alt="Não está sozinho" />
-          Você não está sozinho
+          Você não está sozinho!
         </div>
 
         <div className={styles.askHelp}>
@@ -19,10 +19,11 @@ export function Footer({isDarkMode}) {
 
         <div className={styles.knowUs}>
           <img src={knowUsImage} alt="Conheça nossa iniciativa" />
-          Conheça já nossa iniciativa
+          Conheça nossa iniciativa.
         </div>
+        <button className={styles.buttonConheca}><span>CONHEÇA MAIS</span></button>
       </div>
-      <button className={styles.buttonConheca}><span>CONHEÇA MAIS</span></button>
+      
     </footer>
   );
 }

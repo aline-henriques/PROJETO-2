@@ -3,11 +3,23 @@
   }
   
   .infoQuestionario,
+  .infoForum{
+    background-color: var(--red-200);
+    color: var(--cinza-100);
+  }
+
+  .dark .infoQuestionario,
+  .infoForum{
+    background-color: var(--red-300);
+    color: var(--cinza-100);
+  }
+
+  .infoQuestionario,
   .infoSaudeMais,
   .infoForum {
     display: flex;
-    justify-content: space-between;
-    width: 93%;
+    gap: 20rem;
+    width: 100%;
     padding: 12px 0;
     font-size: 1.1rem;
     align-items: center;
