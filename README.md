@@ -16,6 +16,7 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 8. [Issues](#Issues)
 9. [Equipe](#equipe)
 10. [Licença](#licença)
+11. Programação em Par(#Em-Par)
 
 *** 
 
@@ -145,6 +146,37 @@ Acesse nossos issues e commits semanais.
     -  Thyalles Araújo Campos
 
 *** 
+### | Programação
+
+![Foto](./src/assets/img/Prog-em-Par.jpeg)
+
+Relatório de Programação
+
+* Grupo: Aline Henriques, Bruno Castilho, Luiz Henrique, Thyalles Campos.
+* Projeto: Dei TIlti.
+* Linguagem: JavaScript.
+
+1. Objetivo
+   
+   Desenvolver uma aplicação web para usuários com burnout
+   
+2. Planejamento e Divisão de tarefas
+
+   * Durante o desenvolvimento o grupo se dividiu de acordo com suas afinidades e agendas.
+   
+   * foram feitas reuniões por chamada de voz no Discord, para discutir, programar e revisar os códigos em tempo real.
+
+4. Dificuldades
+
+   * Encontramos difculdades para concilar nossos horários para nos encontrarmos o que impactou no ritmo do de desenvolvimento
+
+   * Um dos integrantes teve dificuldades de realizar o push através do VsCode
+
+5. Conclusão
+
+   O projeto nos proporcionou um aprendizado valioso sobre programação, usabilidade e responsabilidade no desenvolvimento de ferramentas voltadas à saúde mental.
+   consiguimos aplicar conceitos técnicos e humanos para entregar uma aplicação funcional e relevante socialmente.
+
 
 ### ⚖️ | Licença
 
