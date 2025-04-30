@@ -4,6 +4,7 @@ import { Questionario } from './Components/Questionario.jsx';
 import { Login } from './Components/Login.jsx';
 import { ProtectedRoute } from './Components/ProtectedRoute.jsx';
 import { InicioLogado } from './Components/InicioLogado.jsx';
+import { ForumInicial } from './Components/ForumInicial.jsx';
 
 export function Router() {
     return (
@@ -11,6 +12,7 @@ export function Router() {
             <Route path="/login" element={<Login />} />
             <Route path="/" element={<Inicio />} />
             <Route path="/questionario" element={<Questionario />} />
+            <Route path='/forum' element={<ForumInicial />} />
             
             {/* Rota protegida */}
             <Route path="/InicioLogado" element={

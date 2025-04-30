@@ -26,7 +26,7 @@ export function Header({onToggleColors,isDarkMode}) {
        
         <div className={styles.navbar}>
             <NavLink to="/">Início</NavLink>
-            <NavLink to="#">Fórum</NavLink>
+            <NavLink to="/Forum" title='Forum'>Fórum</NavLink>
             <NavLink to="/Questionario" title='Questionario'>Questionários</NavLink>
             <NavLink to="#">+Saúde</NavLink>
 
