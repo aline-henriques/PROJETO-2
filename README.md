@@ -153,25 +153,23 @@ Acesse nossos issues e commits semanais.
 
 ### Relatório
    
-1. Planejamento e Divisão de tarefas
+1. **Planejamento e Divisão de tarefas**
 
    - Durante o desenvolvimento do projeto, o grupo se dividiu de acordo com suas afinidades e agendas.
    
    - Foram feitas reuniões por chamada de voz no Discord para discutir, programar e revisar os códigos em tempo real.
 
-2. Dificuldades
+2. **Dificuldades**
 
    - Encontramos difculdades para concilar horários para nos encontrarmos, o que impactou o ritmo de desenvolvimento.
 
    - Um dos integrantes teve dificuldades de realizar o push diretamente através do terminal do VsCode.
 
-   - ...
+3. **Conclusão**
 
-3. Conclusão
-
-   O projeto nos proporcionou um aprendizado valioso sobre programação, usabilidade e responsabilidade no desenvolvimento de ferramentas voltadas à saúde mental.
+   - O projeto nos proporcionou um aprendizado valioso sobre programação, usabilidade e responsabilidade no desenvolvimento de ferramentas voltadas à saúde mental.
    
-   Conseguimos aplicar conceitos técnicos e humanos para entregar uma aplicação funcional e relevante socialmente.
+   - Conseguimos aplicar conceitos técnicos e humanos para entregar uma aplicação funcional e relevante socialmente.
 
 ***
 
