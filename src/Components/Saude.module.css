@@ -1,0 +1,38 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .withFooter {
+    padding-bottom: 10rem;
+  }
+  
+  .light {
+    background-color: var(--cinza-100);
+    color: var(--red-200);
+  }
+  
+  .dark {
+    background-color: var(--red-300);
+    color: var(--cinza-100);
+  }
+
+  .heroSection {
+    background-color: #8c3e36;
+    color: var(--cinza-100);
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+    margin-top: 3rem;
+  }
+
+  .heroSection h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heroSection p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }

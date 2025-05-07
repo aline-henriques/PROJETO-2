@@ -28,7 +28,7 @@ export function Header({onToggleColors,isDarkMode}) {
             <NavLink to="/">Início</NavLink>
             <NavLink to="/Forum" title='Forum'>Fórum</NavLink>
             <NavLink to="/Questionario" title='Questionario'>Questionários</NavLink>
-            <NavLink to="#">+Saúde</NavLink>
+            <NavLink to="/Saude" title='Saúde+'>+Saúde</NavLink>
 
             <div className={styles.linhaVertical}></div>
 
