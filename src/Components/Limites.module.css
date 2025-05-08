@@ -1,11 +1,17 @@
 .title{
+    gap: 1rem;
     display: flex;
-    gap: 0.5rem;
+    align-items: center;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
 }
 
 
 .newsBox{
-    background-color: #b3b3b3;
+    background-color: #dbdbdb;
     font-size: 1.9rem;
     width: 29rem;
     display: flex;

@@ -20,11 +20,16 @@
   }
 
   .heroSection {
-    background-color: #8c3e36;
+    background-color: var(--red-200);
     color: var(--cinza-100);
     text-align: center;
     padding: 6rem 2rem 4rem;
     margin-top: 3rem;
+  }
+
+  .dark .heroSection{
+    background-color: var(--cinza-100);
+    color: var(--red-200);
   }
 
   .heroSection h1 {
@@ -43,6 +48,12 @@
   max-width: 1100px;
   margin: 0 auto ;
 }
+
+.dark .news, .dark .newsRecurso{
+  color: var(--red-200);
+}
+
+
 
 .recursosUtilidades{
   flex: 1;
@@ -63,6 +74,12 @@
 }
 
 .news{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsRecurso{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,6 +119,10 @@
   text-align: center;
   padding: 3rem 2rem;
   font-size: 1.5rem;
+}
+
+.dark .frase{
+  color: var(--cinza-100);
 }
 
 .limiteBox{

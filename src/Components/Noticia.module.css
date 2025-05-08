@@ -1,4 +1,6 @@
 
+
+
 .newsBox{
     background-color: #f9eee2;
     font-size: 1.7rem;
@@ -10,6 +12,10 @@
     margin: 1rem;
     height: 18rem;
     border-radius: 1rem;
+}
+
+.dark .newsBox strong{
+    color: var(--red-200);
 }
 .lerMais, .paragrafo{
     margin-top: auto;

@@ -1,6 +1,7 @@
 import styles from './Header.module.css'
 import logoHeader from '../assets/img/DEI-TILT-LOGO.svg'
 import temaHeader from '../assets/img/TEMA-BUTTON.svg'
+import imgPerfil from '../assets/img/Foto_perfil.jpg'
 import React from 'react';
 import { NavLink, useNavigate  } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
@@ -22,7 +23,7 @@ export function Header({onToggleColors,isDarkMode}) {
   return (
     <div className={isDarkMode ? styles.dark : styles.light}>
     <div className={styles.header}>
-        <img src={logoHeader} alt="" />
+        <img src={logoHeader} alt="" className={styles.logoHeader}/>
        
         <div className={styles.navbar}>
             <NavLink to="/">Início</NavLink>
@@ -33,7 +34,7 @@ export function Header({onToggleColors,isDarkMode}) {
             <div className={styles.linhaVertical}></div>
 
             <button onClick={onToggleColors}>
-              <img src={temaHeader} alt="" />
+              <img src={temaHeader} alt="" className={styles.temaHeader}/>
             </button>  
 
 
@@ -48,7 +49,7 @@ export function Header({onToggleColors,isDarkMode}) {
                 <>
                   <p>Olá, Danilo!</p>
                   <div className={styles.menuSide}>
-                    <div className={styles.cadastro}>Perfil</div>
+                    <div className={styles.cadastro}><img src={imgPerfil} alt='Foto Perfil' className={styles.fotoPerfil}></img></div>
                     <div className={styles.dropdownMenu}>
                       <NavLink to="*"><span className={styles.textMenuDrop}>Meu Perfil</span></NavLink>
                       <div className={styles.linha}></div>
