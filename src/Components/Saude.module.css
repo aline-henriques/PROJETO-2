@@ -50,9 +50,14 @@
   padding: 0 2rem;
 }
 
+.limitesSaudaveis{
+  flex: 1;
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto ;
+}
 
-
-.weekNews h2, .recursosUtilidades h2 {
+.weekNews h2, .recursosUtilidades h2, .limitesSaudaveis h2 {
   font-weight: bold;
   font-size: 2rem;
 }
@@ -92,4 +97,16 @@
   background-color: var(--red-200);
 }
 
+.frase{
+  color: #666;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.5rem;
+}
 
+.limiteBox{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.4rem;
+}

@@ -3,7 +3,10 @@ import styles from './Saude.module.css';
 import { useState } from 'react';
 import { Noticia } from './Noticia';
 import { Recurso } from './Recurso';
-import { Fire } from "@phosphor-icons/react";
+import { Blueprint, Fire, Student } from "@phosphor-icons/react";
+import { Suitcase } from '@phosphor-icons/react';
+import { SealCheck, Heartbeat, CheckFat, User, Handshake } from '@phosphor-icons/react';
+import { Limites } from './Limites';
 
 const noticias = [
     {
@@ -61,6 +64,69 @@ const recursos =[
     ] 
     },
 ]
+
+const limites =[
+    {
+        id: 1,
+        content:[
+            {type: 'title', content: "Horário de trabalho", icon: <Suitcase size={32}/>},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Estabeleço um horário fixo para começar e terminar o trabalho/estudos."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Evito responder mensagens de trabalho/estudo fora do horário."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Reservo pausas regulares durante o dia."}
+            
+        ]
+    },
+    {
+        id: 2,
+        content:[
+            {type: 'title', content: "Saúde Física", icon: <Heartbeat size={32}/>},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Tenho uma rotina mínima de sono (6 a 8 horas por noite)."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Faço pequenas pausas para me alongar ou caminhar."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Me alimento de forma equilibrada, evitando longos períodos sem comer."}
+            
+        ]
+    },
+    {
+        id: 3,
+        content:[
+            {type: 'title', content: "Espaço pessoal", icon: <User size={32}/>},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Tenho uma rotina mínima de sono (6 a 8 horas por noite)."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Faço pequenas pausas para me alongar ou caminhar."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Me alimento de forma equilibrada, evitando longos períodos sem comer."}
+            
+        ]
+    },
+    {
+        id: 4,
+        content:[
+            {type: 'title', content: "Relações Interpessoais", icon: <Handshake size={32}/>},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Tenho uma rotina mínima de sono (6 a 8 horas por noite)."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Faço pequenas pausas para me alongar ou caminhar."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Me alimento de forma equilibrada, evitando longos períodos sem comer."}
+            
+        ]
+    },
+    {
+        id: 5,
+        content:[
+            {type: 'title', content: "Saúde Física", icon: <Heartbeat size={32}/>},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Tenho uma rotina mínima de sono (6 a 8 horas por noite)."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Faço pequenas pausas para me alongar ou caminhar."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Me alimento de forma equilibrada, evitando longos períodos sem comer."}
+            
+        ]
+    },
+    {
+        id: 6,
+        content:[
+            {type: 'title', content: "Saúde Física", icon: <Heartbeat size={32}/>},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Tenho uma rotina mínima de sono (6 a 8 horas por noite)."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Faço pequenas pausas para me alongar ou caminhar."},
+            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Me alimento de forma equilibrada, evitando longos períodos sem comer."}
+            
+        ]
+    },
+]
  
 
 export function Saude(){
@@ -104,8 +170,26 @@ export function Saude(){
                             />)
                     })}
                     </div>
-                    <div className={styles.linhaInfo}></div>
-                
+
+                    <p className={styles.frase}>Você <strong>não</strong> é uma máquina. Cuide de si mesmo com carinho.</p>
+
+                    <div className={styles.linhaInfo}></div>    
+            </section>
+            <section className={styles.limitesSaudaveis}>
+                    <div className={styles.title}>
+                        <CheckFat size={32} />
+                        <div className={styles.linhaVertical}>.</div>
+                        <h2>Limites Saúdaveis</h2>
+                    </div>
+                    <div className={styles.limiteBox}>
+                    {limites.map(limites =>{
+                        return (< Limites 
+                            key={limites.id}
+                            content = {limites.content}
+                            />)
+                    })}
+                    </div>
+
             </section>
             
 
