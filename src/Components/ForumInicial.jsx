@@ -1,11 +1,21 @@
 import { useState } from 'react';
 import { Header } from './Header';
 import styles from './ForumInicial.module.css'
-import { Fire } from '@phosphor-icons/react';
+import { Fire, Student } from '@phosphor-icons/react';
 import { PostEmAlta } from './PostEmAlta';
+import { NavLink } from 'react-router-dom';
 
 const PostsEmAlta =[
     {
+        id:1,
+        author: {
+            avatarUrl: "https://pbs.twimg.com/profile_images/1867600296920100864/IsNMUhqC_400x400.jpg",
+            name: "Danilo Vinicius"
+        },
+        content: "Estou finalmente aprendendo a dizer não e impor meus limites. Tem sido difícil mas estou orgulhosa do meu progresso.",   
+
+    },
+     {
         id:1,
         author: {
             avatarUrl: "https://pbs.twimg.com/profile_images/1867600296920100864/IsNMUhqC_400x400.jpg",
@@ -30,21 +40,35 @@ export function ForumInicial (){
                 <button className={styles.buttonPublique}>Publique</button>
             </div>
             <div className={styles.postsArea}>
-                <div className={styles.title}>
-                    <Fire size={32}/>
-                    <div className={styles.linhaVertical}>.</div>
-                    <h2>Publicações em Alta</h2>
-                </div>
-                <div className={styles.postsEmAlta}>
-                    {PostsEmAlta.map(post =>{
-                        return (<PostEmAlta 
-                        key={post.id}
-                        author = {post.author}
-                        content= {post.content}
-                        />
-                        )
-                    })}
-                </div>
+                <div className={styles.posts}>
+                    <div className={styles.title}>
+                        <Fire size={32} color='darkOrange' weight='fill'/>
+                        <div className={styles.linhaVertical}>.</div>
+                        <h2>Publicações em Alta</h2>
+                    </div>
+                    <div className={styles.postsEmAlta}>
+                        {PostsEmAlta.map(post =>{
+                            return (<PostEmAlta 
+                            key={post.id}
+                            author = {post.author}
+                            content= {post.content}
+                            />
+                            )
+                        })}
+                    </div>
+               </div>
+               <div className={styles.rightMenu}>
+                    <div className={styles.topicosPopulares}>
+                        <h2>Tópicos Populares</h2>
+                         <NavLink to="/PrecisoDesabafar" title='PrecisoDesabafar'> Preciso Desabafar</NavLink>
+                         <NavLink to="/MeuChefeE" title='MeuChefeE'> Meu chefe é...</NavLink>
+                         <NavLink to="/NaoAguentoMais" title='NaoAguentoMais'> Não aguento Mais</NavLink>
+                         <NavLink to="/Solidão" title='Solidão'> Solidão</NavLink>
+                         <NavLink to="/Progresso" title='Progresso'> Progresso</NavLink>
+                    </div>
+               </div>
+                
+
             </div>
         </div>
         

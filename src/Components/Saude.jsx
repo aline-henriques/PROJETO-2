@@ -70,9 +70,9 @@ const limites =[
         id: 1,
         content:[
             {type: 'title', content: "Horário de trabalho", icon: <Suitcase size={32}/>},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Estabeleço um horário fixo para começar e terminar o trabalho/estudos."},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Evito responder mensagens de trabalho/estudo fora do horário."},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Reservo pausas regulares durante o dia."}
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Estabeleço um horário fixo para começar e terminar o trabalho/estudos."},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Evito responder mensagens de trabalho/estudo fora do horário."},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Reservo pausas regulares durante o dia."}
             
         ]
     },
@@ -80,9 +80,9 @@ const limites =[
         id: 2,
         content:[
             {type: 'title', content: "Saúde Física", icon: <Heartbeat size={32}/>},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Tenho uma rotina mínima de sono (6 a 8 horas por noite)."},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Faço pequenas pausas para me alongar ou caminhar."},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Me alimento de forma equilibrada, evitando longos períodos sem comer."}
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Tenho uma rotina mínima de sono (6 a 8 horas por noite)."},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Faço pequenas pausas para me alongar ou caminhar."},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Me alimento de forma equilibrada, evitando longos períodos sem comer."}
             
         ]
     },
@@ -90,9 +90,9 @@ const limites =[
         id: 3,
         content:[
             {type: 'title', content: "Espaço pessoal", icon: <User size={32}/>},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Tenho um espaço reservado para descansar, longe de telas e notificações."},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Digo 'não' quando estou no meu limite físico ou emocioanal."},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Respeito meu tempo livre sem culpa."}
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Tenho um espaço reservado para descansar, longe de telas e notificações."},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Digo 'não' quando estou no meu limite físico ou emocioanal."},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Respeito meu tempo livre sem culpa."}
             
         ]
     },
@@ -100,9 +100,9 @@ const limites =[
         id: 4,
         content:[
             {type: 'title', content: "Relações Interpessoais", icon: <Handshake size={32}/>},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Evito assumir responsabilidades que não são minhas."},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Converso de forma clara quando me sinto sobrecarregado."},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Tenho ao menos uma pessoa com quem posso falar abertamente."}
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Evito assumir responsabilidades que não são minhas."},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Converso de forma clara quando me sinto sobrecarregado."},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Tenho ao menos uma pessoa com quem posso falar abertamente."}
             
         ]
     },
@@ -110,9 +110,9 @@ const limites =[
         id: 5,
         content:[
             {type: 'title', content: "Autocuidado", icon: <HandHeart size={32}/>},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Reservo tempo para atividades que me dão prazer (música, leitura, arte, etc.)"},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Pratico o autocuidado sem me sentir egoista"},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Reconheço sinais de estresse no meu corpo e mente."}
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Reservo tempo para atividades que me dão prazer (música, leitura, arte, etc.)"},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Pratico o autocuidado sem me sentir egoista"},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Reconheço sinais de estresse no meu corpo e mente."}
             
         ]
     },
@@ -120,9 +120,9 @@ const limites =[
         id: 6,
         content:[
             {type: 'title', content: "Ambiente Digital", icon: <DeviceMobile size={32}/>},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Tenho uma rotina mínima de sono (6 a 8 horas por noite)."},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Faço pequenas pausas para me alongar ou caminhar."},
-            {type: 'paragraph', icon: <SealCheck size={32}/>, content: "Me alimento de forma equilibrada, evitando longos períodos sem comer."}
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Tenho uma rotina mínima de sono (6 a 8 horas por noite)."},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Faço pequenas pausas para me alongar ou caminhar."},
+            {type: 'paragraph', icon: <SealCheck size={32} color='green' weight='fill'/>, content: "Me alimento de forma equilibrada, evitando longos períodos sem comer."}
             
         ]
     },
@@ -143,7 +143,7 @@ export function Saude(){
             </section>
             <section className={styles.weekNews}>
                     <div className={styles.title}>
-                        <Fire size={32} />
+                        <Fire size={32} color='darkOrange' weight='fill'/>
                         <div className={styles.linhaVertical}>.</div>
                         <h2>Notícias da Semana</h2>
                     </div>
@@ -178,7 +178,7 @@ export function Saude(){
             </section>
             <section className={styles.limitesSaudaveis}>
                     <div className={styles.title}>
-                        <CheckFat size={32} />
+                        <CheckFat size={32} color='blue' weight='fill' />
                         <div className={styles.linhaVertical}>.</div>
                         <h2>Limites Saúdaveis</h2>
                     </div>

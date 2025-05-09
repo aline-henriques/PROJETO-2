@@ -1,3 +1,55 @@
 .areaTexto{
     background-color: #f9eee2;
 }
+
+.areaTexto + .areaTexto{
+    margin-top: 2rem;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+}
+
+.content{
+    padding: 0rem 4rem;
+    color: black;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+}
+
+.footer button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footerButtons{
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.likeButton{
+    transition: transform 0.2s ease;
+}
+
+.likeButton:active{
+    transform: scale(1.2);
+}
+
+.imgUserPost{
+    width: 2rem;
+   height: 2rem ; 
+   border-radius: 50%;
+   object-fit: cover;
+   cursor: pointer;
+   border: 2px solid var(--red-200);
+}
