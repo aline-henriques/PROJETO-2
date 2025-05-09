@@ -12,8 +12,8 @@
     border-radius: 1rem;
 }
 
-.dark{
-    background-color: var(--red-300);
+.darkOut{
+    background-color: var(--red-200);
     font-size: 1.7rem;
     width: 18rem;
     display: flex;
@@ -26,7 +26,7 @@
     color: var(--cinza-100);
 }
 
-.dark .lerMais a{
+.darkOut .lerMais a{
     color: var(--cinza-100);
 }
 
@@ -44,5 +44,4 @@
     font-size: 1.2rem;
     font-style: italic;
 }
-
 

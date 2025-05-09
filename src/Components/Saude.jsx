@@ -56,7 +56,7 @@ const recursos =[
     },
     {
     id: 3,
-    style: 'dark',
+    style: 'darkOut',
     content:[
         {type: 'title', content: "Aúdio/Som para acalmar e relaxar"},
         {type: 'paragraph', content: "Desfrute num dia estressante. Vai ficar tudo bem!"},
@@ -164,6 +164,7 @@ export function Saude(){
                     <div className={styles.newsRecurso}>
                     {recursos.map(recurso =>{
                         return (<Recurso 
+                            isDarkMode={darkMode}
                             key={recurso.id}
                             style={recurso.style}
                             content = {recurso.content}
@@ -183,7 +184,8 @@ export function Saude(){
                     </div>
                     <div className={styles.limiteBox}>
                     {limites.map(limites =>{
-                        return (< Limites 
+                        return (< Limites
+                            isDarkMode={darkMode} 
                             key={limites.id}
                             content = {limites.content}
                             />)

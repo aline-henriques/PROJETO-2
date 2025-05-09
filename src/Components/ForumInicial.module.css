@@ -21,7 +21,7 @@
     align-items: center;
     padding: 6rem 2rem 4rem;
     margin-top: 3rem;
-    background-color: var(--red-200);
+    background-color: var(--red-300);
 }
 
 .introduction h1{
@@ -36,9 +36,9 @@
     margin-bottom: 2rem;
 }
 
-.buttonNewPost{
-    background-color: var(--cinza-100);
-    color: var(--red-200);
+.buttonPublique{
+    background-color: var(--red-200);
+    color: var(--cinza-100);
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     border: none;
@@ -48,9 +48,39 @@
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.buttonNewPost:hover{
-    background-color: var(--red-200);
-    color: var(--cinza-100);
-    border: 1px solid var(--cinza-100);
+.buttonPublique:hover{
+    background-color: var(--cinza-100);
+    color: var(--red-200);
+    border: 1px solid var(--red-200);
     transform: scale(1.05);
+}
+
+.postsArea{
+    flex: 1;
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto ;
+    width: 80%;
+}
+
+.linhaVertical{
+  width: 0.2rem;
+  height: 100%;
+  background-color: var(--red-200);
+}
+
+.light .linhaVertical {
+  background-color: var(--red-200);
+}
+
+.title{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.title h2{
+    font-weight: bold;
+    font-size: 2rem;
 }

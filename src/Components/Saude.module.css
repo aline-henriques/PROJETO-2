@@ -53,8 +53,6 @@
   color: var(--red-200);
 }
 
-
-
 .recursosUtilidades{
   flex: 1;
   margin: 0 auto;
@@ -130,4 +128,8 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 0.4rem;
+}
+
+.dark .linhaVertical, .dark .linhaInfo{
+  background-color: var(--cinza-100);
 }

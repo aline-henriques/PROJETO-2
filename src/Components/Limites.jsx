@@ -1,8 +1,8 @@
 import styles from './Limites.module.css'
 
-export function Limites ({content}){
+export function Limites ({content, isDarkMode}){
     return(
-        <div className={styles.content}>
+        <div className={`${styles.content} ${isDarkMode ? styles.dark : styles.light}`}>
             <div className={styles.newsBox}>
                 {content.map(line =>{
                     

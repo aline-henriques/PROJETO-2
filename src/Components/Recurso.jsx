@@ -1,9 +1,9 @@
 import styles from './Recurso.module.css'
 
-export function Recurso({style, content}){
+export function Recurso({style, content, isDarkMode}){
     return(
     
-            <div className={styles[style] }>
+            <div className={`${styles[style]} ${isDarkMode ? styles.dark : styles.light}`}>
                 {content.map(line =>{
                     
                     if (line.type == 'title'){

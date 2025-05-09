@@ -23,6 +23,11 @@
     border-radius: 1rem;
 }
 
+.dark .newsBox{
+    background-color: var(--cinza-100);
+    color: var(--red-200);
+}
+
 .paragrafo{
     margin:auto;
     display: flex;
