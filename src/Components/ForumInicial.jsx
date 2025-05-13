@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Header } from './Header';
 import styles from './ForumInicial.module.css'
 import { Fire, Student } from '@phosphor-icons/react';
-import { PostEmAlta } from './PostEmAlta';
+import { Posts } from './Posts';
 import { NavLink } from 'react-router-dom';
 
 const PostsEmAlta =[
@@ -48,7 +48,7 @@ export function ForumInicial (){
                     </div>
                     <div className={styles.postsEmAlta}>
                         {PostsEmAlta.map(post =>{
-                            return (<PostEmAlta 
+                            return (<Posts 
                             key={post.id}
                             author = {post.author}
                             content= {post.content}
@@ -65,6 +65,9 @@ export function ForumInicial (){
                          <NavLink to="/NaoAguentoMais" title='NaoAguentoMais'> Não aguento Mais</NavLink>
                          <NavLink to="/Solidão" title='Solidão'> Solidão</NavLink>
                          <NavLink to="/Progresso" title='Progresso'> Progresso</NavLink>
+                    </div>
+                    <div className={styles.diretrizes}>
+                        <NavLink to="/DiretrizeComunidadeSegurança" title='ComunidadeSeguranca'>Diretrizes de Comunidade e Segurança</NavLink>
                     </div>
                </div>
                 

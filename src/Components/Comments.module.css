@@ -1,27 +1,33 @@
 .areaTexto{
-    background-color: #f9eee2;
+    background-color: var(--red-300);
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px var(--cinza-100);
+    transition: box-shadow 0.2s ease;
 }
 
 .areaTexto + .areaTexto{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .author{
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
+    color: var(--cinza-100);
 }
 
 .content{
-    padding: 0rem 4rem;
-    color: black;
+    padding: 0.5rem 4rem;
+    color: var(--cinza-100);
+    font-size: 1rem;
+    
 }
 
 .footer{
     display: flex;
     align-items: center;
-    padding: 1rem 4rem;
+    padding: 0.5rem 4rem;
     justify-content: space-between;
 }
 
@@ -45,11 +51,11 @@
     transform: scale(1.2);
 }
 
-.imgUserPost{
+.imgUserComment{
     width: 2rem;
    height: 2rem ; 
    border-radius: 50%;
    object-fit: cover;
    cursor: pointer;
-   border: 2px solid var(--red-200);
+   border: 2px solid var(--cinza-100);
 }

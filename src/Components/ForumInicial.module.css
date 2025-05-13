@@ -90,16 +90,17 @@
     font-size: 2rem;
 }
 
-.topicosPopulares{
+.topicosPopulares, .diretrizes{
     background-color: var(--red-200);
     color: var(--cinza-100);
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    border-radius: 1rem;
 }
 
-.topicosPopulares a{
+.topicosPopulares a, .diretrizes a{
     padding: 0.2rem;
     text-decoration: none;
     color: var(--cinza-100);
@@ -108,7 +109,7 @@
     transition: color 0.3s ease;
 }
 
-.topicosPopulares a::after {
+.topicosPopulares a::after, .diretrizes a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -119,7 +120,7 @@
   transition: width 0.3s ease;
 }
 
-.topicosPopulares a:hover::after {
+.topicosPopulares a:hover::after, .diretrizes a:hover::after {
   width: 100%;
 }
 
@@ -127,4 +128,9 @@
     width: 20%;
     padding: 1rem 3rem;
     margin-top: 2.5rem;
+}
+
+.diretrizes{
+    margin-top: 2rem;
+    
 }
