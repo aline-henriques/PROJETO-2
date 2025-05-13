@@ -7,7 +7,7 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 ### 📑 | Índice
 
 1. [Sobre o Projeto](#sobre-o-projeto)
-2. [Backlog do Projeto](#backlog-do-projeto)
+2. [Backlog](#backlog-do-projeto)
 3. [ScreenCast](#screencast)
 4. [Links](#links-uteis)
 5. [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -15,8 +15,10 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 7. [Como Instalar?](#como-instalar)
 8. [Issues](#Issues)
 9. [Equipe](#equipe)
-10. [Licença](#licença)
-11. [Programação em Par](#programaca-em-par)
+10. [Programação em Par](#programaca-em-par)
+11. [Relatório de Desenvolvimento](#relatório)
+12. [Licença](#licença)
+
 
 *** 
 
@@ -62,11 +64,9 @@ Minutos exatos do vídeo, apresentando as funcionalidades:
 
 [🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/proto/v8qSHsqxcSn1YCFe0em4Wb/Dei-Tilti?node-id=118-50&p=f&t=6jSx9w5MhOaIrp9Y-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=118%3A50)
 
-[🔗 Canva - Design do projeto de alta fidelidade!](https://www.canva.com/design/DAGkIDK7g_c/iggZQvdKgD6SRUxeE1mv3A/edit?utm_content=DAGkIDK7g_c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebuttonv)
+[🔗 Canva - Design de alta fidelidade!](https://www.canva.com/design/DAGkIDK7g_c/iggZQvdKgD6SRUxeE1mv3A/edit?utm_content=DAGkIDK7g_c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebuttonv)
 
 [🔗 DOCS - Relatório de Desenvolvimento!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
-
-[🔗 Diagramas de Atividade UML!](https://www.canva.com/design/DAGlzQsGeGw/ckztLZvsKIfwOUF001ynJw/edit?utm_content=DAGlzQsGeGw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ***
 
@@ -152,9 +152,12 @@ Acesse nossos issues e commits semanais.
 
 ![Foto](./src/assets/img/Prog-em-Par.jpeg)
 
-### Relatório
+*** 
+
+### ✍🏻 | Relatório
    
 Documento para relatório de desenvolvimento, desde o início á conclusão do projeto.
+
 [Acesse aqui o nosso relatório de desenvolvimento COMPLETO!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit?usp=drivesdk)
 
 ***
