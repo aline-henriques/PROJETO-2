@@ -59,7 +59,6 @@ Minutos exatos do vídeo, apresentando as funcionalidades:
 ***
 
 ### ✔️ | Links Úteis
-[🔗 GitHub - Repositório do nosso projeto!](https://github.com/aline-henriques/PROJETO-2)
 
 [🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/proto/v8qSHsqxcSn1YCFe0em4Wb/Dei-Tilti?node-id=118-50&p=f&t=6jSx9w5MhOaIrp9Y-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=118%3A50)
 
@@ -98,6 +97,7 @@ A estimativa de conclusão e o primeiro deploy do site está prevista para junho
 *** 
 
 ### ❓ | Como instalar
+
 E visualizar o andamento do site localmente?
 
 Para visualizar o site em andamento, siga os passos abaixo:
@@ -137,6 +137,7 @@ Acompanhe nossos issues através do link: [Issues](https://github.com/aline-henr
 
 *** 
 ### 👥 | Equipe
+
 Programação em par experimentada 🚀
 Acesse nossos issues e commits semanais.
 
@@ -153,23 +154,8 @@ Acesse nossos issues e commits semanais.
 
 ### Relatório
    
-1. **Planejamento e Divisão de tarefas**
-
-   - Durante o desenvolvimento do projeto, o grupo se dividiu de acordo com suas afinidades e agendas.
-   
-   - Foram feitas reuniões por chamada de voz no Discord para discutir, programar e revisar os códigos em tempo real.
-
-2. **Dificuldades**
-
-   - Encontramos difculdades para concilar horários para nos encontrarmos, o que impactou o ritmo de desenvolvimento.
-
-   - Um dos integrantes teve dificuldades de realizar o push diretamente através do terminal do VsCode.
-
-3. **Conclusão**
-
-   - O projeto nos proporcionou um aprendizado valioso sobre programação, usabilidade e responsabilidade no desenvolvimento de ferramentas voltadas à saúde mental.
-   
-   - Conseguimos aplicar conceitos técnicos e humanos para entregar uma aplicação funcional e relevante socialmente.
+Documento para relatório de desenvolvimento, desde o início á conclusão do projeto.
+[Acesse aqui o nosso relatório de desenvolvimento COMPLETO!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit?usp=drivesdk)
 
 ***
 
