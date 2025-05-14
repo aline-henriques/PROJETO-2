@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Header } from './Header';
 import styles from './ForumInicial.module.css'
-import { Fire, Student } from '@phosphor-icons/react';
+import { Fire, NotePencil } from '@phosphor-icons/react';
 import { Posts } from './Posts';
 import { NavLink } from 'react-router-dom';
 
@@ -33,7 +33,7 @@ export function ForumInicial (){
     
     return( 
         <div className={`${styles.container} ${darkMode ? styles.dark : styles.light}`} >
-             <Header onToggleColors={toggleColors} isDarkMode={darkMode} />
+            <Header onToggleColors={toggleColors} isDarkMode={darkMode} />
             <div className={styles.introduction}>
                 <h1>Forúm anônimo</h1>
                 <p>Compartilhe seus pensamentos e experiências de forma anônima!</p>
@@ -71,8 +71,35 @@ export function ForumInicial (){
                     </div>
                </div>
                 
+            </div>
+
+            <div className={styles.linhaInfo}></div>
+
+            <div className={styles.publicarPost}>
+                <header>
+                     <div className={styles.title}>
+                        <NotePencil size={32} color='darkOrange' weight='fill'/>
+                        <div className={styles.linhaVertical}>.</div>
+                        <h2>Faça uma publicação</h2>
+                    </div>
+                    <h3>Fale o que quiser. Aqui você é ouvido - e acolhido.</h3>
+                </header>
+                <form action="submit">
+                    <div className={styles.novoPost}>
+                        <input 
+                        type="text"
+                        name='publish'
+                        placeholder="Escreva o que está em seu coração...lembre-se de respeitar as diretrizes." />
+                        <div className={styles.novoPostBotton}>
+                            <button>Publicar</button>
+                            <p>Você não está sozinho. Cada história importa!</p>
+                        </div>
+                        
+                    </div>
+                </form>
 
             </div>
+
         </div>
         
     );

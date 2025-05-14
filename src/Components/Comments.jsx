@@ -1,13 +1,18 @@
 import styles from './Comments.module.css'
-import { Heart} from '@phosphor-icons/react';
+import { Heart, Trash} from '@phosphor-icons/react';
 import { useState } from 'react';
 
 
-export function Comments ({content , author}) {
+export function Comments ({content , author, onDeleteComment}) {
     
     const [liked, setLiked] = useState(false);
     
     const toggleLike = () => setLiked(!liked);
+
+    function handleDeleteComment(){
+        onDeleteComment(content);
+    }
+
 
     return(
          <article className={styles.areaTexto}>
@@ -15,6 +20,16 @@ export function Comments ({content , author}) {
                 <div className={styles.author}>
                     <img src={author.avatarUrl} className={styles.imgUserComment}/>
                     <strong>{author.name}</strong>
+                </div>
+                <div>
+                    <button 
+                    className={styles.deleteButton}
+                    onClick={handleDeleteComment}
+                    title='Deletar comentário'>
+
+                        <Trash size={20} />
+                    
+                    </button>
                 </div>
             </header>
             <div className={styles.content}>

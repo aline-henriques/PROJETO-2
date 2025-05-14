@@ -21,6 +21,15 @@ export function Posts ({author, content}){
      }
      setLiked((prev) => !prev);
     }
+
+    function onDeleteComment(commentToDelete){
+        const commentsWhithoutDeletedOne = comments.filter(comment =>{
+            return comment !== commentToDelete;
+        })
+        
+        setComments(commentsWhithoutDeletedOne);
+    }
+
     const [comments, setComments] = useState([]);
 
     function handleCreateNewComment(){
@@ -83,7 +92,7 @@ export function Posts ({author, content}){
 
                     <div>
                         {comments.map((comment, index) => (
-                            <Comments key={index} content={comment} author={author} />
+                            <Comments key={index} content={comment} author={author} onDeleteComment= {onDeleteComment}/>
                         ))}
                     </div>
                     </>

@@ -59,3 +59,22 @@
    cursor: pointer;
    border: 2px solid var(--cinza-100);
 }
+
+.areaTexto header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.deleteButton{
+    background: transparent;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    line-height: 0;
+     transition: transform 0.2s ease;
+}
+
+.deleteButton:hover{
+    color: red;
+}

@@ -21,7 +21,7 @@
     gap: 20rem;
     width: 100%;
     padding: 12px 0;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     align-items: center;
   }
   
@@ -31,7 +31,7 @@
   }
   
   .infoSaudeMais img {
-    width: 60%;
+    width: 50%;
   }
   
   .infoForum img {
