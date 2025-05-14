@@ -1,25 +1,43 @@
 import { createContext, useContext, useState, useEffect } from "react";
+import fotoPerfil from './assets/img/Foto_perfil.jpg'; // Certifique-se que o caminho está certo
 
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-    // Verifica se o usuário está logado ao carregar a página
+    // Verifica dados persistidos
     const storedIsAuthenticated = localStorage.getItem('isLoggedIn') === 'true';
+    const storedUser = JSON.parse(localStorage.getItem('user'));
+
     const [isAuthenticated, setIsAuthenticated] = useState(storedIsAuthenticated);
+    const [user, setUser] = useState(storedUser || {
+        name: "Danilo Vinicius",
+        avatarUrl: fotoPerfil
+    });
 
     useEffect(() => {
-        // Sincroniza o estado de autenticação com o localStorage
         localStorage.setItem('isLoggedIn', isAuthenticated ? 'true' : 'false');
-    }, [isAuthenticated]);
+        if (user) {
+            localStorage.setItem('user', JSON.stringify(user));
+        }
+    }, [isAuthenticated, user]);
 
-    const login = () => setIsAuthenticated(true);
+    const login = (userData = {
+        name: "Danilo Vinicius",
+        avatarUrl: fotoPerfil
+    }) => {
+        setIsAuthenticated(true);
+        setUser(userData);
+    };
+
     const logout = () => {
         setIsAuthenticated(false);
+        setUser(null);
         localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('user');
     };
 
     return (
-        <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
+        <AuthContext.Provider value={{ isAuthenticated, user, login, logout }}>
             {children}
         </AuthContext.Provider>
     );

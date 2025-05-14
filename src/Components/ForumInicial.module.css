@@ -55,7 +55,7 @@
     transform: scale(1.05);
 }
 
-.postsArea, .publicarPost{
+.postsArea, .publicarPost, .feed{
     flex: 1;
     padding: 3rem 2rem;
     max-width: 1100px;
@@ -135,17 +135,17 @@
 }
 
 .linhaInfo {
+    width: calc(100vw - 4rem);
     height: 1px;
-    justify-self: center;
-    margin: 3rem;
-    
+    background-color: var(--red-200);
+    margin: 3rem auto;
   }
 
 .light .linhaInfo{
     background-color: var(--red-200);
   }
 
-.publicarPost{
+.publicarPost, .feed{
     flex-direction: column;
     gap: 1rem;
 }
@@ -154,4 +154,51 @@
     display: flex;
     align-items: center;
     gap: 5rem;
+}
+
+.novoPostBotton button{
+    padding: 0.5rem 4rem;
+    background-color: var(--red-200);
+    border: 1px solid var(--red-200);
+    border-radius: 0.5rem;
+    color: var(--cinza-100);
+    cursor: pointer;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.novoPostBotton button:hover{
+    background-color: var(--cinza-100);
+    color: var(--red-200);
+}
+
+.novoPostBotton p{
+    color: black;
+    font-size: 1.1rem;
+}
+
+.publicarPost h3{
+    color: black;
+    font-size: 1.2rem;
+}
+
+.novoPost input{
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--cinza-100);
+    min-width: 0;
+    flex: 1;
+}
+
+.novoPost input:focus {
+  outline: none;
+  border-color: var(--red-200);
+  box-shadow: 0 0 0 2px var(--cinza-100);
+  scale: 1rem;
+}
+
+.postsFeed + .postsFeed{
+    margin-top: 2rem;
 }
