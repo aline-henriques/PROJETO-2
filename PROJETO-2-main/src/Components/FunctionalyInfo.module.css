@@ -1,0 +1,60 @@
+.funcionalidades {
+    flex: 1;
+  }
+  
+  .infoQuestionario,
+  .infoForum{
+    background-color: var(--red-200);
+    color: var(--cinza-100);
+  }
+
+  .dark .infoQuestionario,
+  .infoForum{
+    background-color: var(--red-300);
+    color: var(--cinza-100);
+  }
+
+  .infoQuestionario,
+  .infoSaudeMais,
+  .infoForum {
+    display: flex;
+    gap: 20rem;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+    align-items: center;
+  }
+  
+  .imageInfo img{
+    width: 50%;
+    margin-left: 10rem;
+  }
+  
+  .infoSaudeMais img {
+    width: 50%;
+  }
+  
+  .infoForum img {
+    width: 50%;
+    margin-left: 10rem;
+  }
+  
+  .textInfoSaudeMais {
+    margin-left: 10rem;
+  }
+  
+  .linhaInfo {
+    width: 93%;
+    height: 1px;
+    justify-self: center;
+    margin: 3rem;
+    
+  }
+
+  .light .linhaInfo{
+      background-color: var(--red-200);
+  }
+
+  .dark .linhaInfo{
+      background-color: var(--cinza-100);
+  }

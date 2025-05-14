@@ -1,0 +1,80 @@
+.areaTexto{
+    background-color: var(--red-300);
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px var(--cinza-100);
+    transition: box-shadow 0.2s ease;
+}
+
+.areaTexto + .areaTexto{
+    margin-top: 1rem;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0.5rem;
+    color: var(--cinza-100);
+}
+
+.content{
+    padding: 0.5rem 4rem;
+    color: var(--cinza-100);
+    font-size: 1rem;
+    
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 4rem;
+    justify-content: space-between;
+}
+
+.footer button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footerButtons{
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.likeButton{
+    transition: transform 0.2s ease;
+}
+
+.likeButton:active{
+    transform: scale(1.2);
+}
+
+.imgUserComment{
+    width: 2rem;
+   height: 2rem ; 
+   border-radius: 50%;
+   object-fit: cover;
+   cursor: pointer;
+   border: 2px solid var(--cinza-100);
+}
+
+.areaTexto header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.deleteButton{
+    background: transparent;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    line-height: 0;
+     transition: transform 0.2s ease;
+}
+
+.deleteButton:hover{
+    color: red;
+}
