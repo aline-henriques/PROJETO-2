@@ -1,0 +1,47 @@
+
+.light{
+    background-color: #f9eee2;
+    font-size: 1.7rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.3rem;
+    margin: 1rem;
+    height: 18rem;
+    border-radius: 1rem;
+}
+
+.darkOut{
+    background-color: var(--red-200);
+    font-size: 1.7rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.3rem;
+    margin: 1rem;
+    height: 18rem;
+    border-radius: 1rem;
+    color: var(--cinza-100);
+}
+
+.darkOut .lerMais a{
+    color: var(--cinza-100);
+}
+
+.lerMais, .paragrafo{
+    margin-top: auto;
+}
+
+.paragrafo{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.lerMais a{
+    color: var(--red-300);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
