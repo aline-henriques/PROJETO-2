@@ -102,3 +102,30 @@
     color: var(--red-200);
 }
 
+.anonimo {
+  background-color: #f9eee2;
+  border-left: 4px solid #aaa;
+  opacity: 0.95;
+}
+
+.anonTag {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  background-color: #ddd;
+  color: #444;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.checkBoxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  user-select: none;
+}

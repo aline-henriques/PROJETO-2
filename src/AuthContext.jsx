@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import fotoPerfil from './assets/img/Foto_perfil.jpg'; // Certifique-se que o caminho está certo
+import fotoPerfil from './assets/img/Foto_perfil.jpg'; 
 
 const AuthContext = createContext();
 

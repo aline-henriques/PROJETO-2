@@ -1,56 +1,77 @@
 import { useState } from 'react';
 import styles from './Posts.module.css';
-import { Heart, ChatCircleDots } from '@phosphor-icons/react';
+import { Heart, ChatCircleDots, User } from '@phosphor-icons/react';
 import { Comments } from './Comments.jsx';
 import { useAuth } from '../AuthContext'; 
+import FotoAnonima from '../assets/img/Foto_Anonima.jpg'
 
-export function Posts({ author, content }) {
-    const { user } = useAuth();
+export function Posts({ author, content, anonimo }) {
 
-    const [newCommentText, setNewCommentText] = useState('');
-    const [liked, setLiked] = useState(false);
-    const [likeCount, setLikeCount] = useState(0);
-    const [comments, setComments] = useState([]);
-    const [mostrarComentario, setMostrarComentario] = useState(false);
-
-    const toggleLike = () => {
-        setLiked(prev => !prev);
-        setLikeCount(prev => (liked ? prev - 1 : prev + 1));
+    // CheckBox
+    const [checkedItems, setCheckedItems] = useState({})
+    const handleCheck = (mark) => {
+        setCheckedItems((prev) => ({
+            ...prev,
+            [mark]: !prev[mark],
+        }));
     };
 
+    // Indormações do usuario
+    const { user } = useAuth();
+
+    // Novo Comentario
+    const [comments, setComments] = useState([]);
+    const [mostrarComentario, setMostrarComentario] = useState(false);
     const handleClick = () => {
         setMostrarComentario(prev => !prev);
     };
-
+    const [newCommentText, setNewCommentText] = useState('');
     function handleCreateNewComment(event) {
         event.preventDefault();
 
-
+        const isAnonimo = checkedItems['postarAnonimo'];
         const novoComentario = {
             id: Date.now(),
             content: newCommentText,
+            anonimo: isAnonimo,
             author: {
-                name: user?.name || 'Anônimo',
-                avatarUrl: user?.avatarUrl || 'https://via.placeholder.com/150'
-    }
-            
+                name: isAnonimo ? 'Anônimo' : user?.name,
+                avatarUrl: isAnonimo? FotoAnonima
+                            : user?.avatarUrl 
+            }  
         };
 
         setComments([...comments, novoComentario]);
         setNewCommentText('');
     }
 
+
+    // Like
+    const [liked, setLiked] = useState(false);
+    const [likeCount, setLikeCount] = useState(0);
+    const toggleLike = () => {
+        setLiked(prev => !prev);
+        setLikeCount(prev => (liked ? prev - 1 : prev + 1));
+    };
+   
+    // Deletar comentario
     function onDeleteComment(commentId) {
         const commentsFiltered = comments.filter(comment => comment.id !== commentId);
         setComments(commentsFiltered);
     }
 
     return (
-        <article className={styles.areaTexto}>
+        <article className={`${styles.areaTexto} ${anonimo ? styles.anonimo : ''}`}>
             <header className={styles.header}>
                 <div className={styles.author}>
                     <img src={author.avatarUrl} alt="foto perfil" className={styles.imgUserPost} />
                     <strong>{author.name}</strong>
+                    {anonimo && (
+                        <span className={styles.anonTag}>
+                        <User size={14} weight="fill" />
+                        Anônimo
+                        </span>
+                    )}
                 </div>
             </header>
             <div className={styles.content}>
@@ -88,6 +109,14 @@ export function Posts({ author, content }) {
                         <button className={styles.publicarButton} type="submit" disabled={newCommentText.length === 0}>
                             Comentar
                         </button>
+                        <label className={styles.checkBoxLabel}>
+                            <input 
+                                type="checkbox"
+                                checked={checkedItems['postarAnonimo'] || false}
+                                onChange={() => handleCheck('postarAnonimo')}
+                            />
+                            Postar Anônimamente
+                        </label>
                     </div>
 
                     <div>
@@ -96,6 +125,7 @@ export function Posts({ author, content }) {
                                 key={comment.id}
                                 content={comment.content}
                                 author={comment.author}
+                                anonimo={comment.anonimo}
                                 onDeleteComment={() => onDeleteComment(comment.id)}
                                 
                             />

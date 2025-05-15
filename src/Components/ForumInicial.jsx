@@ -5,6 +5,7 @@ import { Fire, NotePencil } from '@phosphor-icons/react';
 import { Posts } from './Posts';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
+import FotoAnonima from '../assets/img/Foto_Anonima.jpg'
 
 
 const PostsEmAlta =[
@@ -73,14 +74,23 @@ export function ForumInicial (){
     const lastPostRef = useRef(null);
     function handleCreateNewPost(){
         event.preventDefault()
+
+        if (!isAuthenticated) {
+            alert("Você precisa estar logado para publicar.");
+            navigate('/Login');
+            return;
+  }
+
         if (!newPostText.trim()) return;
+
         const isAnonimo = checkedItems['postarAnonimo'];
         const newPost ={
             id:posts.length + 1,
             content:newPostText,
+            anonimo: isAnonimo,
             author: {
                 name: isAnonimo ? 'Anônimo' : user?.name,
-                avatarUrl: isAnonimo? 'https://via.placeholder.com/150'
+                avatarUrl: isAnonimo? FotoAnonima
                          : user?.avatarUrl 
             }
     };
@@ -267,7 +277,7 @@ export function ForumInicial (){
                             const isLast = index === posts.length - 1;
                             return (
                                 <div ref={isLast ? lastPostRef : null} key={index} className={styles.areaFeed}>
-                                <Posts content={publish.content} author={publish.author} />
+                                <Posts content={publish.content} author={publish.author} anonimo={publish.anonimo}/>
                                 </div>
                             );
                             })}
