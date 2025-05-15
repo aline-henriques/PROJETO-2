@@ -199,6 +199,68 @@
   scale: 1rem;
 }
 
-.postsFeed + .postsFeed{
+.postsEmAltaDeslog, .postsFeedDeslogado{
+    filter: blur(5px);
+    position: relative;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.mensagemLogar{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-Color: var(--red-200);
+    color: var(--cinza-100);
+    padding: 1rem;
+    border-Radius: 1rem;
+    font-size: 1.4rem;
+    text-Align: center;
+    z-Index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.mensagemLogarFeed{
+    position: absolute;
+    bottom: -90%;
+    left: 38%;
+    background-Color: var(--red-200);
+    color: var(--cinza-100);
+    padding: 1rem;
+    border-Radius: 1rem;
+    font-size: 1.4rem;
+    text-Align: center;
+    z-Index: 10;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mensagemLogar button, .mensagemLogarFeed button{
+    background-color: var(--cinza-100);
+    border: 1px solid var(--red-300);
+    color: var(--red-300);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.postsFeed{
     margin-top: 2rem;
+}
+.areaFeed + .areaFeed{
+    margin-top: 2rem;
+}
+
+.checkBoxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  user-select: none;
 }

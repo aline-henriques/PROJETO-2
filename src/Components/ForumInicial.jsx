@@ -3,9 +3,9 @@ import { Header } from './Header';
 import styles from './ForumInicial.module.css'
 import { Fire, NotePencil } from '@phosphor-icons/react';
 import { Posts } from './Posts';
-import { NavLink } from 'react-router-dom';
-import fotoPerfil from '../assets/img/Foto_perfil.jpg'
-import { useAuth } from '../AuthContext'; 
+import { NavLink, useNavigate } from 'react-router-dom';
+import { useAuth } from '../AuthContext';
+
 
 const PostsEmAlta =[
     {
@@ -49,9 +49,23 @@ const PostsFeed=[
     },
 ]
 
-export function ForumInicial ({author,content, usuarioLogado}){
+export function ForumInicial (){
 
+    // CheckBox
+    const [checkedItems, setCheckedItems] = useState({})
+    const handleCheck = (mark) => {
+        setCheckedItems((prev) => ({
+            ...prev,
+            [mark]: !prev[mark],
+        }));
+    };
+
+    // Navegação
+    const navigate = useNavigate();
+
+    // Validação
     const { user } = useAuth();
+    const { isAuthenticated } = useAuth();
 
     // Novo Post
     const [newPostText, setNewPostText] = useState('')
@@ -59,14 +73,17 @@ export function ForumInicial ({author,content, usuarioLogado}){
     const lastPostRef = useRef(null);
     function handleCreateNewPost(){
         event.preventDefault()
-        setPosts([...posts, {
+        if (!newPostText.trim()) return;
+        const isAnonimo = checkedItems['postarAnonimo'];
+        const newPost ={
             id:posts.length + 1,
             content:newPostText,
             author: {
-                name: user?.name || 'Anônimo',
-                avatarUrl: user?.avatarUrl || 'https://via.placeholder.com/150'
+                name: isAnonimo ? 'Anônimo' : user?.name,
+                avatarUrl: isAnonimo? 'https://via.placeholder.com/150'
+                         : user?.avatarUrl 
             }
-    }]);
+    };
         setPosts([...posts, newPost]);
         setNewPostText('');
 
@@ -78,6 +95,7 @@ export function ForumInicial ({author,content, usuarioLogado}){
 
     }
     
+    // DarkMode
     const [darkMode, setDarkMode] = useState(false);
     const toggleColors = () => setDarkMode((prev) => !prev);
     
@@ -85,8 +103,8 @@ export function ForumInicial ({author,content, usuarioLogado}){
         <div className={`${styles.container} ${darkMode ? styles.dark : styles.light}`} >
             <Header onToggleColors={toggleColors} isDarkMode={darkMode} />
             <div className={styles.introduction}>
-                <h1>Forúm anônimo</h1>
-                <p>Compartilhe seus pensamentos e experiências de forma anônima!</p>
+                <h1>Forúm Burnout</h1>
+                <p>Compartilhe seus pensamentos e experiências de forma que desejar!</p>
                 <button className={styles.buttonPublique}>Publique</button>
             </div>
             <div className={styles.postsArea}>
@@ -96,17 +114,50 @@ export function ForumInicial ({author,content, usuarioLogado}){
                         <div className={styles.linhaVertical}>.</div>
                         <h2>Publicações em Alta</h2>
                     </div>
-                    <div className={styles.postsEmAlta}>
-                        {PostsEmAlta.map(post =>{
-                            return (<Posts 
-                            key={post.id}
-                            author = {post.author}
-                            content= {post.content}
-                            />
-                            )
-                        })}
-                    </div>
+
+                    {!isAuthenticated &&(
+                        <>
+                            <div className={styles.blurDiv}>
+                                <div className={styles.postsEmAltaDeslog}>
+                                    {PostsEmAlta.map(post =>{
+                                        return (<Posts 
+                                        key={post.id}
+                                        author = {post.author}
+                                        content= {post.content}
+                                        />
+                                        )
+                                    })}
+                                </div>
+                            </div>
+
+                            <div className={styles.mensagemLogar} >
+                                <span>Para visualizar, logue em uma conta</span>
+                                <button onClick={() => navigate('/Login')}> 
+                                    Fazer login
+                                </button>
+                            </div>
+                        </>
+                    )}
+                    
+                    
+                    {isAuthenticated &&(
+                        <>
+                            <div className={styles.postsEmAlta}>
+                                {PostsEmAlta.map(post =>{
+                                    return (<Posts 
+                                    key={post.id}
+                                    author = {post.author}
+                                    content= {post.content}
+                                    />
+                                    )
+                                })}
+                            </div>
+                        </>
+                    )}
+                    
                </div>
+
+
                <div className={styles.rightMenu}>
                     <div className={styles.topicosPopulares}>
                         <h2>Tópicos Populares</h2>
@@ -148,7 +199,19 @@ export function ForumInicial ({author,content, usuarioLogado}){
                             <button type="submit" disabled={newPostText.length === 0}> 
                                 Publicar
                             </button>
+
+                            <label className={styles.checkBoxLabel}>
+                                <input 
+                                    type="checkbox"
+                                    checked={checkedItems['postarAnonimo'] || false}
+                                    onChange={() => handleCheck('postarAnonimo')}
+                                />
+                                Postar Anônimamente
+                            </label>
+
                             <p>Você não está sozinho. Cada história importa!</p>
+                            
+                            
                         </div>
                         
                     </div>
@@ -160,27 +223,55 @@ export function ForumInicial ({author,content, usuarioLogado}){
                 <div className={styles.title}>
                     <h2>Publicações</h2>
                 </div>    
-                <div >
-                    <div>
-                        {PostsFeed.map(post =>{
-                            return (<Posts 
-                            key={post.id}
-                            author = {post.author}
-                            content= {post.content}
-                            />
-                            )
-                        })}
-                    </div>
-                    <div className={styles.postsFeed}>
-                        {posts.map((publish, index) => {
-                        const isLast = index === posts.length - 1;
-                        return (
-                            <div ref={isLast ? lastPostRef : null} key={index}>
-                            <Posts content={publish.content} author={publish.author} />
+                <div>
+                    
+                    {!isAuthenticated &&(
+                        <>
+                           <div className={styles.postsFeedDeslogado}>
+                                {PostsFeed.map(post =>{
+                                    return (<Posts
+                                    key={post.id}
+                                    author = {post.author}
+                                    content= {post.content}
+                                    />
+                                    )
+                                })}
+                            </div>      
+                            <div className={styles.mensagemLogarFeed} >
+                                <span>Para visualizar, logue em uma conta</span>
+                                <button onClick={() => navigate('/Login')}> 
+                                    Fazer login
+                                </button>
                             </div>
-                        );
-                        })}
-                    </div>
+                        </>
+                    )}
+                    
+                    
+                    {isAuthenticated &&(
+                        <>
+                            <div className={styles.postsFeedLogado}>
+                                {PostsFeed.map(post =>{
+                                    return (<Posts
+                                    key={post.id}
+                                    author = {post.author}
+                                    content= {post.content}
+                                    />
+                                    )
+                                })}
+                            </div>      
+                        </>
+                    )}
+
+                    <div className={styles.postsFeed}>
+                            {posts.map((publish, index) => {
+                            const isLast = index === posts.length - 1;
+                            return (
+                                <div ref={isLast ? lastPostRef : null} key={index} className={styles.areaFeed}>
+                                <Posts content={publish.content} author={publish.author} />
+                                </div>
+                            );
+                            })}
+                    </div>   
                     
                 </div>
             </article>
