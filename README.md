@@ -168,9 +168,9 @@ Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ***
 
-### 🤝 Como contribuir
+### 🤝 | Como contribuir
 
-Siga o passo a passo: 
+> Siga o passo a passo: 
 1. Faça um fork deste repositório
 3. Crie uma branch com a sua feature ou correção. Exemplo: `git checkout -b minha-feature`.
 5. Commit suas mudanças. Exemplo: `git commit -m 'feat: nova funcionalidade'`.
