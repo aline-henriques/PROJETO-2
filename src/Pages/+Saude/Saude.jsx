@@ -1,12 +1,12 @@
-import { Header } from './Header';
+import { Header } from '../../Layauts/Header/Header';
 import styles from './Saude.module.css';
 import { useState } from 'react';
-import { Noticia } from './Noticia';
-import { Recurso } from './Recurso';
+import { Noticia } from '../../Components/Noticias/Noticia';
+import { Recurso } from '../../Components/Recursos (+Saude)/Recurso';
 import { Blueprint, Fire, Student } from "@phosphor-icons/react";
 import { Suitcase } from '@phosphor-icons/react';
 import { SealCheck, Heartbeat, CheckFat, User, Handshake, HandHeart, DeviceMobile } from '@phosphor-icons/react';
-import { Limites } from './Limites';
+import { Limites } from '../../Components/Limites saudaveis/Limites';
 
 const noticias = [
     {

@@ -1,6 +1,6 @@
-import { Header } from "./Header";
-import { PrincipalContent } from "./PrincipalContent";
-import { FunctionalyInfo } from "./FunctionalyInfo";
+import { Header } from "../../Layauts/Header/Header";
+import { PrincipalContent } from "../Contrudo Principal/PrincipalContent";
+import { FunctionalyInfo } from "../Funcionalidades/FunctionalyInfo";
 import styles from './InicioLogado.module.css';
 import { useState } from "react";
 

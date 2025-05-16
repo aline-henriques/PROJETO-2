@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import styles from './Posts.module.css';
 import { Heart, ChatCircleDots, User } from '@phosphor-icons/react';
-import { Comments } from './Comments.jsx';
-import { useAuth } from '../AuthContext'; 
-import FotoAnonima from '../assets/img/Foto_Anonima.jpg'
+import { Comments } from '../Comentarios/Comments.jsx';
+import { useAuth } from '../../Services/AuthContext.jsx'; 
+import FotoAnonima from '../../assets/img/Foto_Anonima.jpg'
 
 export function Posts({ author, content, anonimo }) {
 

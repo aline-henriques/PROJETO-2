@@ -1,8 +1,8 @@
 import styles from './Questionario.module.css';
-import { Header } from "./Header";
+import { Header } from "../../Layauts/Header/Header";
 import { useState } from 'react';
-import { Footer } from './Footer';
-import { Quiz } from './Quiz';
+import { Footer } from '../../Layauts/Footer/Footer';
+import { Quiz } from '../../Components/Quizes/Quiz';
 
 export function Questionario() {
     const [darkMode, setDarkMode] = useState(false);

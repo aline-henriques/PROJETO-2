@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
-import { Inicio } from './Components/Inicio.jsx';
-import { Questionario } from './Components/Questionario.jsx';
-import { Login } from './Components/Login.jsx';
-import { ProtectedRoute } from './Components/ProtectedRoute.jsx';
-import { InicioLogado } from './Components/InicioLogado.jsx';
-import { ForumInicial } from './Components/ForumInicial.jsx';
-import { Saude } from './Components/Saude.jsx';
+import { Inicio } from '../Pages/Inicio/Inicio.jsx';
+import { Questionario } from '../Pages/Questionario/Questionario.jsx';
+import { Login } from '../Pages/Login/Login.jsx';
+import { ProtectedRoute } from '../Routes/ProtectedRoute.jsx';
+import { InicioLogado } from '../Components/Inicio Logado/InicioLogado.jsx';
+import { ForumInicial } from '../Pages/Forum/ForumInicial.jsx';
+import { Saude } from '../Pages/+Saude/Saude.jsx';
 
 export function Router() {
     return (

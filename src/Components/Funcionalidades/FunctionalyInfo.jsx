@@ -1,7 +1,7 @@
 import styles from './FunctionalyInfo.module.css';
-import imageInfoQuestionario from '../assets/img/imageInfoQuestionario.svg';
-import imageInfoSaudeMais from '../assets/img/imageInfoSaudeMais.svg';
-import imageInfoForum from '../assets/img/imageInfoForum.svg';
+import imageInfoQuestionario from '../../assets/img/imageInfoQuestionario.svg';
+import imageInfoSaudeMais from '../../assets/img/imageInfoSaudeMais.svg';
+import imageInfoForum from '../../assets/img/imageInfoForum.svg';
 
 export function FunctionalyInfo({ isDarkMode }) {
   return (

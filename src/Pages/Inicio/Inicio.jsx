@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from './Inicio.module.css'
-import { Header } from './Header.jsx'
-import { PrincipalContent } from './PrincipalContent.jsx'
-import { FunctionalyInfo } from './FunctionalyInfo.jsx';
-import { Footer } from './Footer.jsx';
+import { Header } from '../../Layauts/Header/Header.jsx'
+import { PrincipalContent } from '../../Components/Contrudo Principal/PrincipalContent.jsx'
+import { FunctionalyInfo } from '../../Components/Funcionalidades/FunctionalyInfo.jsx';
+import { Footer } from '../../Layauts/Footer/Footer.jsx';
 
 export function Inicio() {
 

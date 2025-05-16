@@ -1,6 +1,6 @@
 import styles from './PrincipalContent.module.css'
-import logoContent from '../assets/img/LogoContent1.svg'
-import { useAuth } from '../AuthContext';
+import logoContent from '../../assets/img/LogoContent1.svg'
+import { useAuth } from '../../Services/AuthContext';
 
 export function PrincipalContent({isDarkMode}){
   const { isAuthenticated } = useAuth();

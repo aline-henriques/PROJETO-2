@@ -1,7 +1,7 @@
 import styles from './Footer.module.css';
-import askHelpImage from '../assets/img/buttonAskHelp.svg';
-import knowUsImage from '../assets/img/buttonKnowUs.svg';
-import notAloneImage from '../assets/img/buttonNotAlone.svg';
+import askHelpImage from '../../assets/img/buttonAskHelp.svg';
+import knowUsImage from '../../assets/img/buttonKnowUs.svg';
+import notAloneImage from '../../assets/img/buttonNotAlone.svg';
 
 export function Footer({isDarkMode}) {
   return (

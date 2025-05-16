@@ -1,11 +1,11 @@
 import { useState, useRef } from 'react';
-import { Header } from './Header';
+import { Header } from '../../Layauts/Header/Header';
 import styles from './ForumInicial.module.css'
 import { Fire, NotePencil } from '@phosphor-icons/react';
-import { Posts } from './Posts';
+import { Posts } from '../../Components/Posts/Posts';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { useAuth } from '../AuthContext';
-import FotoAnonima from '../assets/img/Foto_Anonima.jpg'
+import { useAuth } from '../../Services/AuthContext';
+import FotoAnonima from '../../assets/img/Foto_Anonima.jpg'
 
 
 const PostsEmAlta =[
