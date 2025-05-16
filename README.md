@@ -18,6 +18,7 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 10. [Programação em Par](#programaca-em-par)
 11. [Relatório de Desenvolvimento](#relatório)
 12. [Licença](#licença)
+13. [Como Contribuir](#como-contribuir)
 
 
 *** 
@@ -164,3 +165,16 @@ Documento para relatório de desenvolvimento, desde o início á conclusão do p
 
 Distribuído sob a **Licença MIT**.  
 Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+***
+
+### 🤝 Como contribuir
+
+Siga o passo a passo: 
+1. Faça um fork deste repositório
+3. Crie uma branch com a sua feature ou correção. Exemplo: `git checkout -b minha-feature`.
+5. Commit suas mudanças. Exemplo: `git commit -m 'feat: nova funcionalidade'`.
+6. Faça push para a sua branch. Exemplo: `git push origin minha-feature`.
+9. Abra um Pull Request explicando suas alterações.
+
+Sugestões, melhorias e correções são sempre bem-vindas! ☺
