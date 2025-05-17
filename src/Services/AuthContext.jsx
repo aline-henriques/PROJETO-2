@@ -11,7 +11,10 @@ export function AuthProvider({ children }) {
     const [isAuthenticated, setIsAuthenticated] = useState(storedIsAuthenticated);
     const [user, setUser] = useState(storedUser || {
         name: "Danilo Vinicius",
-        avatarUrl: fotoPerfil
+        avatarUrl: fotoPerfil,
+        Email: "dandan@gmail.com",
+        senha: "123",
+        usuario: "dandan"
     });
 
     useEffect(() => {
@@ -22,8 +25,8 @@ export function AuthProvider({ children }) {
     }, [isAuthenticated, user]);
 
     const login = (userData = {
-        name: "Danilo Vinicius",
-        avatarUrl: fotoPerfil
+        avatarUrl: "Danilo Vinicius",
+        foto: fotoPerfil
     }) => {
         setIsAuthenticated(true);
         setUser(userData);

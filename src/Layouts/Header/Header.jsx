@@ -11,6 +11,7 @@ export function Header({onToggleColors,isDarkMode}) {
   const location = useLocation();
   const from = location.state?.from?.pathname || '/';
 
+  const { user } = useAuth();
   const { isAuthenticated, logout } = useAuth();
     const navigate = useNavigate();
 
@@ -49,9 +50,9 @@ export function Header({onToggleColors,isDarkMode}) {
                 <>
                   <p>Olá, Danilo!</p>
                   <div className={styles.menuSide}>
-                    <div className={styles.cadastro}><img src={imgPerfil} alt='Foto Perfil' className={styles.fotoPerfil}></img></div>
+                    <div className={styles.cadastro}><img src={user.avatarUrl} alt='Foto Perfil' className={styles.fotoPerfil}></img></div>
                     <div className={styles.dropdownMenu}>
-                      <NavLink to="*"><span className={styles.textMenuDrop}>Meu Perfil</span></NavLink>
+                      <NavLink to='/Perfil' title='Perfil'><span className={styles.textMenuDrop}>Meu Perfil</span></NavLink>
                       <div className={styles.linha}></div>
                       <NavLink onClick={handleLogout}><span className={styles.textMenuDrop}>Logout</span></NavLink>
                     </div>

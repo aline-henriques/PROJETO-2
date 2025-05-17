@@ -1,4 +1,4 @@
-import { Header } from '../../Layauts/Header/Header';
+import { Header } from '../../Layouts/Header/Header';
 import styles from './Saude.module.css';
 import { useState } from 'react';
 import { Noticia } from '../../Components/Noticias/Noticia';

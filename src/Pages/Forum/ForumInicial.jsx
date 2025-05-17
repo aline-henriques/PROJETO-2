@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Header } from '../../Layauts/Header/Header';
+import { Header } from '../../Layouts/Header/Header';
 import styles from './ForumInicial.module.css'
 import { Fire, NotePencil } from '@phosphor-icons/react';
 import { Posts } from '../../Components/Posts/Posts';

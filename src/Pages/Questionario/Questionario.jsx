@@ -1,7 +1,7 @@
 import styles from './Questionario.module.css';
-import { Header } from "../../Layauts/Header/Header";
+import { Header } from "../../Layouts/Header/Header";
 import { useState } from 'react';
-import { Footer } from '../../Layauts/Footer/Footer';
+import { Footer } from '../../Layouts/Footer/Footer';
 import { Quiz } from '../../Components/Quizes/Quiz';
 
 export function Questionario() {

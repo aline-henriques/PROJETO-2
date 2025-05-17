@@ -17,7 +17,7 @@ export function Posts({ author, content, anonimo }) {
     };
 
     // Indormações do usuario
-    const { user } = useAuth();
+    
 
     // Novo Comentario
     const [comments, setComments] = useState([]);

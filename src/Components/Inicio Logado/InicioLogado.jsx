@@ -1,4 +1,4 @@
-import { Header } from "../../Layauts/Header/Header";
+import { Header } from "../../Layouts/Header/Header";
 import { PrincipalContent } from "../Contrudo Principal/PrincipalContent";
 import { FunctionalyInfo } from "../Funcionalidades/FunctionalyInfo";
 import styles from './InicioLogado.module.css';
