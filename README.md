@@ -46,7 +46,7 @@ Print dos quadros com as Sprints:
 
 ![Quadro da Sprint 02](./src/assets/img/QUADROS-TRELLO(2).jpg)
 
-![Quadro da Sprint 03]((./src/assets/img/QUADROS-TRELLO(3).jpg)
+![Quadro da Sprint 03](./src/assets/img/QUADROS-TRELLO(3).jpg)
 
 *** 
 
@@ -86,11 +86,9 @@ Minutos exatos do vídeo apresentando as funcionalidades contidos na descrição
 
 [**Projeto em andamento...**](https://link-do-site.com)
 
-✔️ Justificativa para o Não Deployment:
+✔️ Justificativa para o Não Deployment e Conclusão:
 
 O projeto ainda está em desenvolvimento e não foi completamente finalizado. Estamos aguardando a implementação de funcionalidades-chave antes de realizar o deploy. O foco está em garantir que todas as partes essenciais do site sejam implementadas corretamente antes de ser disponibilizado publicamente.
-
-✔️ Planos para o Projeto:
 
 A estimativa de conclusão e o primeiro deploy do site está prevista para junho de 2025. Estamos planejando realizar testes de funcionalidade, usabilidade e responsividade antes de lançar o site. Nosso objetivo é garantir que o sistema seja bem implementado e funcional, oferecendo uma experiência de usuário de alta qualidade antes de torná-lo acessível ao público.
 
@@ -134,7 +132,9 @@ O site estará rodando localmente, permitindo que você visualize as funcionalid
 
 ### 📌 Issues 
 
-Acompanhe nossos issues através do link: [Issues](https://github.com/aline-henriques/PROJETO-2/issues)
+Acompanhe nossos issues através do link: 
+
+[Issues](https://github.com/aline-henriques/PROJETO-2/issues)
 
 *** 
 
@@ -159,7 +159,7 @@ Documento para relatório de desenvolvimento, desde o início á conclusão do p
 
 ### 💡 | Programação em Equipe
 
-Acesse mais informações sobre a nossa equip no documento acima! 
+Acesse mais informações sobre a nossa equipe no documento acima! 
 
 ![Foto da Equipe](./src/assets/img/Prog-em-Par.jpeg)
 
