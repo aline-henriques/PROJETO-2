@@ -38,7 +38,11 @@
   }
   
   .heroSection p {
+<<<<<<< HEAD
     font-size: 1.2rem;
+=======
+    font-size: 1.3rem;
+>>>>>>> 587d101 (Ajustes básicos)
     margin-bottom: 2rem;
   }
 

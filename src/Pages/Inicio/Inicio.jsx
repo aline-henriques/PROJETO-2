@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import styles from './Inicio.module.css'
 import { Header } from '../../Layouts/Header/Header.jsx'
+<<<<<<< HEAD
 import { PrincipalContent } from '../../Components/Contrudo Principal/PrincipalContent.jsx'
+=======
+import { PrincipalContent } from '../../Components/Conteúdo Principal/PrincipalContent.jsx'
+>>>>>>> 587d101 (Ajustes básicos)
 import { FunctionalyInfo } from '../../Components/Funcionalidades/FunctionalyInfo.jsx';
 import { Footer } from '../../Layouts/Footer/Footer.jsx';
 

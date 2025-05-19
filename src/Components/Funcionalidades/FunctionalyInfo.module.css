@@ -10,7 +10,11 @@
 
   .dark .infoQuestionario,
   .infoForum{
+<<<<<<< HEAD
     background-color: var(--red-300);
+=======
+    background-color: var(--red-200);
+>>>>>>> 587d101 (Ajustes básicos)
     color: var(--cinza-100);
   }
 
@@ -21,7 +25,11 @@
     gap: 20rem;
     width: 100%;
     padding: 12px 0;
+<<<<<<< HEAD
     font-size: 1.3rem;
+=======
+    font-size: 1rem;
+>>>>>>> 587d101 (Ajustes básicos)
     align-items: center;
   }
   

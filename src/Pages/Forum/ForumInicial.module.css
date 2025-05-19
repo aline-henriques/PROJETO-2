@@ -21,7 +21,11 @@
     align-items: center;
     padding: 6rem 2rem 4rem;
     margin-top: 3rem;
+<<<<<<< HEAD
     background-color: var(--red-300);
+=======
+    background-color: var(--red-200);
+>>>>>>> 587d101 (Ajustes básicos)
 }
 
 .introduction h1{
@@ -37,7 +41,11 @@
 }
 
 .buttonPublique{
+<<<<<<< HEAD
     background-color: var(--red-200);
+=======
+    background-color: var(--red-300);
+>>>>>>> 587d101 (Ajustes básicos)
     color: var(--cinza-100);
     padding: 1rem 2rem;
     border-radius: 0.5rem;
@@ -46,6 +54,10 @@
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.3s ease, border-color 0.3s ease;
+<<<<<<< HEAD
+=======
+    font-size: 1rem;
+>>>>>>> 587d101 (Ajustes básicos)
 }
 
 .buttonPublique:hover{
@@ -93,11 +105,19 @@
 .topicosPopulares, .diretrizes{
     background-color: var(--red-200);
     color: var(--cinza-100);
+<<<<<<< HEAD
     padding: 1rem 2rem;
+=======
+    padding: 2rem 2rem;
+>>>>>>> 587d101 (Ajustes básicos)
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     border-radius: 1rem;
+<<<<<<< HEAD
+=======
+    font-size: 1.1rem;
+>>>>>>> 587d101 (Ajustes básicos)
 }
 
 .topicosPopulares a, .diretrizes a{
@@ -132,11 +152,19 @@
 
 .diretrizes{
     margin-top: 2rem;   
+<<<<<<< HEAD
+=======
+    font-weight: bold;
+>>>>>>> 587d101 (Ajustes básicos)
 }
 
 .linhaInfo {
     width: calc(100vw - 4rem);
+<<<<<<< HEAD
     height: 1px;
+=======
+    height: 0.5px;
+>>>>>>> 587d101 (Ajustes básicos)
     background-color: var(--red-200);
     margin: 3rem auto;
   }
@@ -184,7 +212,11 @@
 }
 
 .novoPost input{
+<<<<<<< HEAD
     padding: 2rem;
+=======
+    padding: 1.2rem;
+>>>>>>> 587d101 (Ajustes básicos)
     border-radius: 1rem;
     font-size: 1rem;
     border: 1px solid var(--cinza-100);
@@ -208,12 +240,20 @@
 
 .mensagemLogar{
     position: absolute;
+<<<<<<< HEAD
     top: 80%;
+=======
+    top: 100%;
+>>>>>>> 587d101 (Ajustes básicos)
     left: 40%;
     transform: translate(-50%, -50%);
     background-Color: var(--red-200);
     color: var(--cinza-100);
+<<<<<<< HEAD
     padding: 1rem;
+=======
+    padding: 1.2rem;
+>>>>>>> 587d101 (Ajustes básicos)
     border-Radius: 1rem;
     font-size: 1.4rem;
     text-Align: center;
@@ -224,18 +264,29 @@
 
 .mensagemLogarFeed{
     position: absolute;
+<<<<<<< HEAD
     bottom: -90%;
     left: 38%;
     background-Color: var(--red-200);
     color: var(--cinza-100);
     padding: 1rem;
+=======
+    bottom: -95%;
+    left: 38%;
+    background-Color: var(--red-200);
+    color: var(--cinza-100);
+    padding: 1.2rem;
+>>>>>>> 587d101 (Ajustes básicos)
     border-Radius: 1rem;
     font-size: 1.4rem;
     text-Align: center;
     z-Index: 10;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 587d101 (Ajustes básicos)
 }
 
 .mensagemLogar button, .mensagemLogarFeed button{
@@ -246,6 +297,10 @@
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
     font-weight: bold;
+<<<<<<< HEAD
+=======
+    border-radius: 8px;
+>>>>>>> 587d101 (Ajustes básicos)
 }
 
 .postsFeed{

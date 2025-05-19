@@ -1,5 +1,9 @@
 import { Header } from "../../Layouts/Header/Header";
+<<<<<<< HEAD
 import { PrincipalContent } from "../Contrudo Principal/PrincipalContent";
+=======
+import { PrincipalContent } from "../Conteúdo Principal/PrincipalContent";
+>>>>>>> 587d101 (Ajustes básicos)
 import { FunctionalyInfo } from "../Funcionalidades/FunctionalyInfo";
 import styles from './InicioLogado.module.css';
 import { useState } from "react";

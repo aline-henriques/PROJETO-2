@@ -54,6 +54,11 @@ export function Header({onToggleColors,isDarkMode}) {
                     <div className={styles.dropdownMenu}>
                       <NavLink to='/Perfil' title='Perfil'><span className={styles.textMenuDrop}>Meu Perfil</span></NavLink>
                       <div className={styles.linha}></div>
+<<<<<<< HEAD
+=======
+                        <NavLink to='/Perfil' title='Perfil'><span className={styles.textMenuDrop}>Notificações</span></NavLink>
+                      <div className={styles.linha}></div>
+>>>>>>> 587d101 (Ajustes básicos)
                       <NavLink onClick={handleLogout}><span className={styles.textMenuDrop}>Logout</span></NavLink>
                     </div>
                   </div>
