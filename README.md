@@ -15,10 +15,9 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 7. [Como Instalar?](#como-instalar)
 8. [Issues](#Issues)
 9. [Equipe](#equipe)
-10. [Programação em Par](#programaca-em-par)
-11. [Relatório de Desenvolvimento](#relatório)
-12. [Licença](#licença)
-13. [Como Contribuir](#como-contribuir)
+10. [Relatório de Desenvolvimento](#relatório)
+11 [Licença](#licença)
+12. [Como Contribuir](#como-contribuir)
 
 
 *** 
@@ -47,11 +46,13 @@ Print dos quadros com as Sprints:
 
 ![Quadro da Sprint 02](./src/assets/img/QUADROS-TRELLO(2).jpg)
 
+![Quadro da Sprint 03]((./src/assets/img/QUADROS-TRELLO(3).jpg)
+
 *** 
 
 ### 🎥 ScreenCast
 
-Vídeo no YouTube, apresentando as funcionalidades principais do site.
+Vídeo no YouTube apresentando as funcionalidades principais do site.
 
 Minutos exatos do vídeo apresentando as funcionalidades contidos na descrição do vídeo.
 
@@ -65,7 +66,7 @@ Minutos exatos do vídeo apresentando as funcionalidades contidos na descrição
 
 [🔗 Canva - Design de alta fidelidade!](https://www.canva.com/design/DAGkIDK7g_c/iggZQvdKgD6SRUxeE1mv3A/edit?utm_content=DAGkIDK7g_c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebuttonv)
 
-[🔗 DOCS - Relatório de Desenvolvimento!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
+[🔗 DOCS - Relatório de Desenvolvimento do Projeto!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
 
 ***
 
@@ -87,7 +88,7 @@ Minutos exatos do vídeo apresentando as funcionalidades contidos na descrição
 
 ✔️ Justificativa para o Não Deployment:
 
-O projeto ainda está em início de desenvolvimento e não foi completamente finalizado. Estamos aguardando a implementação de funcionalidades-chave antes de realizar o deploy. O foco está em garantir que todas as partes essenciais do site sejam implementadas corretamente antes de ser disponibilizado publicamente.
+O projeto ainda está em desenvolvimento e não foi completamente finalizado. Estamos aguardando a implementação de funcionalidades-chave antes de realizar o deploy. O foco está em garantir que todas as partes essenciais do site sejam implementadas corretamente antes de ser disponibilizado publicamente.
 
 ✔️ Planos para o Projeto:
 
@@ -128,6 +129,7 @@ O site será aberto automaticamente no seu navegador. Caso não abra, acesse o e
 
 O site estará rodando localmente, permitindo que você visualize as funcionalidades que já foram implementadas até o momento. :)
 
+
 *** 
 
 ### 📌 Issues 
@@ -135,6 +137,7 @@ O site estará rodando localmente, permitindo que você visualize as funcionalid
 Acompanhe nossos issues através do link: [Issues](https://github.com/aline-henriques/PROJETO-2/issues)
 
 *** 
+
 ### 👥 | Equipe
 
 Programação em par experimentada 🚀
@@ -147,17 +150,18 @@ Acesse nossos issues e commits semanais.
 
 *** 
 
-### 💡 | Programação em Par
-
-![Foto da Equipe](./src/assets/img/Prog-em-Par.jpeg)
-
-*** 
 
 ### ✍🏻 | Relatório
    
 Documento para relatório de desenvolvimento, desde o início á conclusão do projeto.
 
 [Acesse aqui o nosso relatório de desenvolvimento COMPLETO!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit?usp=drivesdk)
+
+### 💡 | Programação em Equipe
+
+Acesse mais informações sobre a nossa equip no documento acima! 
+
+![Foto da Equipe](./src/assets/img/Prog-em-Par.jpeg)
 
 ***
 
@@ -171,10 +175,18 @@ Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 ### 🤝 | Como contribuir
 
 > Siga o passo a passo: 
+
 1. Faça um fork deste repositório
+
+2. Clone o seu fork na sua máquina.  
+   `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
+
 3. Crie uma branch com a sua feature ou correção. Exemplo: `git checkout -b minha-feature`.
-5. Commit suas mudanças. Exemplo: `git commit -m 'feat: nova funcionalidade'`.
+
+5. Commit suas mudanças. Exemplo: `git commit -m 'Nova funcionalidade'`.
+
 6. Faça push para a sua branch. Exemplo: `git push origin minha-feature`.
+
 9. Abra um Pull Request explicando suas alterações.
 
 Sugestões, melhorias e correções são sempre bem-vindas! ☺
