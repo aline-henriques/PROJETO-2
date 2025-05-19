@@ -16,7 +16,7 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 8. [Issues](#Issues)
 9. [Equipe](#equipe)
 10. [Relatório de Desenvolvimento](#relatório)
-11 [Licença](#licença)
+11. [Licença](#licença)
 12. [Como Contribuir](#como-contribuir)
 
 
