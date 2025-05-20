@@ -139,11 +139,7 @@ export function Saude(){
 
             <section className={styles.heroSection}>
                     <h1>+Saúde</h1>
-<<<<<<< HEAD
-                    <p>O que a ciência descobriu recentemente? Conheça mais sobre o assunto em nossa página +Saúde.</p>
-=======
                     <p>O que a ciência descobriu recentemente? Conheça mais sobre o assunto em nossa página +Saúde. </p>
->>>>>>> 587d101 (Ajustes básicos)
             </section>
             <section className={styles.weekNews}>
                     <div className={styles.title}>

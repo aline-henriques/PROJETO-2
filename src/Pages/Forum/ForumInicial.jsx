@@ -15,11 +15,7 @@ const PostsEmAlta =[
             avatarUrl: "https://pbs.twimg.com/profile_images/1893010592484491264/-jaz88Xa_400x400.jpg",
             name: "Guilherme Mattos"
         },
-<<<<<<< HEAD
-        content: "Estou finalmente aprendendo a dizer não e impor meus limites. Tem sido difícil mas estou orgulhoso do meu progresso.",   
-=======
         content: "Estou finalmente aprendendo a dizer não e impor meus limites. Tem sido difícil mas estou orgulhoso do meu progresso!",   
->>>>>>> 587d101 (Ajustes básicos)
 
     },
      {
@@ -80,11 +76,7 @@ export function ForumInicial (){
         event.preventDefault()
 
         if (!isAuthenticated) {
-<<<<<<< HEAD
-            alert("Você precisa estar logado para publicar.");
-=======
             alert("Você precisa estar logado para publicar!");
->>>>>>> 587d101 (Ajustes básicos)
             navigate('/Login');
             return;
   }
@@ -121,13 +113,8 @@ export function ForumInicial (){
         <div className={`${styles.container} ${darkMode ? styles.dark : styles.light}`} >
             <Header onToggleColors={toggleColors} isDarkMode={darkMode} />
             <div className={styles.introduction}>
-<<<<<<< HEAD
-                <h1>Forúm Burnout</h1>
-                <p>Compartilhe seus pensamentos e experiências de forma que desejar!</p>
-=======
                 <h1>Fórum Burnout</h1>
                 <p>Compartilhe seus pensamentos e experiências da forma que desejar!</p>
->>>>>>> 587d101 (Ajustes básicos)
                 <button className={styles.buttonPublique}>Publique</button>
             </div>
             <div className={styles.postsArea}>
@@ -154,15 +141,9 @@ export function ForumInicial (){
                             </div>
 
                             <div className={styles.mensagemLogar} >
-<<<<<<< HEAD
-                                <span>Para visualizar, logue em uma conta</span>
-                                <button onClick={() => navigate('/Login')}> 
-                                    Fazer login
-=======
                                 <span>Para visualizar, logue em uma conta.</span>
                                 <button onClick={() => navigate('/Login')}> 
                                     Fazer Login
->>>>>>> 587d101 (Ajustes básicos)
                                 </button>
                             </div>
                         </>
@@ -266,16 +247,12 @@ export function ForumInicial (){
                                     )
                                 })}
                             </div>      
-<<<<<<< HEAD
                             <div className={styles.mensagemLogarFeed} >
                                 <span>Para visualizar, logue em uma conta</span>
                                 <button onClick={() => navigate('/Login')}> 
                                     Fazer login
                                 </button>
                             </div>
-=======
-
->>>>>>> 587d101 (Ajustes básicos)
                         </>
                     )}
                     

@@ -1,9 +1,5 @@
 import { Header } from "../../Layouts/Header/Header";
-<<<<<<< HEAD
-import { PrincipalContent } from "../Contrudo Principal/PrincipalContent";
-=======
 import { PrincipalContent } from "../Conteúdo Principal/PrincipalContent";
->>>>>>> 587d101 (Ajustes básicos)
 import { FunctionalyInfo } from "../Funcionalidades/FunctionalyInfo";
 import styles from './InicioLogado.module.css';
 import { useState } from "react";
@@ -12,12 +8,6 @@ export function InicioLogado() {
 
     const { login } = useAuth();
 
-    const handleLogin = () => {
-        login({
-            name: "Danilo Vinicius",
-            avatarUrl: "https://pbs.twimg.com/profile_images/1867600296920100864/IsNMUhqC_400x400.jpg"
-        });
-        };
         
     const [darkMode, setDarkMode] = useState(false);
     const toggleColors = () => setDarkMode((prev) => !prev);

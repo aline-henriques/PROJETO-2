@@ -7,6 +7,8 @@ import FotoAnonima from '../../assets/img/Foto_Anonima.jpg'
 
 export function Posts({ author, content, anonimo }) {
 
+    const { user } = useAuth();
+
     // CheckBox
     const [checkedItems, setCheckedItems] = useState({})
     const handleCheck = (mark) => {

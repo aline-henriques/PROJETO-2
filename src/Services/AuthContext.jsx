@@ -24,13 +24,16 @@ export function AuthProvider({ children }) {
         }
     }, [isAuthenticated, user]);
 
-    const login = (userData = {
-        avatarUrl: "Danilo Vinicius",
-        foto: fotoPerfil
+   const login = (userData = {
+       name: "Danilo Vinicius",
+       avatarUrl: fotoPerfil,
+       email: "dandan@gmail.com",
+       senha: "123",
+       usuario: "dandan"
     }) => {
-        setIsAuthenticated(true);
-        setUser(userData);
-    };
+      setIsAuthenticated(true);
+      setUser(userData);
+};
 
     const logout = () => {
         setIsAuthenticated(false);

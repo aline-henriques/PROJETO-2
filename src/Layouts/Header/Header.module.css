@@ -72,13 +72,8 @@
 }
 
 .cadastro {
-<<<<<<< HEAD
-  border-radius: 8px;
-  background-color: var(--red-200);  /* Cor de fundo inicial igual ao botão "ENTRAR" */
-=======
   border-radius: 10px;
   background-color: var(--red-200);
->>>>>>> 587d101 (Ajustes básicos)
   padding: 0.7rem 2rem;
   font-size: 1rem;
   text-decoration: none;
@@ -88,11 +83,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-  padding: 0.3rem;
-=======
   padding: 0.6rem;
->>>>>>> 587d101 (Ajustes básicos)
 }
 
 .dark .textMenuDrop{
@@ -252,10 +243,6 @@
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
-<<<<<<< HEAD
-  border: 2px solid var(--red-200);
-=======
->>>>>>> 587d101 (Ajustes básicos)
 }
 
 
