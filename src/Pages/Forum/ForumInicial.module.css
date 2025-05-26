@@ -127,7 +127,7 @@
 }
 
 .rightMenu{
-    width: 20%;
+    flex: 1;
     padding: 1rem 3rem;
     margin-top: 2.5rem;
 }

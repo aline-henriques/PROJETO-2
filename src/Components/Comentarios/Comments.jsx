@@ -35,7 +35,7 @@ export function Comments({ content, author, onDeleteComment, anonimo }) {
                         {liked ? (
                             <Heart className={styles.likeButton} size={20} color="red" weight="fill" />
                         ) : (
-                            <Heart className={styles.likeButton} size={20} color="white" />
+                            <Heart className={styles.likeButton} size={20} color="black" />
                         )}
                     </button>
                 </div>

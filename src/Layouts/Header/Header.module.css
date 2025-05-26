@@ -113,7 +113,7 @@
   border-radius: 0.5rem;
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   z-index: 1;
 
   max-height: 0;

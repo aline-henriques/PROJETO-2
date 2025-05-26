@@ -141,3 +141,11 @@
   background-color: #a44d42;
   color: var(--cinza-100);
 }
+
+.quiz{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  margin: 0 auto;
+}

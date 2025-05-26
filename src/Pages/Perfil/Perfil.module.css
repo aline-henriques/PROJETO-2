@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 .container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     transition: background-color 0.3s, color 0.3s;
-    flex:1;
+    padding-bottom: 4rem;
 }
 
 .light{
@@ -25,7 +29,6 @@ header{
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  padding-bottom: 1rem;
   font-size: 2rem;
 }
 
@@ -38,25 +41,47 @@ header{
 main{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center; 
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .dadosPessoais{
     width: 70%;
-    background-color: #f9eee2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.dadosPessoais h2 {
+.colunas h2 {
     padding: 2rem;
     font-size: 2rem;
-    
 }
 
 .diretrizes{
     width: 20%;
-    background-color: var(--red-300);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.diretrizesInfo , .vizuResultados{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    background-color: #daa894;
+}
+
+.diretrizesInfo p, .vizuResultados p{
+    font-size: 1.6rem;
+}
+
+.diretrizesInfo a{
+    color: var(--red-200);
+    margin-right: 0.3rem;
 }
 
 .infos{
@@ -75,7 +100,7 @@ main{
 .colunas{
     display: flex;
     width: 100%;
-    
+    background-color: #f9eee2;
 }
 
 .dados{
@@ -135,4 +160,78 @@ main{
     margin: 1rem;
     border-radius: 1rem;
     font-weight: bold;
+}
+
+.alterarFoto{
+    background-color: var(--red-300);
+    border: none;
+    color: var(--cinza-100);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.dadosUsuario{
+    color: black;
+    display: flex;
+    gap: 3rem;
+    flex: 1;
+    
+}
+
+.dadosUsuario button{
+    background: none;
+    border: none;
+    color: var(--red-200);
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+.dadosUsuario button:hover{
+    color: green;
+    scale: 1.2;
+}
+
+.alterarDados{
+    display: flex;
+    gap: 3rem;
+    flex: 1;
+}
+
+.alterarDados input{
+    color: var(--red-200);
+}
+
+.alterarDados button {
+    background: none;
+    border: none;
+    color: var(--red-200);
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+.alterarDados button:hover{
+    color: red;
+    scale: 1.2;
+}
+
+.inputFile{
+    display: none;
+}
+
+.linha {
+  width: 93%;
+  height: 1px;
+  justify-self: center;
+  background-color: var(--red-200);
+}
+
+.postsHistorico{
+    margin-top: 2rem;
+}
+
+.postsHistorico img{
+    clip-path: none;
 }

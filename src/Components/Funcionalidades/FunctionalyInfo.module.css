@@ -18,7 +18,7 @@
   .infoSaudeMais,
   .infoForum {
     display: flex;
-    gap: 20rem;
+    gap: 10rem;
     width: 100%;
     padding: 12px 0;
     font-size: 1rem;

@@ -5,6 +5,7 @@ import { Fire, NotePencil } from '@phosphor-icons/react';
 import { Posts } from '../../Components/Posts/Posts';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../Services/AuthContext';
+import { usePost } from '../../Services/PostContext';
 import FotoAnonima from '../../assets/img/Foto_Anonima.jpg'
 
 
@@ -67,10 +68,10 @@ export function ForumInicial (){
     // Validação
     const { user } = useAuth();
     const { isAuthenticated } = useAuth();
+    const { posts, addPost} = usePost();
 
     // Novo Post
     const [newPostText, setNewPostText] = useState('')
-    const [posts, setPosts] = useState([]);
     const lastPostRef = useRef(null);
     function handleCreateNewPost(){
         event.preventDefault()
@@ -94,8 +95,9 @@ export function ForumInicial (){
                          : user?.avatarUrl 
             }
     };
-        setPosts([...posts, newPost]);
+        addPost(newPost);
         setNewPostText('');
+       
 
         setTimeout(() => {
             if (lastPostRef.current) {

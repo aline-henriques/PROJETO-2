@@ -5,10 +5,6 @@
     transition: background-color 0.3s, color 0.3s;
   }
   
-  .withFooter {
-    padding-bottom: 10rem;
-  }
-  
   .light {
     background-color: var(--cinza-100);
     color: var(--red-200);
@@ -62,7 +58,7 @@
 .limitesSaudaveis{
   flex: 1;
   padding: 3rem 2rem;
-  max-width: 1100px;
+  max-width: 68.75rem;
   margin: 0 auto ;
 }
 
@@ -132,4 +128,8 @@
 
 .dark .linhaVertical, .dark .linhaInfo{
   background-color: var(--cinza-100);
+}
+
+section{
+  justify-content: center;
 }

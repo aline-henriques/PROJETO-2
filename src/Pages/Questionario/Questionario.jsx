@@ -74,13 +74,11 @@ export function Questionario() {
                     <hr className={styles.divider} />
                 </section>
 
-                <section id="quiz">
+                <section id="quiz" className={styles.quiz}>
                     <Quiz isDarkMode={darkMode} />
                 </section>
 
             </main>
-
-            <Footer isDarkMode={darkMode} />
         </div>
     )
 }
