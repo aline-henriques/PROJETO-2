@@ -9,16 +9,15 @@ Aplicação desenvolvida com React como projeto acadêmico para a disciplina de 
 1. [Sobre o Projeto](#sobre-o-projeto)
 2. [Backlog](#backlog-do-projeto)
 3. [ScreenCast](#screencast)
-4. [Links](#links-uteis)
-5. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+4. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 6. [Acesse o Site](#acesse-o-site)
-7. [Como Instalar?](#como-instalar)
-8. [Issues](#Issues)
-9. [Equipe](#equipe)
-10. [Relatório de Desenvolvimento](#relatório)
+7. [Equipe](#equipe)
+8. [Relatório de Desenvolvimento](#relatório)
+9. [Links Úteis](#links-uteis)
+10. [Issues](#Issues)
 11. [Licença](#licença)
-12. [Como Contribuir](#como-contribuir)
-
+12. [Como Instalar?](#como-instalar)
+13. [Como Contribuir](#como-contribuir)
 
 *** 
 
@@ -33,8 +32,6 @@ Plataforma Web interativa para promover a saúde mental no trabalho. Com um fór
     ✔️ Questionários de Auto Avaliação
     
 
-*** 
-
 ### 📑 | Backlog do Projeto
 
 Link para o Trello, contendo todo o backlog do projeto.
@@ -48,7 +45,6 @@ Print dos quadros com as Sprints:
 
 ![Quadro da Sprint 03](./src/assets/img/QUADROS-TRELLO(3).jpg)
 
-*** 
 
 ### 🎥 ScreenCast
 
@@ -56,19 +52,8 @@ Vídeo no YouTube apresentando as funcionalidades principais do site.
 
 Minutos exatos do vídeo apresentando as funcionalidades contidos na descrição do vídeo.
 
-[Screencast no YouTube](https://youtu.be/AYptshBXO7Q?si=WzMDX9upq5QId9Bk)
+[Screencast no YouTube](https://youtu.be/AYptshBXO7Q?si=
 
-***
-
-### ✔️ | Links Úteis
-
-[🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/proto/v8qSHsqxcSn1YCFe0em4Wb/Dei-Tilti?node-id=118-50&p=f&t=6jSx9w5MhOaIrp9Y-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=118%3A50)
-
-[🔗 Canva - Design de alta fidelidade!](https://www.canva.com/design/DAGkIDK7g_c/iggZQvdKgD6SRUxeE1mv3A/edit?utm_content=DAGkIDK7g_c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebuttonv)
-
-[🔗 DOCS - Relatório de Desenvolvimento do Projeto!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
-
-***
 
 ### 💻 | Tecnologias Utilizadas
 
@@ -88,11 +73,58 @@ Minutos exatos do vídeo apresentando as funcionalidades contidos na descrição
 
 ✔️ Justificativa para o Não Deployment e Conclusão:
 
-O projeto ainda está em desenvolvimento e não foi completamente finalizado. Estamos aguardando a implementação de funcionalidades-chave antes de realizar o deploy. O foco está em garantir que todas as partes essenciais do site sejam implementadas corretamente antes de ser disponibilizado publicamente.
+O projeto ainda está em desenvolvimento e não foi completamente finalizado. Estamos aguardando a implementação de funcionalidades-chave antes de realizar o deploy. 
 
 A estimativa de conclusão e o primeiro deploy do site está prevista para junho de 2025. Estamos planejando realizar testes de funcionalidade, usabilidade e responsividade antes de lançar o site. Nosso objetivo é garantir que o sistema seja bem implementado e funcional, oferecendo uma experiência de usuário de alta qualidade antes de torná-lo acessível ao público.
 
 *** 
+
+### 👥 | Equipe
+
+Acesse nossos issues e commits semanais.
+
+    -  Aline de Albuquerque Henriques
+    -  Bruno Felipe de Castilhos Gomes Rego  
+    -  Luiz Henrique da Silva Neves  
+    -  Thyalles Araújo Campos
+
+
+### 💡 | Programação em Equipe
+
+![Foto da Equipe](./src/assets/img/Prog-em-Par.jpeg)
+
+
+### ✍🏻 | Relatório
+   
+Documento para relatório de desenvolvimento, desde o início á conclusão do projeto.
+
+[Acesse aqui o nosso relatório de desenvolvimento COMPLETO!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit?usp=drivesdk)
+
+***
+
+### ✔️ | Links Úteis
+
+[🔗 Figma - Prototipação Navegável de baixa fidelidade!](https://www.figma.com/proto/v8qSHsqxcSn1YCFe0em4Wb/Dei-Tilti?node-id=118-50&p=f&t=6jSx9w5MhOaIrp9Y-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=118%3A50)
+
+[🔗 Canva - Design de alta fidelidade!](https://www.canva.com/design/DAGkIDK7g_c/iggZQvdKgD6SRUxeE1mv3A/edit?utm_content=DAGkIDK7g_c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebuttonv)
+
+[🔗 DOCS - Relatório de Desenvolvimento do Projeto!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
+
+*** 
+
+### 📌 Issues 
+
+Acompanhe nossos issues através do link: 
+
+[Issues](https://github.com/aline-henriques/PROJETO-2/issues)
+
+*** 
+
+### ⚖️ | Licença
+
+Distribuído sob a **Licença MIT**.  
+Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
 
 ### ❓ | Como instalar
 
@@ -127,50 +159,6 @@ O site será aberto automaticamente no seu navegador. Caso não abra, acesse o e
 
 O site estará rodando localmente, permitindo que você visualize as funcionalidades que já foram implementadas até o momento. :)
 
-
-*** 
-
-### 📌 Issues 
-
-Acompanhe nossos issues através do link: 
-
-[Issues](https://github.com/aline-henriques/PROJETO-2/issues)
-
-*** 
-
-### 👥 | Equipe
-
-Programação em par experimentada 🚀
-Acesse nossos issues e commits semanais.
-
-    -  Aline de Albuquerque Henriques
-    -  Bruno Felipe de Castilhos Gomes Rego  
-    -  Luiz Henrique da Silva Neves  
-    -  Thyalles Araújo Campos
-
-*** 
-
-
-### ✍🏻 | Relatório
-   
-Documento para relatório de desenvolvimento, desde o início á conclusão do projeto.
-
-[Acesse aqui o nosso relatório de desenvolvimento COMPLETO!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit?usp=drivesdk)
-
-### 💡 | Programação em Equipe
-
-Acesse mais informações sobre a nossa equipe no documento acima! 
-
-![Foto da Equipe](./src/assets/img/Prog-em-Par.jpeg)
-
-***
-
-### ⚖️ | Licença
-
-Distribuído sob a **Licença MIT**.  
-Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-***
 
 ### 🤝 | Como contribuir
 
