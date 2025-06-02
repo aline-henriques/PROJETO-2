@@ -6,15 +6,24 @@ const AuthContext = createContext();
 export function AuthProvider({ children }) {
     // Verifica dados persistidos
     const storedIsAuthenticated = localStorage.getItem('isLoggedIn') === 'true';
-    const storedUser = JSON.parse(localStorage.getItem('user'));
+    const storedUser = JSON.parse(localStorage.getItem('user') || 'null');
+    const atualizarStatus = (novoStatus) => {
+    setUser((prev) => {
+        if (!prev) return null; 
+        const atualizado = { ...prev, status: novoStatus };
+        localStorage.setItem('user', JSON.stringify(atualizado));
+        return atualizado;
+    });
+};
 
     const [isAuthenticated, setIsAuthenticated] = useState(storedIsAuthenticated);
-    const [user, setUser] = useState(storedUser || {
+    const [user, setUser] = useState(storedUser ?? {
         name: "Danilo Vinicius",
         avatarUrl: fotoPerfil,
         Email: "dandan@gmail.com",
         senha: "123",
-        usuario: "dandan"
+        usuario: "dandan",
+        status: "Sem Avaliações"
     });
 
     useEffect(() => {
@@ -29,10 +38,12 @@ export function AuthProvider({ children }) {
        avatarUrl: fotoPerfil,
        email: "dandan@gmail.com",
        senha: "123",
-       usuario: "dandan"
+       usuario: "dandan",
+       status: "Sem Avaliações"
     }) => {
-      setIsAuthenticated(true);
-      setUser(userData);
+        setIsAuthenticated(true);
+        setUser(userData);
+        localStorage.setItem('user', JSON.stringify(userData));
 };
 
     const logout = () => {
@@ -41,9 +52,10 @@ export function AuthProvider({ children }) {
         localStorage.removeItem('isLoggedIn');
         localStorage.removeItem('user');
     };
+    
 
     return (
-        <AuthContext.Provider value={{ isAuthenticated, user, login, logout, setUser }}>
+        <AuthContext.Provider value={{ isAuthenticated, user, login, logout, setUser, atualizarStatus }}>
             {children}
         </AuthContext.Provider>
     );

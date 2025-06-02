@@ -1,11 +1,22 @@
-.effectPhrase {
+.mainConteudoPrincipal {
   display: flex;
   align-items: flex-start;
-  justify-items: center;
+  justify-content: space-between;
+  gap: 11rem;
   width: 100%;
   transition: background-color 0.3s, color 0.3s, filter 0.3s;
   margin-bottom: -5rem;
   flex: 1;
+}
+
+.light{
+    color: var(--red-200);
+    background-color: var(--cinza-100);
+}
+
+.dark{
+    color: var(--cinza-100);
+    background-color: var(--red-200);
 }
 
 .text {
@@ -14,25 +25,30 @@
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
-  padding-left: 12rem;
+  padding-left: 3rem;
   
+}
+
+.light .text p,
+.dark .text p{
+  font-size: 1.5rem;
 }
 
 .image{
   padding-right: 12rem;
-}
-
-main h1 {
-  font-size: 6rem;
-}
-
-main p {
-  font-size: 1rem;
-  font-weight: 500;
   
 }
 
-main img {
+.mainConteudoPrincipal h1 {
+  font-size: 6rem;
+}
+
+.mainConteudoPrincipal p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.image img{
   width: 40rem;
   height: 40rem;
   clip-path: inset(0 0 16%);
@@ -43,7 +59,6 @@ main img {
   justify-content: space-between;
 }
 
-/* Botão Cadastre-se */
 .buttonCadastrar {
   margin-left: 3rem;
   border: 0;
@@ -77,7 +92,6 @@ main img {
   transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
 }
 
-/* Tema escuro */
 .dark img {
   filter: brightness(0) invert(1);
 }

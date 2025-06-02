@@ -4,7 +4,7 @@
 }
 
 .dark{
-    background-color: var(--red-300);
+    background-color: var(--red-200);
     color: var(--cinza-100);
 }
 
@@ -23,6 +23,11 @@
     margin-top: 3rem;
     background-color: var(--red-200);
 }
+
+.dark .introduction{
+    background-color: var(--red-300);
+}
+
 
 .introduction h1{
     color: var(--cinza-100);
@@ -47,6 +52,10 @@
     font-weight: bold;
     transition: transform 0.3s ease, border-color 0.3s ease;
     font-size: 1rem;
+}
+
+.dark .buttonPublique{
+    background-color: var(--red-200);
 }
 
 .buttonPublique:hover{
@@ -101,6 +110,10 @@
     border-radius: 1rem;
     font-size: 1.1rem;
 }
+.dark .topicosPopulares,  
+.dark .diretrizes{
+    background-color: var(--red-300);
+}
 
 .topicosPopulares a, .diretrizes a{
     padding: 0.2rem;
@@ -132,6 +145,8 @@
     margin-top: 2.5rem;
 }
 
+
+
 .diretrizes{
     margin-top: 2rem;   
     font-weight: bold;
@@ -148,6 +163,10 @@
     background-color: var(--red-200);
   }
 
+.dark .linhaInfo{
+    background-color: var(--cinza-100);
+}
+
 .publicarPost, .feed{
     flex-direction: column;
     gap: 1rem;
@@ -157,6 +176,10 @@
     display: flex;
     align-items: center;
     gap: 5rem;
+}
+
+.dark .novoPostBotton p{
+    color: var(--cinza-100);
 }
 
 .novoPostBotton button{
@@ -169,6 +192,11 @@
     margin: 0.5rem;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.dark .novoPostBotton button{
+    background-color: var(--red-300);
+    border: 2px solid var(--cinza-100);
 }
 
 .novoPostBotton button:hover{
@@ -266,4 +294,8 @@
   font-size: 1rem;
   color: #333;
   user-select: none;
+}
+
+.dark .checkBoxLabel{
+    color: var(--cinza-100);
 }

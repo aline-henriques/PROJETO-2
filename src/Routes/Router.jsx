@@ -7,6 +7,9 @@ import { InicioLogado } from '../Components/Inicio Logado/InicioLogado.jsx';
 import { ForumInicial } from '../Pages/Forum/ForumInicial.jsx';
 import { Saude } from '../Pages/+Saude/Saude.jsx';
 import { Perfil } from '../Pages/Perfil/Perfil.jsx';
+import { Diretrizes } from '../Pages/Diretrizes/Diretrizes.jsx'
+import { AcompEmocional } from '../Pages/AcompEmocional/acompEmocional.jsx';
+import { Cadastro } from '../Pages/Cadastro/Cadastro.jsx';
 
 export function Router() {
     return (
@@ -16,7 +19,11 @@ export function Router() {
             <Route path="/questionario" element={<Questionario />} />
             <Route path='/forum' element={<ForumInicial />} />
             <Route path='/saude' element={<Saude />} />
-            <Route path='/Perfil' element={<Perfil />} />
+            <Route path='/perfil' element={<Perfil />} />
+            <Route path='/diretrizes' element={<Diretrizes />} />
+            <Route path='/acompanhamentoEmocional' element={<AcompEmocional />} />
+            <Route path='/cadastro' element={<Cadastro />} />
+            
 
             {/* Rota protegida */}
             <Route path="/InicioLogado" element={

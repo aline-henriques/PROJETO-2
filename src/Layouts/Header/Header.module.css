@@ -195,7 +195,7 @@
 }
 
 .dark .header {
-  background-color: var(--red-300);
+  background-color: var(--red-200);
 }
 
 .dark .logoHeader,
@@ -243,6 +243,10 @@
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+}
+
+.menuSide button {
+  color: var(--red-200);
 }
 
 

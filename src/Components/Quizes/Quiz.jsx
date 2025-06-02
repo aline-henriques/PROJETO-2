@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import { useQuizHistory } from '../../Services/QuizHistoricoContext';
 import styles from './Quiz.module.css';
+import { useAuth } from '../../Services/AuthContext';
 
 export function Quiz({isDarkMode}) {
+   
     const questions = [
         "Sinto-me emocionalmente exausto(a) devido ao trabalho ou estudos.",
         "Sinto que estou no limite emocionalmente.",
@@ -21,13 +24,30 @@ export function Quiz({isDarkMode}) {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [showResult, setShowResult] = useState(false);
+    const { addResult } = useQuizHistory();
+    const { user, atualizarStatus } = useAuth();
 
-    const handleAnswer = (value) => {
-        setScore(prev => prev + value);
 
-        if (currentQuestion + 1 < questions.length) {
-            setCurrentQuestion(prev => prev + 1);
+     const handleAnswer = (value) => {
+        const nextQuestion = currentQuestion + 1;
+
+        if (nextQuestion < questions.length) {
+            setScore(prev => prev + value);
+            setCurrentQuestion(nextQuestion);
         } else {
+            const finalScore = score + value;
+            const timestamp = new Date().toLocaleString();
+            const level = getBurnoutLevel(finalScore);
+
+            const result = {
+                score: finalScore,
+                level,
+                date: timestamp
+            };
+
+            addResult(result);
+            atualizarStatus(level);
+            setScore(finalScore);
             setShowResult(true);
         }
     };
@@ -38,12 +58,28 @@ export function Quiz({isDarkMode}) {
         setShowResult(false);
     };
 
-    const getResultMessage = () => {
-        if (score <= 5) return "Sem sinais de burnout. Continue se cuidando!";
-        if (score <= 10) return "Atenção: pequenos sinais de estresse. Fique atento ao seu bem-estar.";
-        if (score <= 15) return "Alerta: sinais moderados de burnout. Considere buscar apoio profissional.";
-        return "Importante: altos sinais de burnout! Procure apoio psicológico urgentemente.";
+    const getBurnoutLevel = (finalScore) => {
+        if (finalScore <= 5) return "baixo";
+        if (finalScore <= 10) return "moderado";
+        if (finalScore <= 15) return "alto";
+        return "alarmante";
     };
+
+    const getMessageFromLevel = (level) => {
+    switch (level) {
+        case "baixo":
+            return "Sem sinais de burnout. Continue se cuidando!";
+        case "moderado":
+            return "Atenção: pequenos sinais de estresse. Fique atento ao seu bem-estar.";
+        case "alto":
+            return "Alerta: sinais moderados de burnout. Considere buscar apoio profissional.";
+        case "alarmante":
+            return "Importante: altos sinais de burnout! Procure apoio psicológico urgentemente.";
+        default:
+            return "Nível desconhecido.";
+    }
+};
+
 
     const progressPercent = Math.round((currentQuestion / questions.length) * 100);
 
@@ -76,7 +112,7 @@ export function Quiz({isDarkMode}) {
             ) : (
                 <div className={styles.result}>
                     <h2>Resultado</h2>
-                    <p>{getResultMessage()}</p>
+                    <p>{getMessageFromLevel(user.status)}</p>
                     <button onClick={handleRestart} className={styles.restartButton}>
                         Refazer o Teste
                     </button>

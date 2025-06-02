@@ -12,7 +12,7 @@ export function Comments({ content, author, onDeleteComment, anonimo }) {
             <header>
                 <div className={styles.author}>
                     <img src={author.avatarUrl} className={styles.imgUserComment} />
-                    <strong>{author.name}</strong>
+                    <strong>{author.nome}</strong>
                     {anonimo && (
                         <span className={styles.anonTag}>
                         <User size={14} weight="fill" />

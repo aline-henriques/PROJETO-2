@@ -106,7 +106,7 @@ export function Perfil () {
                                     <p>Nome</p>
                                     {!alterarDados.nome && (
                                         <div className={styles.dadosUsuario}>
-                                            <span>{user.name}</span>
+                                            <span>{user.nome}</span>
                                             <button onClick={ () => handleClick('nome')}><Pencil size={32}/></button>
                                         </div>
                                     )}
@@ -186,7 +186,7 @@ export function Perfil () {
                                     </div>
                                 )}
                             </div>
-                        </div>
+                    </div>
                     <div className={styles.linhaVerticalColuna}>.</div>
                     <div className={styles.fotoArea}>
                             <h3>Foto de Perfil</h3>
@@ -241,7 +241,7 @@ export function Perfil () {
                             de comunidade e segurança
                         </p>
                         <p>
-                            <NavLink>Clique aqui</NavLink>
+                            <NavLink to='/diretrizes' title='ComunidadeSeguranca'>Clique aqui</NavLink>
                             para ler mais sobre nossas políticas e práticas.
                         </p>
                         <ShieldCheck size={72}/>
@@ -249,9 +249,9 @@ export function Perfil () {
                     </div>
                     <div className={styles.vizuResultados}>
                         <p>
-                            <strong>Vizualize </strong>
-                            seus 
-                            <strong> resultados </strong>
+                            <NavLink to='/AcompanhamentoEmocional' title='AcompanhamentoEmocional'>
+                                <strong>Vizualize seus resultados</strong>
+                            </NavLink>
                             dos questionarios de saúde mental
                         </p>
                         <ChartBar size={72}/>

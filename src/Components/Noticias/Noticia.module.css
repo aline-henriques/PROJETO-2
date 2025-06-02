@@ -1,19 +1,22 @@
+.content {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 
-
-
-.newsBox{
+.newsBox {
     background-color: #f9eee2;
     font-size: 1.7rem;
-    width: 18rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1.3rem;
     margin: 1rem;
-    height: 18rem;
     border-radius: 1rem;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
 }
-
 .dark .newsBox strong{
     color: var(--red-200);
 }

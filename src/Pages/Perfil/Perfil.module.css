@@ -23,6 +23,8 @@
 header{
     width: 93%;
     padding: 2rem 5rem;
+    max-width: 75rem; /* Limite visual */
+    margin: 0 auto; /* Centraliza */
 }
 
 .title{
@@ -38,12 +40,14 @@ header{
   background-color: var(--red-200);
 }
 
-main{
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center; 
-    gap: 1rem;
+main {
+  width: 100%;
+  max-width: 75rem; /* Limite visual */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; /* Centraliza */
+  padding: 0 1rem; /* Protege nas bordas */
+  flex-wrap: wrap; /* Prevê quebras em telas pequenas */
 }
 
 .dadosPessoais{
@@ -76,10 +80,10 @@ main{
 }
 
 .diretrizesInfo p, .vizuResultados p{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
-.diretrizesInfo a{
+.diretrizes a{
     color: var(--red-200);
     margin-right: 0.3rem;
 }
@@ -234,4 +238,15 @@ main{
 
 .postsHistorico img{
     clip-path: none;
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+
+  .dadosPessoais,
+  .diretrizes {
+    width: 100%;
+  }
 }

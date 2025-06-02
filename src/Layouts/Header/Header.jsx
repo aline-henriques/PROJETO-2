@@ -9,17 +9,20 @@ import { useLocation } from 'react-router-dom';
 
 export function Header({onToggleColors,isDarkMode}) {
   const location = useLocation();
+  const navigate = useNavigate();
   const from = location.state?.from?.pathname || '/';
 
-  const { user } = useAuth();
-  const { isAuthenticated, logout } = useAuth();
-    const navigate = useNavigate();
+  
+  const { user , isAuthenticated, logout } = useAuth();
 
-    const handleLogout = () => {
-        navigate(from, { replace: false });
+  const handleLogout = () => {
         logout();  
         navigate('/');  
     };
+  
+  const handleCadastro = () => {
+      navigate ('/cadastro')
+  }
 
   return (
     <div className={isDarkMode ? styles.dark : styles.light}>
@@ -28,9 +31,9 @@ export function Header({onToggleColors,isDarkMode}) {
        
         <div className={styles.navbar}>
             <NavLink to="/">Início</NavLink>
-            <NavLink to="/Forum" title='Forum'>Fórum</NavLink>
-            <NavLink to="/Questionario" title='Questionario'>Questionários</NavLink>
-            <NavLink to="/Saude" title='Saúde+'>+Saúde</NavLink>
+            <NavLink to="/forum" title='Forum'>Fórum</NavLink>
+            <NavLink to="/questionario" title='Questionario'>Questionários</NavLink>
+            <NavLink to="/saude" title='Saúde+'>+Saúde</NavLink>
 
             <div className={styles.linhaVertical}></div>
 
@@ -42,21 +45,21 @@ export function Header({onToggleColors,isDarkMode}) {
               {!isAuthenticated && (
                 <>
                   <NavLink to="/login">Login</NavLink>
-                  <button className={styles.cadastro}>Cadastre-se</button>
+                  <button onClick={handleCadastro} className={styles.cadastro}>Cadastre-se</button>
                 </>
               )}
 
               {isAuthenticated && (
                 <>
-                  <p>Olá, Danilo!</p>
+                  <p>Olá, {user.nome}!</p>
                   <div className={styles.menuSide}>
                     <div className={styles.cadastro}><img src={user.avatarUrl} alt='Foto Perfil' className={styles.fotoPerfil}></img></div>
                     <div className={styles.dropdownMenu}>
-                      <NavLink to='/Perfil' title='Perfil'><span className={styles.textMenuDrop}>Meu Perfil</span></NavLink>
+                      <NavLink to='/perfil' title='Perfil'><span className={styles.textMenuDrop}>Meu Perfil</span></NavLink>
                       <div className={styles.linha}></div>
-                        <NavLink to='/Perfil' title='Perfil'><span className={styles.textMenuDrop}>Notificações</span></NavLink>
+                        <NavLink to='/acompanhamentoEmocional' title='acompanhamentoEmocional'><span className={styles.textMenuDrop}>Acompanhamento</span></NavLink>
                       <div className={styles.linha}></div>
-                      <NavLink onClick={handleLogout}><span className={styles.textMenuDrop}>Logout</span></NavLink>
+                      <button onClick={handleLogout}><span className={styles.textMenuDrop}>Logout</span></button>
                     </div>
                   </div>
                 </>

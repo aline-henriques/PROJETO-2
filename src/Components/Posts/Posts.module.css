@@ -1,6 +1,4 @@
-.areaTexto{
-    background-color: #f9eee2;
-}
+
 
 .areaTexto + .areaTexto{
     margin-top: 2rem;
@@ -12,6 +10,7 @@
     gap: 1rem;
     padding: 1rem 1rem;
     font-size: 1.2rem;
+    color: var(--red-200);
 }
 
 .content{
@@ -25,6 +24,7 @@
     align-items: center;
     padding: 1rem 4rem;
     justify-content: space-between;
+    color: var(--red-200);
 }
 
 .footer button{
@@ -128,4 +128,13 @@
   font-size: 1rem;
   color: #333;
   user-select: none;
+}
+
+.areaTexto {
+    background-color: #f9eee2;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    border-radius: 1rem;
 }

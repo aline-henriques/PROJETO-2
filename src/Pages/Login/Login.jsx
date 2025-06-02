@@ -16,20 +16,25 @@ export function Login({ isDarkMode }) {
     const { login } = useAuth(); // 👈 pega o método login do contexto
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        setError('');
-    
-        if (!username || !password) {
-            setError('Por favor, preencha todos os campos');
-            return;
-        }
-    
-        if (username === 'dandan' && password === '123') {
-            login(); 
-            navigate(from, { replace: true });
-        } else {
-            setError('Usuário ou senha incorretos');
-        }
+    e.preventDefault();
+    setError('');
+
+    if (!username || !password) {
+        setError('Por favor, preencha todos os campos');
+        return;
+    }
+
+    const cadastrosExistentes = JSON.parse(localStorage.getItem('usuarios')) || [];
+    const usuarioEncontrado = cadastrosExistentes.find(
+        (user) => user.usuario === username && user.senha === password
+    );
+
+    if (usuarioEncontrado) {
+        login(usuarioEncontrado); // Passa o usuário para o contexto e armazena no localStorage
+        navigate(from, { replace: true });
+    } else {
+        setError('Usuário ou senha incorretos');
+    }
     };
 
     return (
@@ -64,7 +69,7 @@ export function Login({ isDarkMode }) {
                     {error && <div className={styles.error}>{error}</div>}
 
                     <div className={styles.space}>
-                        <label>
+                        <label className={styles.spaceBox}>
                             <input
                                 type="checkbox"
                                 checked={rememberMe}
