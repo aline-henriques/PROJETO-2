@@ -36,7 +36,7 @@ export function Perfil () {
 
     // Alterar dados perfil
     const [alterarDados, setAlterarDados] = useState({
-        nome:false,
+        name:false,
         usuario:false,
         email:false,
         senha: false,
@@ -51,7 +51,7 @@ export function Perfil () {
 
     //salvar dados do perfil
     const [profileData , setProfileData] = useState({
-        nome: user.name,
+        name: user.name,
         usuario: user.usuario,
         email: user.email,
         senha: user.senha,
@@ -59,7 +59,7 @@ export function Perfil () {
     const handleSave = () => {
     setUser(prev => ({
         ...prev,
-        name: profileData.nome,
+        name: profileData.name,
         usuario: profileData.usuario,
         email: profileData.email,
         senha: profileData.senha,
@@ -68,7 +68,7 @@ export function Perfil () {
 
     
     setAlterarDados({
-        nome: false,
+        name: false,
         usuario: false,
         email: false,
         senha: false
@@ -104,19 +104,19 @@ export function Perfil () {
                                 <h2>Meus dados Pessoais</h2>
                                 <div className={styles.infos}>
                                     <p>Nome</p>
-                                    {!alterarDados.nome && (
+                                    {!alterarDados.name && (
                                         <div className={styles.dadosUsuario}>
-                                            <span>{user.nome}</span>
+                                            <span>{user.name}</span>
                                             <button onClick={ () => handleClick('nome')}><Pencil size={32}/></button>
                                         </div>
                                     )}
-                                    {alterarDados.nome && (
+                                    {alterarDados.name && (
                                         <div className={styles.alterarDados}>
                                             <input 
                                                 type="text" 
-                                                defaultValue={user.nome}
+                                                defaultValue={user.name}
                                                 name='nome'
-                                                value={profileData.nome}
+                                                value={profileData.name}
                                                 onChange={handleInputChange}
                                             />
                                             <button onClick={ () => handleClick('nome')}><XCircle size={32}/></button>

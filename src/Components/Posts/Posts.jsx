@@ -37,7 +37,7 @@ export function Posts({ author, content, anonimo }) {
             content: newCommentText,
             anonimo: isAnonimo,
             author: {
-                nome: isAnonimo ? 'Anônimo' : user?.nome,
+                name: isAnonimo ? 'Anônimo' : user?.name,
                 avatarUrl: isAnonimo? FotoAnonima
                             : user?.avatarUrl 
             }  
@@ -67,7 +67,7 @@ export function Posts({ author, content, anonimo }) {
             <header className={styles.header}>
                 <div className={styles.author}>
                     <img src={author.avatarUrl} alt="foto perfil" className={styles.imgUserPost} />
-                    <strong>{author.nome}</strong>
+                    <strong>{author.name}</strong>
                     {anonimo && (
                         <span className={styles.anonTag}>
                         <User size={14} weight="fill" />

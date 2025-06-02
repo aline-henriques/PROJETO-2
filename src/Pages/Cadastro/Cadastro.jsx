@@ -4,7 +4,7 @@ import styles from '../Cadastro/Cadastro.module.css';
 import logoContent from '../../assets/img/LogoContent1.svg'
 
 export function Cadastro({ isDarkMode }) {
-  const [nome, setNome] = useState('');
+  const [name, setName] = useState('');
   const [usuario, setUsuario] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
@@ -18,7 +18,7 @@ export function Cadastro({ isDarkMode }) {
 
    
     const novosErros = {};
-    if (!nome) novosErros.nome = 'Campo obrigatório';
+    if (!name) novosErros.name = 'Campo obrigatório';
     if (!usuario) novosErros.usuario = 'Campo obrigatório';
     if (!email) novosErros.email = 'Campo obrigatório';
     if (!senha) novosErros.senha = 'Campo obrigatório';
@@ -29,12 +29,12 @@ export function Cadastro({ isDarkMode }) {
     if (Object.keys(novosErros).length > 0) return;
 
    
-    const novoCadastro = { nome, usuario, email, senha };
+    const novoCadastro = { name, usuario, email, senha };
     const cadastrosExistentes = JSON.parse(localStorage.getItem('usuarios')) || [];
     localStorage.setItem('usuarios', JSON.stringify([...cadastrosExistentes, novoCadastro]));
 
     // Limpa campos e erros
-    setNome('');
+    setName('');
     setUsuario('');
     setEmail('');
     setSenha('');
@@ -54,11 +54,11 @@ export function Cadastro({ isDarkMode }) {
             <h3>Nome Completo</h3>
             <input
                 type="text"
-                value={nome}
-                onChange={(e) => setNome(e.target.value)}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
             />
             <small className={styles.errorMessage}>
-                {errors.nome || '\u00A0'}
+                {errors.name || '\u00A0'}
             </small>
 
             <h3>Usuário</h3>
