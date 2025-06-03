@@ -1,6 +1,6 @@
 [build]
   base = "PROJETO-2-main"
-  publish = "PROJETO-2-main/dist"
+  publish = "dist"
   command = "npm run build"
 
 [[redirects]]
