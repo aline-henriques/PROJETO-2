@@ -31,6 +31,7 @@ Plataforma Web interativa para promover a saúde mental no trabalho. Com um fór
     ✔️ Área de Recursos com dicas, notícias sobre burnout e checklist de limites saudáveis.
     ✔️ Questionários de Auto Avaliação
     
+***
 
 ### 📑 | Backlog do Projeto
 
@@ -52,7 +53,7 @@ Vídeo no YouTube apresentando as funcionalidades principais do site.
 
 Minutos exatos do vídeo apresentando as funcionalidades contidos na descrição do vídeo.
 
-[Screencast no YouTube](https://youtu.be/AYptshBXO7Q?si=
+[Screencast no YouTube](https://youtu.be/AYptshBXO7Q?si=)
 
 
 ### 💻 | Tecnologias Utilizadas
@@ -82,17 +83,19 @@ A estimativa de conclusão e o primeiro deploy do site está prevista para junho
 ### 👥 | Equipe
 
 Acesse nossos issues e commits semanais.
+Membros da nossa Equipe:
 
-    -  Aline de Albuquerque Henriques
-    -  Bruno Felipe de Castilhos Gomes Rego  
-    -  Luiz Henrique da Silva Neves  
-    -  Thyalles Araújo Campos
+    -  Aline de Albuquerque Henriques - @aline_henriques
+    -  Bruno Felipe de Castilhos Gomes Rego - @bruno-cod
+    -  Luiz Henrique da Silva Neves - @luiz380
+    -  Thyalles Araújo Campos - @Thyalles
 
 
 ### 💡 | Programação em Equipe
 
 ![Foto da Equipe](./src/assets/img/Prog-em-Par.jpeg)
 
+*** 
 
 ### ✍🏻 | Relatório
    
