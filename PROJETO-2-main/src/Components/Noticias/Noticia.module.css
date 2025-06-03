@@ -1,0 +1,36 @@
+.content {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.newsBox {
+    background-color: #f9eee2;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.3rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.dark .newsBox strong{
+    color: var(--red-200);
+}
+.lerMais, .paragrafo{
+    margin-top: auto;
+}
+
+.paragrafo{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.lerMais a{
+    color: var(--red-300);
+    font-size: 1.2rem;
+    font-style: italic;
+}
