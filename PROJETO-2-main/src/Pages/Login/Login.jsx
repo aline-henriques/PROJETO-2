@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Login.module.css';
-import logoContent from '../../assets/img/logoContent1.svg';
+import logo from "../../assets/img/LogoContent1.svg";
 import { useAuth } from '../../Services/AuthContext'; 
 import { useLocation } from 'react-router-dom';
 
