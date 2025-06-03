@@ -89,13 +89,13 @@ export function Perfil () {
             
             <Header onToggleColors={toggleColors} isDarkMode={darkMode} />
         
-            <header>
-                <div className={styles.title}>
-                    <Pencil size={45} color='orange' weight='fill' />
-                    <div className={styles.linhaVertical}>.</div>
-                    <h2>Editar Perfil</h2>
-                </div>
-            </header>
+        
+            <div className={styles.title}>
+                <Pencil size={45} color='orange' weight='fill' />
+                <div className={styles.linhaVertical}>|</div>
+                <h2>Editar Perfil</h2>
+            </div>
+            
             <main>
                 <div className={styles.dadosPessoais}>
                     <div>
@@ -218,7 +218,7 @@ export function Perfil () {
                         <div className={styles.linha}></div>
                     </div>
                     <div>
-                        <div className={styles.title}>
+                        <div className={styles.titleHistorico}>
                             <h2>Histórico de Postagens no Fórum</h2>
                         </div>
                         <div className={styles.postsHistorico}>

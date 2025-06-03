@@ -82,6 +82,10 @@
     padding: 1rem;   
 }
 
+.dark .icons{
+    background-color: var(--red-300);
+}
+
 .contate{
     align-self: center;
     justify-content: center;
@@ -97,4 +101,15 @@
 .contate:hover{
     color: var(--cinza-100);
     background-color: var(--red-200);
+}
+
+.dark .contate{
+    color: var(--cinza-100);
+    background-color: var(--red-300);
+    border: 1px solid var(--cinza-100);
+}
+
+.dark .contate:hover{
+    background-color: var(--cinza-100);
+    color: var(--red-300);
 }

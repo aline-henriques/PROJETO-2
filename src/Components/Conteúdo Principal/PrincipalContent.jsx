@@ -1,9 +1,20 @@
 import styles from './PrincipalContent.module.css';
 import logoContent from '../../assets/img/LogoContent1.svg';
 import { useAuth } from '../../Services/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 export function PrincipalContent({ isDarkMode }) {
   const { isAuthenticated } = useAuth();
+
+  const navigate = useNavigate();
+
+  const handleCadastro = () => {
+    navigate ('/cadastro')
+  }
+
+  const handleLogin = () => {
+    navigate ('/login')
+  }
 
   return (
     <div
@@ -19,8 +30,8 @@ export function PrincipalContent({ isDarkMode }) {
         <p>Coloque a paz e equilíbrio em prioridade!</p>
         {!isAuthenticated && (
           <div className={styles.buttons}>
-            <button className={styles.buttonEntrar}>ENTRAR</button>
-            <button className={styles.buttonCadastrar}>CADASTRE-SE</button>
+            <button onClick={handleLogin} className={styles.buttonEntrar}>ENTRAR</button>
+            <button onClick={handleCadastro} className={styles.buttonCadastrar}>CADASTRE-SE</button>
           </div>
         )}
       </div>

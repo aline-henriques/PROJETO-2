@@ -1,8 +1,6 @@
 import styles from './Header.module.css'
 import logoHeader from '../../assets/img/DEI-TILT-LOGO.svg'
 import temaHeader from '../../assets/img/TEMA-BUTTON.svg'
-import imgPerfil from '../../assets/img/Foto_perfil.jpg'
-import React from 'react';
 import { NavLink, useNavigate  } from 'react-router-dom';
 import { useAuth } from '../../Services/AuthContext';
 import { useLocation } from 'react-router-dom';

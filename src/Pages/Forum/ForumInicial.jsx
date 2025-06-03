@@ -64,6 +64,7 @@ export function ForumInicial (){
 
     // Navegação
     const navigate = useNavigate();
+    const publicarRef = useRef(null);
 
     // Validação
     const { user } = useAuth();
@@ -117,7 +118,11 @@ export function ForumInicial (){
             <div className={styles.introduction}>
                 <h1>Fórum Burnout</h1>
                 <p>Compartilhe seus pensamentos e experiências da forma que desejar!</p>
-                <button className={styles.buttonPublique}>Publique</button>
+                <button className={styles.buttonPublique} onClick={() => {
+                    publicarRef.current?.scrollIntoView({ behavior: 'smooth' });
+                }}>
+                    Publique
+                </button>
             </div>
             <div className={styles.postsArea}>
                 <div className={styles.posts}>
@@ -188,7 +193,7 @@ export function ForumInicial (){
 
             <div className={styles.linhaInfo}></div>
 
-            <div className={styles.publicarPost}>
+            <div ref={publicarRef} className={styles.publicarPost}>
                 <header>
                      <div className={styles.title}>
                         <NotePencil size={32} color='darkOrange' weight='fill'/>

@@ -13,7 +13,7 @@
 }
 
 .darkOut{
-    background-color: var(--red-200);
+    background-color: var(--red-300);
     font-size: 1.7rem;
     width: 18rem;
     display: flex;
@@ -25,6 +25,7 @@
     border-radius: 1rem;
     color: var(--cinza-100);
 }
+
 
 .darkOut .lerMais a{
     color: var(--cinza-100);
