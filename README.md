@@ -56,7 +56,7 @@ Vídeo no YouTube apresentando as funcionalidades principais do site.
 
 Minutos exatos do vídeo apresentando as funcionalidades contidos na descrição do vídeo.
 
-[Screencast no YouTube](https://youtu.be/AYptshBXO7Q?si=WzMDX9upq5QId9Bk)
+[Screencast no YouTube](https://youtu.be/ZlwLpPZQpNs?si=Wi7IsgepMqdGtJjD)
 
 ***
 
