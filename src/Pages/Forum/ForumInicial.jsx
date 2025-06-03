@@ -71,6 +71,12 @@ export function ForumInicial (){
     const { isAuthenticated } = useAuth();
     const { posts, addPost} = usePost();
 
+    const handlePublicarClick = () => {
+    if (!isAuthenticated) {
+        navigate('/login');
+    }
+    };
+
     // Novo Post
     const [newPostText, setNewPostText] = useState('')
     const lastPostRef = useRef(null);
@@ -118,9 +124,7 @@ export function ForumInicial (){
             <div className={styles.introduction}>
                 <h1>Fórum Burnout</h1>
                 <p>Compartilhe seus pensamentos e experiências da forma que desejar!</p>
-                <button className={styles.buttonPublique} onClick={() => {
-                    publicarRef.current?.scrollIntoView({ behavior: 'smooth' });
-                }}>
+                <button className={styles.buttonPublique} onClick={handlePublicarClick}>
                     Publique
                 </button>
             </div>
@@ -213,7 +217,7 @@ export function ForumInicial (){
                         required 
                         />
                         <div className={styles.novoPostBotton}>
-                            <button type="submit" disabled={newPostText.length === 0}> 
+                            <button onClick={handlePublicarClick} type="submit" disabled={newPostText.length === 0}> 
                                 Publicar
                             </button>
 
