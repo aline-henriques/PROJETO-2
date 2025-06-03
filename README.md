@@ -1,4 +1,4 @@
-## 🧠 | Dei Tilti - Website
+Dr ## 🧠 | Dei Tilti - Website
 
 Aplicação desenvolvida com React como projeto acadêmico para a disciplina de **Projetos 2** na [CESAR School](https://www.cesar.school).
 
@@ -68,6 +68,8 @@ Minutos exatos do vídeo apresentando as funcionalidades contidos na descrição
 
 [🔗 DOCS - Relatório de Desenvolvimento do Projeto!](https://docs.google.com/document/d/180YaCEbCrv_3SM8Rb_zrdJ8bSbknzEjNVU1qo71WdYM/edit)
 
+[🔗 SITE - Link do Site](https://dei-tilti.netlify.app/)
+
 ***
 
 ### 💻 | Tecnologias Utilizadas
@@ -84,13 +86,7 @@ Minutos exatos do vídeo apresentando as funcionalidades contidos na descrição
 
 ### 🔥 | Acesse o Site
 
-[**Projeto em andamento...**](https://link-do-site.com)
-
-✔️ Justificativa para o Não Deployment e Conclusão:
-
-O projeto ainda está em desenvolvimento e não foi completamente finalizado. Estamos aguardando a implementação de funcionalidades-chave antes de realizar o deploy. O foco está em garantir que todas as partes essenciais do site sejam implementadas corretamente antes de ser disponibilizado publicamente.
-
-A estimativa de conclusão e o primeiro deploy do site está prevista para junho de 2025. Estamos planejando realizar testes de funcionalidade, usabilidade e responsividade antes de lançar o site. Nosso objetivo é garantir que o sistema seja bem implementado e funcional, oferecendo uma experiência de usuário de alta qualidade antes de torná-lo acessível ao público.
+[**Link para o Site**](https://dei-tilti.netlify.app/)
 
 *** 
 
