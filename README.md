@@ -42,11 +42,11 @@ Link para o Trello, contendo todo o backlog do projeto.
 [🔗 Trello](https://trello.com/b/FODA84Ao/lorem-ipsons)
 
 Print dos quadros com as Sprints:
-![Quadro da Sprint 01](./src/assets/img/QUADROS-TRELLO.jpg)
+![Quadro da Sprint 01](./PROJETO-2-main/src/assets/img/QUADROS-TRELLO.jpg)
 
-![Quadro da Sprint 02](./src/assets/img/QUADROS-TRELLO(2).jpg)
+![Quadro da Sprint 02](./PROJETO-2-main/src/assets/img/QUADROS-TRELLO(2).jpg)
 
-![Quadro da Sprint 03](./src/assets/img/QUADROS-TRELLO(3).jpg)
+![Quadro da Sprint 03](./PROJETO-2-main/src/assets/img/QUADROS-TRELLO(3).jpg)
 
 *** 
 
@@ -161,7 +161,7 @@ Documento para relatório de desenvolvimento, desde o início á conclusão do p
 
 Acesse mais informações sobre a nossa equipe no documento acima! 
 
-![Foto da Equipe](./src/assets/img/Prog-em-Par.jpeg)
+![Foto da Equipe](./PROJETO-2-main/src/assets/img/Prog-em-Par.jpeg)
 
 ***
 
