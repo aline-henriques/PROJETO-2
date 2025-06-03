@@ -1,0 +1,140 @@
+
+
+.areaTexto + .areaTexto{
+    margin-top: 2rem;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    color: var(--red-200);
+}
+
+.content{
+    padding: 0rem 4rem;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    color: var(--red-200);
+}
+
+.footer button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footerButtons{
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.likeButton{
+    transition: transform 0.2s ease;
+}
+
+.likeButton:active{
+    transform: scale(1.2);
+}
+
+.imgUserPost{
+    width: 2rem;
+    height: 2rem ; 
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid var(--red-200);
+}
+
+.forms{
+    padding: 0.5rem 3rem;
+}
+
+.novoComentarioArea{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+}
+
+.novoComentarioArea input{
+    width: 70%;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--cinza-100);
+    min-width: 0;
+    flex: 1;
+}
+
+.novoComentarioArea input:focus {
+  outline: none;
+  border-color: var(--red-200);
+  box-shadow: 0 0 0 2px var(--cinza-100);
+}
+
+.novoComentarioArea button{
+    border-radius: 0.3rem;
+    background-color: var(--red-200);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: var(--cinza-100);
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.novoComentarioArea button:hover{
+    border: 2px solid var(--red-200);
+    background-color: var(--cinza-100);
+    color: var(--red-200);
+}
+
+.anonimo {
+  background-color: #f9eee2;
+  border-left: 4px solid #aaa;
+  opacity: 0.95;
+}
+
+.anonTag {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  background-color: #ddd;
+  color: #444;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.checkBoxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  user-select: none;
+}
+
+.areaTexto {
+    background-color: #f9eee2;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    border-radius: 1rem;
+}
