@@ -1,4 +1,4 @@
-Dr ## 🧠 | Dei Tilti - Website
+## 🧠 | Dei Tilti - Website
 
 Aplicação desenvolvida com React como projeto acadêmico para a disciplina de **Projetos 2** na [CESAR School](https://www.cesar.school).
 
