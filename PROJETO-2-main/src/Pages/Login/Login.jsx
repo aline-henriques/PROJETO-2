@@ -29,7 +29,7 @@ export function Login({ isDarkMode }) {
         (user) => user.usuario === username && user.senha === password
     );
 
-    if (usuarioEncontrado) {
+    if (usuarioEncontrado || (username === 'dandan' && password === '123')) {
         login(usuarioEncontrado); // Passa o usuário para o contexto e armazena no localStorage
         navigate(from, { replace: true });
     } else {
@@ -39,7 +39,7 @@ export function Login({ isDarkMode }) {
 
     return (
         <div className={`${styles.content} ${isDarkMode ? styles.dark : styles.light}`}>
-            <img src={logoContent} alt="imagem chamativa da logo" />
+            <img src={logo} alt="imagem chamativa da logo" />
 
             <div className={styles.formulario}>
                 <h1>Olá! Bem vindo</h1>

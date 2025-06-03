@@ -44,7 +44,7 @@ export function Header({onToggleColors,isDarkMode}) {
 
               {!isAuthenticated && (
                 <>
-                  <NavLink to="/login">Login</NavLink>
+                  <NavLink to="/Login">Login</NavLink>
                   <button onClick={handleCadastro} className={styles.cadastro}>Cadastre-se</button>
                 </>
               )}

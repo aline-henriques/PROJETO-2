@@ -42,7 +42,7 @@ export function Cadastro({ isDarkMode }) {
     setErrors({});
 
     // Redireciona para login
-    navigate('/login');
+    navigate('/Login');
   };
 
   return (
@@ -54,7 +54,7 @@ export function Cadastro({ isDarkMode }) {
 
   <div className={styles.space}>
     <p>Você já está registrado no site?</p>
-    <a href="/login" className={styles.linkLogin}>Faça Login</a>
+    <a href="/Login" className={styles.linkLogin}>Faça Login</a>
   </div>
 
   <form onSubmit={handleSubmit}>

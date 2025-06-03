@@ -6,27 +6,34 @@ export function PrincipalContent({ isDarkMode }) {
   const { isAuthenticated } = useAuth();
 
   return (
-    <div
-      className={`${styles.mainConteudoPrincipal} ${
-        isDarkMode ? styles.dark : styles.light
-      }`}
-    >
-      <div className={styles.text}>
-        <h1>Paz.</h1>
-        <h1>Energia.</h1>
-        <h1>Restauração.</h1>
-        <p>Recupere sua energia e renove sua mente.</p>
-        <p>Coloque a paz e equilíbrio em prioridade!</p>
-        {!isAuthenticated && (
-          <div className={styles.buttons}>
-            <button className={styles.buttonEntrar}>ENTRAR</button>
-            <button className={styles.buttonCadastrar}>CADASTRE-SE</button>
-          </div>
-        )}
+    <>
+      <div
+        className={`${styles.mainConteudoPrincipal} ${
+          isDarkMode ? styles.dark : styles.light
+        }`}
+      >
+        <div className={styles.text}>
+          <h1>Paz.</h1>
+          <h1>Energia.</h1>
+          <h1>Restauração.</h1>
+          <p>Recupere sua energia e renove sua mente.</p>
+          <p>Coloque a paz e equilíbrio em prioridade!</p>
+
+          {!isAuthenticated && (
+            <div className={styles.buttons}>
+              <button className={styles.buttonEntrar}>ENTRAR</button>
+              <button className={styles.buttonCadastrar}>CADASTRE-SE</button>
+            </div>
+          )}
+        </div>
+
+        <div className={styles.image}>
+          <img src={logoContent} alt="imagem chamativa da logo." />
+        </div>
       </div>
-      <div className={styles.image}>
-        <img src={logoContent} alt="imagem chamativa da logo." />
-      </div>
-    </div>
+
+      {/* ✅ Linha abaixo do bloco completo */}
+     
+    </>
   );
 }
