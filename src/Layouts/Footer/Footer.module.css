@@ -1,0 +1,189 @@
+/* Layout geral */
+.bottomContent {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  max-width: 100%;
+  height: 8rem;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: inherit;
+  z-index: 10;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.bottomActions {
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  height: 100%;
+  width: 100%; 
+  flex-wrap: wrap; 
+}
+
+.bottomActions img {
+  background: transparent;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  max-width: 100%; 
+}
+
+.askHelp,
+.knowUs {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.notAlone {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.buttonConheca {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 1rem;
+  color: white;
+  border: 0;
+  background-color: #92423c;
+  text-align: center;
+  cursor: pointer;
+  width: 25%; 
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.buttonConheca::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--cinza-100); /* cor ao passar o mouse */
+  transition: left 0.3s ease;
+  z-index: 0;
+}
+
+.dark .buttonConheca::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--red-200); /* cor ao passar o mouse */
+  transition: left 0.3s ease;
+  z-index: 0;
+}
+
+.buttonConheca:hover::before {
+  left: 0;
+}
+
+.buttonConheca:hover {
+  color: var(--red-200);
+}
+
+.buttonConheca:hover {
+  color: var(--red-200);
+}
+
+.dark .buttonConheca:hover {
+  color: var(--cinza-100);
+}
+
+.buttonConheca span {
+  position: relative;
+  z-index: 1;
+}
+
+
+.dark .bottomActions {
+  background-color: var(--red-200);
+  color: var(--cinza-100);
+}
+
+.light .bottomActions {
+  background-color: white;
+  color: var(--red-200);
+}
+
+.dark .buttonConheca {
+  background-color: var(--cinza-100);
+  color: var(--red-200);
+}
+
+
+@media (max-width: 1024px) {
+  .bottomActions {
+    padding: 1rem; 
+  }
+
+  .askHelp,
+  .knowUs {
+    margin-left: 0;
+  }
+
+  .buttonConheca {
+    padding: 1rem 2rem;
+    font-size: 0.9rem; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .bottomActions {
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center; 
+  }
+
+  .askHelp,
+  .knowUs {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .notAlone {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .buttonConheca {
+    width: 100%; /* Garante que o botão ocupe 100% da largura */
+    padding: 1.5rem; /* Ajusta o padding para telas menores */
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .bottomActions {
+    padding: 1rem; 
+  }
+
+  .askHelp,
+  .knowUs {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .buttonConheca {
+    padding: 1rem; 
+    font-size: 1rem; 
+  }
+}

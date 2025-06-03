@@ -1,0 +1,110 @@
+.mainConteudoPrincipal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 11rem;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s, filter 0.3s;
+  margin-bottom: -5rem;
+  flex: 1;
+}
+
+.light{
+    color: var(--red-200);
+    background-color: var(--cinza-100);
+}
+
+.dark{
+    color: var(--cinza-100);
+    background-color: var(--red-200);
+}
+
+.text {
+  font-family: sans-serif;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  
+}
+
+.light .text p,
+.dark .text p{
+  font-size: 1.5rem;
+}
+
+.image{
+  padding-right: 12rem;
+  
+}
+
+.mainConteudoPrincipal h1 {
+  font-size: 6rem;
+}
+
+.mainConteudoPrincipal p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.image img{
+  width: 40rem;
+  height: 40rem;
+  clip-path: inset(0 0 16%);
+}
+
+.buttons {
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.buttonCadastrar {
+  margin-left: 3rem;
+  border: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  background: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.buttonCadastrar:hover {
+  color: var(--red-300);
+  transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+/* Botão Entrar */
+.buttonEntrar {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--cinza-100);
+  background-color: var(--red-200);
+  border-radius: 1rem;
+  border: 0;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.buttonEntrar:hover {
+  background-color: var(--red-300);
+  color: white;
+  transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+.dark img {
+  filter: brightness(0) invert(1);
+}
+
+.dark .buttonEntrar {
+  color: var(--red-200);
+  background-color: var(--cinza-100);
+}
+
+.light .buttonCadastrar {
+  color: var(--red-200);
+}
+
+.dark .buttonCadastrar {
+  color: var(--cinza-100);
+}
