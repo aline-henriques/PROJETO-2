@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
+    padding-bottom: 4rem;
+}
+
+.light{
+    color: var(--red-200);
+    background-color: var(--cinza-100);
+}
+
+.dark{
+    color: var(--cinza-100);
+    background-color: var(--red-200);
+}
+
+.mainDiretrizes{
+    justify-content: flex-start;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.aviso{
+    padding: 0.2rem;
+}
+
+.aviso p{
+    font-size: 1.5rem;
+}
+
+.title{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.linhaVertical{
+  width: 0.2rem;
+  height: 100%;
+  background-color: var(--red-200);
+}
+
+.regras{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    padding: 3em 4rem;
+
+}
+
+.sejaRespeitoso, .privacidade, .denuncie{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sejaRespeitoso h3, .privacidade h3, .denuncie h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sejaRespeitoso p , .privacidade p , .denuncie p {
+    text-align: center;
+    font-size: 1.1rem;
+    width: 50%;
+}
+
+.icons{
+    background-color: #dbdbdb;
+    border-radius: 50%;
+    padding: 1rem;   
+}
+
+.dark .icons{
+    background-color: var(--red-300);
+}
+
+.contate{
+    align-self: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--cinza-100);
+    border: 2px solid var(--red-200);
+    cursor: pointer;
+    color: var(--red-200);
+    font-weight: bold;
+}
+
+.contate:hover{
+    color: var(--cinza-100);
+    background-color: var(--red-200);
+}
+
+.dark .contate{
+    color: var(--cinza-100);
+    background-color: var(--red-300);
+    border: 1px solid var(--cinza-100);
+}
+
+.dark .contate:hover{
+    background-color: var(--cinza-100);
+    color: var(--red-300);
+}

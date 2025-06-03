@@ -1,0 +1,81 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content img {
+    margin-left: 5rem;
+    width: 35%;
+}
+
+.formulario h1, h3, h4, p, form, label {
+    background-color: var(--red-100);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red-200);
+    color: white;
+    height: 100vh;
+    width: 50%;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--red-200);
+    padding-top: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h3 {
+    padding-top: 0.5rem;  /* reduzido de 2rem */
+    margin-bottom: 0.2rem; /* espaçamento pequeno embaixo */
+}
+
+form input {
+    margin: 4px 0;        /* reduzido de 8px para 4px */
+    padding: 8px;         /* um pouco menor que antes */
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.formulario button {
+    font-size: 1rem;
+    color: var(--cinza-100);
+    background-color: var(--red-300);
+    border-radius: 0.5rem;
+    border: 1px solid var(--cinza-100);
+    padding: 0.7rem 0rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    margin-top: 3rem;
+    width: 18.5rem;
+}
+
+.error {
+    color: #ff3333;
+    background-color: #ffebee;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.errorMessage {
+    color: #ff3333;
+    min-height: 1em;
+    display: block;
+    margin-top: 2px;
+    font-size: 0.75rem;
+}
