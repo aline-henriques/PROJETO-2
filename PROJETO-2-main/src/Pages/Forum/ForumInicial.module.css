@@ -70,6 +70,11 @@
     display: flex;
     gap: 1rem;
 }
+
+.feed{
+    position: relative;
+}
+
 .postsArea, .feed{
     flex: 1;
     padding: 3rem 2rem;
@@ -272,8 +277,9 @@
 
 .mensagemLogarFeed{
     position: absolute;
-    bottom: -180%;
-    left: 38%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-Color: var(--red-200);
     color: var(--cinza-100);
     padding: 1.2rem;
@@ -315,4 +321,15 @@
 
 .dark .checkBoxLabel{
     color: var(--cinza-100);
+}
+
+@media (max-width: 768px) {
+  .postsArea {
+    flex-direction: column;
+  }
+
+  .posts,
+  .rightMenu {
+    width: 100%;
+  }
 }

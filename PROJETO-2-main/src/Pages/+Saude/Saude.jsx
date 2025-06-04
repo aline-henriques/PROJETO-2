@@ -1,5 +1,6 @@
 import { Header } from '../../Layouts/Header/Header';
 import styles from './Saude.module.css';
+import Stress from '../../assets/img/Stress.png'
 import { useState } from 'react';
 import { Noticia } from '../../Components/Noticias/Noticia';
 import { Recurso } from '../../Components/Recursos (+Saude)/Recurso';
@@ -140,7 +141,7 @@ export function Saude(){
            <section className={styles.heroSection}>
                 <div className={styles.containerHero}>
                     <div className={styles.colunaImagem}>
-                        <img src="src/assets/img/Stress.png" alt="Pessoa estressada no computador" />
+                        <img src={Stress} alt="Pessoa estressada no computador" />
                     </div>
     
                 <div className={styles.colunaTexto}>
