@@ -195,7 +195,7 @@ export function Saude(){
             </section>
             <section className={styles.limitesSaudaveis}>
                     <div className={styles.title}>
-                        <CheckFat size={32} color='blue' weight='fill' />
+                        <CheckFat size={32} weight='fill' />
                         <div className={styles.linhaVertical}>.</div>
                         <h2>Limites Saúdaveis</h2>
                     </div>
