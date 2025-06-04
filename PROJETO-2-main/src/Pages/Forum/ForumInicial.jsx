@@ -128,7 +128,7 @@ export function ForumInicial (){
             <div className={styles.postsArea}>
                 <div className={styles.posts}>
                     <div className={styles.title}>
-                        <Fire size={32} color='darkOrange' weight='fill'/>
+                        <Fire size={32} weight='fill'/>
                         <div className={styles.linhaVertical}>.</div>
                         <h2>Publicações em Alta</h2>
                     </div>
@@ -196,7 +196,7 @@ export function ForumInicial (){
 
             <div ref={publicarRef} className={styles.publicarPost}>
                      <div className={styles.title}>
-                        <NotePencil size={32} color='darkOrange' weight='fill'/>
+                        <NotePencil size={32} weight='fill'/>
                         <div className={styles.linhaVertical}>.</div>
                         <h2>Faça uma publicação</h2>
                     </div>

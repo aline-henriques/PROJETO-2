@@ -159,7 +159,7 @@ export function Saude(){
 
             <section className={styles.weekNews}>
                     <div className={styles.title}>
-                        <Fire size={32} color='darkOrange' weight='fill'/>
+                        <Fire size={32} weight='fill'/>
                         <div className={styles.linhaVertical}>.</div>
                         <h2>Notícias da Semana</h2>
                     </div>

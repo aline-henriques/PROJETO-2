@@ -10,7 +10,6 @@ export function PrincipalContent({ isDarkMode }) {
   const navigate = useNavigate();
 
   return (
-    <>
       <div
         className={`${styles.mainConteudoPrincipal} ${
           isDarkMode ? styles.dark : styles.light
@@ -35,9 +34,5 @@ export function PrincipalContent({ isDarkMode }) {
           <img src={logoContent} alt="imagem chamativa da logo." />
         </div>
       </div>
-
-      {/* ✅ Linha abaixo do bloco completo */}
-     
-    </>
   );
 }
