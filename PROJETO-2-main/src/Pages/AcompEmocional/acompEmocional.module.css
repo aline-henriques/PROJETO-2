@@ -21,11 +21,14 @@
 }
 
 .mainAcompEmocional{
-    justify-content: flex-start;
-    padding: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
-
+  width: 100%;
+  max-width: 75rem; /* Limite visual */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto; /* Centraliza */
+  padding: 0 1rem; /* Protege nas bordas */
+  flex-wrap: wrap; /* Prevê quebras em telas pequenas */
 }
 
 .title{
@@ -33,6 +36,7 @@
   gap: 0.5rem;
   align-items: center;
   font-size: 2rem;
+  padding: 1rem 0;
 }
 
 .linhaVertical{
@@ -67,12 +71,17 @@
     clip-path: none;
 }
 
+.dark .introducao img{
+    filter: brightness(0.8) contrast(1.1);
+}
+
 .questionarios, .niveis{
     display: flex;
     gap: 2rem;
     justify-content: center;
-    padding: 2rem 4rem;
+    padding: 2rem 0;
 }
+
 
 section p {
     font-size: 1.3rem;
@@ -94,6 +103,11 @@ section h2{
     padding: 2rem 3rem;
     justify-content: space-between;
     width: 33%;
+}
+
+.dark .questionariosBox{
+    border: 2px solid var(--cinza-100);
+    background-color: #daa894;
 }
 
 .questionariosBox button{

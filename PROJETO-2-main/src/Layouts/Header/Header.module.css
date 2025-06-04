@@ -173,7 +173,7 @@
 }
 
 .dark .cadastro{
-  background-color: white;
+  background-color: var(--red-200);
   color: var(--red-200);
 }
 

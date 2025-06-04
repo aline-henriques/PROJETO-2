@@ -20,18 +20,19 @@
     background-color: var(--red-200);
 }
 
-header{
-    width: 93%;
-    padding: 2rem 5rem;
-    max-width: 75rem; /* Limite visual */
-    margin: 0 auto; /* Centraliza */
-}
-
 .title{
   display: flex;
   gap: 0.5rem;
   align-items: center;
   font-size: 2rem;
+  padding: 1rem 9rem;
+}
+
+.titleHistorico{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 2rem;
 }
 
 .linhaVertical{
@@ -40,7 +41,7 @@ header{
   background-color: var(--red-200);
 }
 
-main {
+.mainPerfil {
   width: 100%;
   max-width: 75rem; /* Limite visual */
   display: flex;
@@ -100,17 +101,21 @@ main {
 
 .infos input{
     border-radius: 1rem;
-  background-color: #f2e8df; /* mesmo tom de fundo dos inputs do Canva */
-  border: 1px solid var(--red-200);
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  width: 100%;
+    background-color: #f2e8df; /* mesmo tom de fundo dos inputs do Canva */
+    border: 1px solid var(--red-200);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    width: 100%;
 }
 
 .colunas{
     display: flex;
     width: 100%;
     background-color: #f9eee2;
+}
+
+.dark .colunas{
+    color: var(--red-200);
 }
 
 .dados{
@@ -257,4 +262,24 @@ main {
   .diretrizes {
     width: 100%;
   }
+}
+
+.mensagemSucesso {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px auto;
+    width: fit-content;
+    animation: fadeInOut 3s ease-in-out;
+    font-weight: bold;
+}
+
+/* Animação opcional */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
 }

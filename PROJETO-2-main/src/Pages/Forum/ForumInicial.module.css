@@ -56,6 +56,7 @@
 
 .dark .buttonPublique{
     background-color: var(--red-200);
+    color: var(--cinza-100);
 }
 
 .buttonPublique:hover{

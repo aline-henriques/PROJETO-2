@@ -35,8 +35,9 @@ export function Perfil () {
     };
 
     // Alterar dados perfil
+    const [mensagemSucesso, setMensagemSucesso] = useState(false);
     const [alterarDados, setAlterarDados] = useState({
-        nome:false,
+        name:false,
         usuario:false,
         email:false,
         senha: false,
@@ -51,7 +52,7 @@ export function Perfil () {
 
     //salvar dados do perfil
     const [profileData , setProfileData] = useState({
-        nome: user.name,
+        name: user.name,
         usuario: user.usuario,
         email: user.email,
         senha: user.senha,
@@ -59,7 +60,7 @@ export function Perfil () {
     const handleSave = () => {
     setUser(prev => ({
         ...prev,
-        name: profileData.nome,
+        name: profileData.name,
         usuario: profileData.usuario,
         email: profileData.email,
         senha: profileData.senha,
@@ -68,13 +69,19 @@ export function Perfil () {
 
     
     setAlterarDados({
-        nome: false,
+        name: false,
         usuario: false,
         email: false,
         senha: false
     });
 
      setNovaImagem(null);
+
+     setMensagemSucesso(true);
+
+     setTimeout(() => {
+            setMensagemSucesso(false);
+        }, 3000);
     };
 
     // historico de posts do usuario
@@ -89,37 +96,42 @@ export function Perfil () {
             
             <Header onToggleColors={toggleColors} isDarkMode={darkMode} />
         
-            <header>
-                <div className={styles.title}>
-                    <Pencil size={45} color='orange' weight='fill' />
-                    <div className={styles.linhaVertical}>.</div>
-                    <h2>Editar Perfil</h2>
-                </div>
-            </header>
-            <main>
+            
+            <div className={styles.title}>
+                <Pencil size={45} color='orange' weight='fill' />
+                <div className={styles.linhaVertical}>.</div>
+                <h2>Editar Perfil</h2>
+            </div>
+            
+            <main className={styles.mainPerfil}>
                 <div className={styles.dadosPessoais}>
+                    {mensagemSucesso && (
+                    <div className={styles.mensagemSucesso}>
+                        Informações salvas com sucesso!
+                    </div>
+                )}
                     <div>
                         <div className={styles.colunas}>
                             <div className={styles.dados}>
                                 <h2>Meus Dados Pessoais</h2>
                                 <div className={styles.infos}>
                                     <p>Nome</p>
-                                    {!alterarDados.nome && (
+                                    {!alterarDados.name && (
                                         <div className={styles.dadosUsuario}>
-                                            <span>{user.nome}</span>
-                                            <button onClick={ () => handleClick('nome')}><Pencil size={32}/></button>
+                                            <span>{user.name}</span>
+                                            <button onClick={ () => handleClick('name')}><Pencil size={32}/></button>
                                         </div>
                                     )}
-                                    {alterarDados.nome && (
+                                    {alterarDados.name && (
                                         <div className={styles.alterarDados}>
                                             <input 
                                                 type="text" 
-                                                defaultValue={user.nome}
-                                                name='nome'
-                                                value={profileData.nome}
+                                                defaultValue={user.name}
+                                                name='name'
+                                                value={profileData.name}
                                                 onChange={handleInputChange}
                                             />
-                                            <button onClick={ () => handleClick('nome')}><XCircle size={32}/></button>
+                                            <button onClick={ () => handleClick('name')}><XCircle size={32}/></button>
                                         </div>
                                     )}
                                 </div>
@@ -218,7 +230,7 @@ export function Perfil () {
                         <div className={styles.linha}></div>
                     </div>
                     <div>
-                        <div className={styles.title}>
+                        <div className={styles.titleHistorico}>
                             <h2>Histórico de Postagens no Fórum</h2>
                         </div>
                         <div className={styles.postsHistorico}>

@@ -33,10 +33,9 @@
     padding-top: 1rem;
 }
 
-.space input{
-    margin-right: 0.3rem;
+.space a{
+    cursor: pointer;
 }
-
 .spaceBox{
     display: flex;
     flex: 1;

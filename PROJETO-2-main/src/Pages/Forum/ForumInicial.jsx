@@ -14,7 +14,7 @@ const PostsEmAlta =[
         id:1,
         author: {
             avatarUrl: "https://pbs.twimg.com/profile_images/1893010592484491264/-jaz88Xa_400x400.jpg",
-            nome: "Guilherme Mattos"
+            name: "Guilherme Mattos"
         },
         content: "Estou finalmente aprendendo a dizer não e impor meus limites. Tem sido difícil mas estou orgulhoso do meu progresso!",   
 
@@ -23,7 +23,7 @@ const PostsEmAlta =[
         id:2,
         author: {
             avatarUrl: "https://pbs.twimg.com/profile_images/1894169205039042560/dHbunUpS_400x400.jpg",
-            nome: "Dani Liu"
+            name: "Dani Liu"
         },
         content: "Não me sinto feliz. Estou no meu limite, preciso de ajuda urgentemente!",   
 
@@ -35,7 +35,7 @@ const PostsFeed=[
         id:1,
         author: {
             avatarUrl: "https://pbs.twimg.com/profile_images/1893010592484491264/-jaz88Xa_400x400.jpg",
-            nome: "Guilherme Mattos"
+            name: "Guilherme Mattos"
         },
         content: "Estou precisando desabafar sobre algo que anda me incomodando bastante no trabalho, mas não tenho com quem expor para ouvir opiniões. Alguém poderia me ajudar? ",   
 
@@ -44,7 +44,7 @@ const PostsFeed=[
         id:2,
         author: {
             avatarUrl: "https://pbs.twimg.com/profile_images/1894169205039042560/dHbunUpS_400x400.jpg",
-            nome: "Dani Liu"
+            name: "Dani Liu"
         },
         content: "Me sinto exausto. Meu chefe é muito abusivo e desrespeitoso. Queria poder conversar com alguém.",   
 
@@ -73,6 +73,7 @@ export function ForumInicial (){
     // Novo Post
     const [newPostText, setNewPostText] = useState('')
     const lastPostRef = useRef(null);
+    const publicarRef = useRef()
     function handleCreateNewPost(){
         event.preventDefault()
 
@@ -90,7 +91,7 @@ export function ForumInicial (){
             content:newPostText,
             anonimo: isAnonimo,
             author: {
-                nome: isAnonimo ? 'Anônimo' : user?.nome,
+                name: isAnonimo ? 'Anônimo' : user?.name,
                 avatarUrl: isAnonimo? FotoAnonima
                          : user?.avatarUrl 
             }
@@ -117,7 +118,12 @@ export function ForumInicial (){
             <div className={styles.introduction}>
                 <h1>Fórum Burnout</h1>
                 <p>Compartilhe seus pensamentos e <br></br> experiências da forma que desejar!</p>
-                <button className={styles.buttonPublique}>Publique</button>
+                <button 
+                    className={styles.buttonPublique}
+                    onClick={() => publicarRef.current?.scrollIntoView({ behavior: 'smooth' })}
+                    >
+                    Publique
+                </button>
             </div>
             <div className={styles.postsArea}>
                 <div className={styles.posts}>
@@ -188,7 +194,7 @@ export function ForumInicial (){
 
             <div className={styles.linhaInfo}></div>
 
-            <div className={styles.publicarPost}>
+            <div ref={publicarRef} className={styles.publicarPost}>
                      <div className={styles.title}>
                         <NotePencil size={32} color='darkOrange' weight='fill'/>
                         <div className={styles.linhaVertical}>.</div>

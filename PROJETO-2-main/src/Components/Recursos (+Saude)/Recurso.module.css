@@ -13,7 +13,7 @@
 }
 
 .darkOut{
-    background-color: var(--red-200);
+    background-color: var(--red-300);
     font-size: 1.7rem;
     width: 18rem;
     display: flex;

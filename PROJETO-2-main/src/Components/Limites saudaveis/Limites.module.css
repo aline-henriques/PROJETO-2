@@ -24,7 +24,6 @@
 }
 
 .dark .newsBox{
-    background-color: var(--cinza-100);
     color: var(--red-200);
 }
 

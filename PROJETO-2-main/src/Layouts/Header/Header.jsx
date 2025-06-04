@@ -51,7 +51,7 @@ export function Header({onToggleColors,isDarkMode}) {
 
               {isAuthenticated && (
                 <>
-                  <p>Olá, {user.nome}!</p>
+                  <p>Olá, {user.name}!</p>
                   <div className={styles.menuSide}>
                     <div className={styles.cadastro}><img src={user.avatarUrl} alt='Foto Perfil' className={styles.fotoPerfil}></img></div>
                     <div className={styles.dropdownMenu}>
