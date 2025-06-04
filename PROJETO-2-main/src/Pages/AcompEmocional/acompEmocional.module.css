@@ -106,6 +106,7 @@ section h2{
 }
 
 .dark .questionariosBox{
+    color: var(--red-200);
     border: 2px solid var(--cinza-100);
     background-color: #daa894;
 }
